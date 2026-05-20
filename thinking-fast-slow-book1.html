@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第 1 期 · 思考，快与慢 — Thinking, Fast and Slow</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f7f3ec;color:#2a2418;line-height:1.85}
+.container{max-width:760px;margin:0 auto;padding:32px 24px 60px}
+.issue-tag{display:inline-block;background:#6b4423;color:#f7f3ec;padding:4px 14px;font-size:0.78rem;letter-spacing:3px;border-radius:2px;margin-bottom:18px}
+header{border-bottom:2px solid #a87a3e;padding-bottom:28px;margin-bottom:32px}
+header h1{font-size:1.9rem;color:#6b4423;font-weight:800;letter-spacing:1px;line-height:1.4}
+header h2{font-size:1.05rem;color:#8a6e4a;font-weight:400;font-style:italic;margin-top:6px}
+header .meta{margin-top:14px;font-size:0.88rem;color:#8a6e4a}
+header .meta span{margin-right:18px}
+section{margin:30px 0}
+h3{font-size:1.15rem;color:#6b4423;border-left:4px solid #a87a3e;padding-left:12px;margin-bottom:14px;letter-spacing:1px}
+p{margin-bottom:12px;text-align:justify}
+.tagline{background:#fff;border-left:3px solid #a87a3e;padding:18px 22px;font-size:1.05rem;color:#4a3820;font-style:italic;border-radius:4px;box-shadow:0 1px 6px rgba(107,68,35,0.06)}
+ul{margin-left:8px;list-style:none}
+ul li{padding:6px 0 6px 22px;position:relative}
+ul li:before{content:"◆";position:absolute;left:0;color:#a87a3e;font-size:0.7rem;top:11px}
+.quote{background:#fffaf2;border-left:3px solid #c8a667;padding:14px 18px;margin:14px 0;border-radius:3px}
+.quote .en{color:#4a3820;font-style:italic}
+.quote .zh{color:#6b4423;margin-top:6px;font-size:0.96rem}
+.quote .src{display:block;margin-top:8px;font-size:0.8rem;color:#a87a3e}
+.dim{font-size:0.92rem;color:#5a4838}
+.english-sum{background:#efe7d6;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3820}
+.questions{background:#fff;padding:18px 22px;border-radius:4px;box-shadow:0 1px 6px rgba(107,68,35,0.06)}
+.questions ol{margin-left:20px}
+.questions li{padding:5px 0;color:#4a3820}
+a{color:#6b4423;text-decoration:underline}
+a:hover{color:#a87a3e}
+.nav-back{text-align:center;margin-top:50px;padding-top:24px;border-top:1px solid #d8c8a8}
+.nav-back a{display:inline-block;padding:10px 26px;background:#6b4423;color:#f7f3ec;text-decoration:none;border-radius:3px;font-size:0.9rem;letter-spacing:1px}
+.nav-back a:hover{background:#a87a3e}
+@media(max-width:600px){header h1{font-size:1.45rem}.container{padding:24px 18px 50px}}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="issue-tag">第 001 期</div>
+
+<header>
+<h1>思考，快与慢</h1>
+<h2>Thinking, Fast and Slow — Daniel Kahneman</h2>
+<div class="meta">
+<span>📖 原版 2011</span>
+<span>📑 499 页（英文精装）</span>
+<span>🏆 诺贝尔经济学奖得主</span>
+</div>
+</header>
+
+<section>
+<h3>一句话推荐</h3>
+<div class="tagline">心理学家拿了经济学诺贝尔奖，因为他第一次让"非理性"成为可量化、可重现、可教学的学问——读完它，你看自己每一个决策都会多一层冷峻的旁观者。</div>
+</section>
+
+<section>
+<h3>适合谁读</h3>
+<ul>
+<li><strong>适合</strong>：做决策的人（投资、招聘、产品、医生、政策）、对自我认知有诚意的人、需要识破他人话术的人、AI/数据从业者（理解人类基线）。</li>
+<li><strong>适合</strong>：希望摆脱"我比别人理性"幻觉的资深技术人——尤其当你开始管理团队、与产品和销售对话时。</li>
+<li><strong>不那么适合</strong>：寻找速效方法论的人。Kahneman 反复强调：知道偏误并不意味着你能避免它。这是诊断书，不是处方。</li>
+<li><strong>已熟悉者可跳过</strong>：如果你读过 Thaler 的《助推》、Ariely 的《怪诞行为学》并理解 prospect theory，本书第一部分会偏冗长。</li>
+</ul>
+</section>
+
+<section>
+<h3>核心思想</h3>
+<ul>
+<li><strong>系统 1 与系统 2</strong>：直觉自动（快），逻辑费力（慢）。我们 95% 的判断由系统 1 完成，但我们以为自己用的是系统 2。</li>
+<li><strong>启发式与偏误</strong>：可得性、代表性、锚定、框架效应——大脑用近似算法替代真实计算，多数时候够用，关键时刻致命。</li>
+<li><strong>所见即所有（WYSIATI）</strong>：人只用眼前信息构造故事，对"我不知道的东西"系统性地视而不见。这是分析师、董事会、专家最常犯的错。</li>
+<li><strong>展望理论（Prospect Theory）</strong>：损失带来的痛苦约为同等收益喜悦的 2 倍——这一条改写了现代金融学和保险学。</li>
+<li><strong>峰终定律 / 经验自我 vs 记忆自我</strong>：我们记住的不是经历本身，而是峰值与结尾。这彻底重定义"幸福"是什么。</li>
+<li><strong>回归均值</strong>：被表扬的表现下次更差，被批评的下次更好——不是教育有效，是统计回归。误读它毁掉无数管理与育儿决策。</li>
+<li><strong>专家直觉的边界</strong>：在反馈快、规则稳的领域（消防员、象棋手）可信；在反馈慢、噪音大的领域（股票预测、政治分析）专家≈猴子掷飞镖。</li>
+<li><strong>算法常胜过专家</strong>：在数百项研究中，简单线性模型预测优于资深临床判断。这一发现对今天的 AI 时代具有奠基意义。</li>
+</ul>
+</section>
+
+<section>
+<h3>重要金句</h3>
+<div class="quote">
+<div class="en">"Nothing in life is as important as you think it is, while you are thinking about it."</div>
+<div class="zh">"当你在想一件事时，没有任何事像你以为的那样重要。"</div>
+<span class="src">— p. 402，论聚焦错觉</span>
+</div>
+<div class="quote">
+<div class="en">"A reliable way to make people believe in falsehoods is frequent repetition, because familiarity is not easily distinguished from truth."</div>
+<div class="zh">"让人相信谎言的可靠方法是不断重复，因为熟悉感与真相极易混淆。"</div>
+<span class="src">— p. 62</span>
+</div>
+<div class="quote">
+<div class="en">"We can be blind to the obvious, and we are also blind to our blindness."</div>
+<div class="zh">"我们对显而易见的事盲目，对自己的盲目也盲目。"</div>
+<span class="src">— p. 24</span>
+</div>
+<div class="quote">
+<div class="en">"The idea that the future is unpredictable is undermined every day by the ease with which the past is explained."</div>
+<div class="zh">"未来不可预测这件事，每天都被'解释过去如此容易'这件事所瓦解。"</div>
+<span class="src">— p. 218</span>
+</div>
+</section>
+
+<section>
+<h3>背景与作者</h3>
+<p>Daniel Kahneman（1934-2024）出生于特拉维夫，童年在纳粹占领下的法国度过——他后来说，那段经历让他终生着迷于"人为何相信他们相信的东西"。他与 Amos Tversky 在希伯来大学的合作（1969 起）开创了"启发式与偏误"研究纲领，最终促成 2002 年诺贝尔经济学奖。Tversky 1996 年因癌症去世，未能共享。Kahneman 一生说：这本书是写给 Amos 的。</p>
+<p>本书出版于 2011 年，是他 77 岁时的集大成——把四十年实验室成果整理成普通读者可读的叙事。值得注意：2017 年后心理学"重复性危机"波及书中部分研究（尤其"启动效应"那章），Kahneman 公开承认这一部分不再可靠。这种自我修正的诚实，本身就是这本书品格的一部分。</p>
+</section>
+
+<section>
+<h3>思想谱系</h3>
+<p>本书是<strong>行为经济学的圣经</strong>。上游：Herbert Simon "有限理性"（1956）。下游：Thaler 的《助推》（政策应用）、Ariely 的《怪诞行为学》（实验趣闻）、Taleb 的《黑天鹅》（极端事件下的认知失效）。</p>
+<p>同领域推荐另外两本：</p>
+<ul>
+<li><strong>《Misbehaving》</strong>（Richard Thaler，2015）——本书的姊妹篇，从经济学家视角讲同一场革命，更轻松。</li>
+<li><strong>《The Undoing Project》</strong>（Michael Lewis，2016）——讲 Kahneman 与 Tversky 的友谊与决裂，读完会让你对本书所有结论的来源动情。</li>
+</ul>
+</section>
+
+<section>
+<h3>限制与争议</h3>
+<ul>
+<li><strong>启动效应章节失效</strong>：第 4 章关于"老年词汇让人走得更慢"的研究在大规模重复实验中未能复现。Kahneman 在 2017 年的博客上承认："I placed too much faith in underpowered studies." 阅读这一章需打折。</li>
+<li><strong>结构松散</strong>：38 章像 38 篇独立论文的合订本。中段（第 3 部分"过度自信"与第 4 部分"选择")最厚重，新手易在第二部分晕眩。</li>
+<li><strong>悲观底色</strong>：全书几乎不给"如何变理性"的答案。Kahneman 自己说："我研究偏误四十年，自己依然中招。" 读者若期待自助书的鼓舞会失望。</li>
+<li><strong>文化样本偏狭</strong>：实验多基于北美/以色列大学生（WEIRD 样本），跨文化推广性需谨慎。</li>
+</ul>
+</section>
+
+<section>
+<h3>阅读策略</h3>
+<p><strong>不要顺读</strong>。Kahneman 自己在序言里就建议跳读。推荐路径：</p>
+<ul>
+<li><strong>必读（精）</strong>：第 1-2 章（系统1/2 概念）、第 10-12 章（小样本、锚定、可得性）、第 19-24 章（专家直觉、算法、规划谬误）、第 26-28 章（展望理论核心）、第 35-36 章（两个自我）。</li>
+<li><strong>可跳过</strong>：第 4 章（启动效应，已失效）、第 9 章（部分实验弱）、附录论文（除非做学术）。</li>
+<li><strong>阅读节奏</strong>：每天 1-2 章，预留时间停下来回想自己生活中的例证。否则只是"读过"而非"读进去"。整本约 6-8 周。</li>
+<li><strong>配合工具</strong>：读完每章在笔记本上写"我今天哪个判断可能被这个偏误污染了？"——这是 Kahneman 本人推荐的练习。</li>
+</ul>
+</section>
+
+<section>
+<h3>中文译本推荐</h3>
+<p>胡晓姣、李爱民、何梦莹译本（中信出版社，2012，多次再版）是目前通行版。整体可读，但部分专业术语（如 anchoring 译"锚定"、framing 译"框架"）已成共识。瑕疵：少数统计学表达不够精准，遇到关键论点建议对照英文原文。如英文阅读流畅，强烈推荐读原版——Kahneman 的英文克制、幽默、节奏极佳，是社会科学写作的范本。</p>
+</section>
+
+<section>
+<h3>阅读笔记推荐</h3>
+<p>Farnam Street 博客（Shane Parrish）写过一系列详细解读，搜索 "Farnam Street Thinking Fast Slow"。Goodreads 上 Trevor 的长评（约 4000 字）对每个主要概念都有提炼。中文世界推荐豆瓣"安端"的笔记。</p>
+</section>
+
+<section>
+<h3>English Summary</h3>
+<div class="english-sum">Kahneman's masterwork synthesizes four decades of research into a dual-process model of the mind: an intuitive, fast System 1 and a deliberate, slow System 2. The book reveals how cognitive biases shape every decision we make—from investing to parenting to medicine—and why simply knowing about them rarely cures them. Essential reading for anyone who refuses to flatter themselves about their own rationality.</div>
+</section>
+
+<section>
+<h3>实践问题</h3>
+<div class="questions">
+<ol>
+<li>我最近一次重大决策中，"所见即所有"让我忽略了什么我没去找的信息？</li>
+<li>我对团队某个成员的评估，是基于他的表现还是基于第一印象的锚定？</li>
+<li>我在评估自己孩子或下属时，是否把"回归均值"误读成了"我的批评起作用了"？</li>
+<li>作为一个超级个体，我的哪些直觉来自高反馈领域（值得信）、哪些来自低反馈领域（不值得信）？</li>
+<li>如果让算法替代我做下个月最重要的三个决策，结果可能更好吗？为什么我抵触这个想法？</li>
+</ol>
+</div>
+</section>
+
+<div class="nav-back">
+<a href="index.html">← 返回书架</a>
+</div>
+
+</div>
+</body>
+</html>
