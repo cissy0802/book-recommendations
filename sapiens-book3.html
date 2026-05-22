@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第 3 期 · 人类简史 — Sapiens</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f7f3ec;color:#2a2418;line-height:1.85}
+.container{max-width:760px;margin:0 auto;padding:32px 24px 60px}
+.issue-tag{display:inline-block;background:#6b4423;color:#f7f3ec;padding:4px 14px;font-size:0.78rem;letter-spacing:3px;border-radius:2px;margin-bottom:18px}
+header{border-bottom:2px solid #a87a3e;padding-bottom:28px;margin-bottom:32px}
+header h1{font-size:1.9rem;color:#6b4423;font-weight:800;letter-spacing:1px;line-height:1.4}
+header h2{font-size:1.05rem;color:#8a6e4a;font-weight:400;font-style:italic;margin-top:6px}
+header .meta{margin-top:14px;font-size:0.88rem;color:#8a6e4a}
+header .meta span{margin-right:18px;display:inline-block}
+section{margin:30px 0}
+h3{font-size:1.15rem;color:#6b4423;border-left:4px solid #a87a3e;padding-left:12px;margin-bottom:14px;letter-spacing:1px}
+p{margin-bottom:12px;text-align:justify}
+.tagline{background:#fff;border-left:3px solid #a87a3e;padding:18px 22px;font-size:1.05rem;color:#4a3820;font-style:italic;border-radius:4px;box-shadow:0 1px 6px rgba(107,68,35,0.06)}
+ul{margin-left:8px;list-style:none}
+ul li{padding:6px 0 6px 22px;position:relative}
+ul li:before{content:"◆";position:absolute;left:0;color:#a87a3e;font-size:0.7rem;top:11px}
+.quote{background:#fffaf2;border-left:3px solid #c8a667;padding:14px 18px;margin:14px 0;border-radius:3px}
+.quote .en{color:#4a3820;font-style:italic}
+.quote .zh{color:#6b4423;margin-top:6px;font-size:0.96rem}
+.quote .src{display:block;margin-top:8px;font-size:0.8rem;color:#a87a3e}
+.dim{font-size:0.92rem;color:#5a4838}
+.english-sum{background:#efe7d6;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3820}
+.questions{background:#fff;padding:18px 22px;border-radius:4px;box-shadow:0 1px 6px rgba(107,68,35,0.06)}
+.questions ol{margin-left:20px}
+.questions li{padding:5px 0;color:#4a3820}
+a{color:#6b4423;text-decoration:underline}
+a:hover{color:#a87a3e}
+.nav-back{text-align:center;margin-top:50px;padding-top:24px;border-top:1px solid #d8c8a8}
+.nav-back a{display:inline-block;padding:10px 26px;background:#6b4423;color:#f7f3ec;text-decoration:none;border-radius:3px;font-size:0.9rem;letter-spacing:1px}
+.nav-back a:hover{background:#a87a3e}
+
+/* === 三场革命时间线可视化 === */
+.viz-wrap{background:#fff;border:1px solid #e0d2b8;border-radius:6px;padding:26px 22px 22px;margin:18px 0;box-shadow:0 1px 6px rgba(107,68,35,0.06)}
+.viz-title{text-align:center;font-size:0.85rem;color:#8a6e4a;letter-spacing:2px;margin-bottom:22px;font-style:italic}
+.timeline{position:relative;padding:8px 0 12px;margin:0 6px}
+.timeline-bar{position:relative;height:6px;background:linear-gradient(to right,#e8d8b8 0%,#d4b888 40%,#c89a5a 75%,#a87a3e 100%);border-radius:3px;margin:46px 0 60px}
+.tl-point{position:absolute;top:-7px;width:20px;height:20px;border-radius:50%;background:#6b4423;border:3px solid #fffaf2;transform:translateX(-50%);box-shadow:0 1px 4px rgba(0,0,0,0.18)}
+.tl-label-top{position:absolute;bottom:32px;transform:translateX(-50%);text-align:center;font-size:0.78rem;color:#6b4423;font-weight:700;width:140px;line-height:1.4}
+.tl-label-top .yr{display:block;color:#a87a3e;font-size:0.72rem;font-weight:400;font-style:italic;margin-top:2px}
+.tl-label-bot{position:absolute;top:24px;transform:translateX(-50%);text-align:center;font-size:0.72rem;color:#5a4838;width:155px;line-height:1.45;font-style:italic}
+.tl-now{position:absolute;top:-7px;right:-2px;width:20px;height:20px;border-radius:50%;background:#a87a3e;border:3px solid #fffaf2}
+.tl-now-label{position:absolute;bottom:32px;right:-30px;font-size:0.78rem;color:#6b4423;font-weight:700;text-align:center;width:60px}
+.tl-now-label .yr{display:block;color:#a87a3e;font-size:0.72rem;font-weight:400;font-style:italic;margin-top:2px}
+
+/* 三大革命对照三栏 */
+.three-rev{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:14px}
+.rev-col{background:#fffaf2;border-top:3px solid #a87a3e;padding:12px 12px 14px;border-radius:0 0 4px 4px;font-size:0.78rem;line-height:1.55;color:#4a3820}
+.rev-col strong{display:block;color:#6b4423;font-size:0.85rem;margin-bottom:6px}
+.rev-col em{display:block;color:#8a6e4a;font-style:italic;margin-top:6px;font-size:0.72rem}
+
+@media(max-width:600px){
+  header h1{font-size:1.45rem}
+  .container{padding:24px 18px 50px}
+  .timeline-bar{margin:80px 0 60px}
+  .tl-label-top{font-size:0.7rem;width:90px}
+  .tl-label-bot{font-size:0.66rem;width:100px}
+  .three-rev{grid-template-columns:1fr;gap:8px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="issue-tag">第 003 期</div>
+
+<header>
+<h1>人类简史：从动物到上帝</h1>
+<h2>Sapiens: A Brief History of Humankind — Yuval Noah Harari</h2>
+<div class="meta">
+<span>📖 希伯来文 2011 / 英文 2014</span>
+<span>📑 英文版约 464 页</span>
+<span>🌍 译成 65 种语言，销量逾 2500 万册</span>
+</div>
+</header>
+
+<section>
+<h3>一句话推荐</h3>
+<div class="tagline">这是一本"危险得过分好读"的书——Harari 用一根叙事线把七万年人类史串成"我们靠虚构故事征服地球"，能带来史无前例的视野震撼，但你必须带着一本红笔阅读：他给你的不是定论，是一个待辩驳的强假说。</div>
+</section>
+
+<section>
+<h3>适合谁读</h3>
+<ul>
+<li><strong>适合</strong>：想用一周时间获得"长程历史脑回路"的人；产品/战略/平台从业者（"想象的秩序"几乎是平台经济的人类学原型）；想给青少年孩子一本"非教科书的人类导论"的父母——但读完要和孩子讨论书里哪些是事实、哪些是 Harari 的解释。</li>
+<li><strong>适合</strong>：被专业分工困住的技术人——一本书让你重新看到"语言、货币、公司、神"是同一类东西：可共享的虚构。</li>
+<li><strong>不适合</strong>：寻求严谨人类学/考古学新近共识的读者，这本书很多结论是 2010 年前后的"大众科普版"，今日学界已修正不少（见下文限制与争议）。</li>
+<li><strong>可跳过</strong>：第四部分（科学革命之后）的部分章节叙事密度变低，主要变成 Harari 个人的世界观推演——快读即可，重点在第一、二部分。</li>
+</ul>
+</section>
+
+<section>
+<h3>核心思想</h3>
+<ul>
+<li><strong>七万年前的"认知革命"是 Homo sapiens 起飞点</strong>：基因突变让我们能讨论"不存在的事物"——龙、神、有限责任公司——这种"虚构能力"是其他物种没有的。</li>
+<li><strong>"想象的秩序"是大规模协作的唯一可能</strong>：超过 150 人（邓巴数）的合作，必须靠共同相信的故事。法律、国家、宗教、品牌、人权——都是。</li>
+<li><strong>农业革命是"史上最大骗局"</strong>：小麦驯化了人类，不是人类驯化了小麦。农民比采集者更累、更营养不良、更易瘟疫——但人口暴涨。这是 Harari 最具煽动性也最具争议的论断。</li>
+<li><strong>金钱、帝国、宗教是三种全球统一力量</strong>：它们都建立在跨族群的共同信任之上。金钱是"人类发明的最普世的信仰"。</li>
+<li><strong>科学革命的真正起点是"承认无知"</strong>：欧洲不是因为更聪明而崛起，而是因为承认"我们不知道"，于是去探险、去实验、去殖民。</li>
+<li><strong>资本主义 = 科学 + 帝国 + 对未来的信用</strong>：信贷让"明天的钱"能投入"今天的发明"，这是经济持续增长的元设定。</li>
+<li><strong>幸福研究是历史学的盲点</strong>：我们假设进步带来幸福，但人类是否比一万年前更幸福？Harari 给的是问题，不是答案。</li>
+<li><strong>智人正在自我终结</strong>：基因工程、AI、半机械化将让"智人"变成下一个物种——这条线索在《未来简史》中继续展开。</li>
+</ul>
+</section>
+
+<section>
+<h3>可视化：三场革命如何压缩了 250 万年</h3>
+<div class="viz-wrap">
+<div class="viz-title">— 智人时间轴：250 万年中的最后 0.5% —</div>
+
+<div class="timeline">
+<div class="timeline-bar">
+  <!-- 250 万年前：人属出现（线最左端） -->
+  <div class="tl-point" style="left:0%"></div>
+  <div class="tl-label-top" style="left:0%">
+    人属出现
+    <span class="yr">~2,500,000 年前</span>
+  </div>
+  <div class="tl-label-bot" style="left:0%">直立人、能人……智人远未登场</div>
+
+  <!-- 认知革命：约 7 万年前 ≈ 时间轴 97.2% -->
+  <div class="tl-point" style="left:97.2%"></div>
+  <div class="tl-label-top" style="left:97.2%">
+    认知革命
+    <span class="yr">~70,000 年前</span>
+  </div>
+
+  <!-- 农业革命：约 1.2 万年前 ≈ 99.52% -->
+  <div class="tl-point" style="left:99.52%"></div>
+  <div class="tl-label-bot" style="left:99.52%">农业革命 · ~12,000 年前</div>
+
+  <!-- 科学革命：约 500 年前 ≈ 99.98% -->
+  <div class="tl-point" style="left:99.98%"></div>
+
+  <div class="tl-now"></div>
+  <div class="tl-now-label">今<span class="yr">2026</span></div>
+</div>
+</div>
+
+<p class="dim" style="text-align:center;font-size:0.8rem;color:#8a6e4a;margin:-30px 0 18px">↑ 整条线 = 250 万年。从认知革命到今天，挤在最右边那一小段。<br>科学革命距今仅 500 年——在这张图上肉眼几乎看不见。</p>
+
+<div class="three-rev">
+<div class="rev-col">
+<strong>① 认知革命</strong>
+讲故事的能力出现。150 人以上的合作成为可能。智人走出非洲，灭绝其他人种。
+<em>这才有了"我们"。</em>
+</div>
+<div class="rev-col">
+<strong>② 农业革命</strong>
+小麦"驯化"人类，定居、私有制、王权、瘟疫一并到来。人口涨百倍，个体却更苦。
+<em>Harari 称之"史上最大骗局"。</em>
+</div>
+<div class="rev-col">
+<strong>③ 科学革命</strong>
+承认无知 → 探险 → 实验 → 资本主义 → 帝国 → 工业 → AI / 基因编辑。
+<em>250 万年的尾巴，决定了一切。</em>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<h3>重要金句</h3>
+<div class="quote">
+<div class="en">"Large numbers of strangers can cooperate successfully by believing in common myths."</div>
+<div class="zh">"大批互不相识的陌生人之所以能成功合作，是因为他们相信共同的虚构故事。"</div>
+<span class="src">— Ch. 2，论想象的秩序</span>
+</div>
+<div class="quote">
+<div class="en">"The Agricultural Revolution was history's biggest fraud."</div>
+<div class="zh">"农业革命是史上最大的骗局。"</div>
+<span class="src">— Ch. 5</span>
+</div>
+<div class="quote">
+<div class="en">"We did not domesticate wheat. It domesticated us."</div>
+<div class="zh">"不是我们驯化了小麦，是小麦驯化了我们。"</div>
+<span class="src">— Ch. 5</span>
+</div>
+<div class="quote">
+<div class="en">"The Scientific Revolution has not been a revolution of knowledge. It has been above all a revolution of ignorance."</div>
+<div class="zh">"科学革命并不是'知识的革命'，而首先是'承认无知的革命'。"</div>
+<span class="src">— Ch. 14</span>
+</div>
+<div class="quote">
+<div class="en">"There are no gods in the universe, no nations, no money, no human rights, no laws, and no justice outside the common imagination of human beings."</div>
+<div class="zh">"宇宙中没有神、没有国家、没有金钱、没有人权、没有法律、也没有正义——除了在人类共同的想象之中。"</div>
+<span class="src">— Ch. 6</span>
+</div>
+</section>
+
+<section>
+<h3>背景与作者</h3>
+<p>Yuval Noah Harari（1976- ）以色列人，牛津大学中世纪军事史博士。学术专长其实非常窄——他原本研究的是中世纪十字军日记中的士兵心理。这本"通史"是他在希伯来大学开通识课的讲稿整理。课很受欢迎，于是出书，2011 年希伯来文先出，2014 年英文版引爆全球。Bill Gates、Obama、Zuckerberg 公开推荐后，它从学术普及书变成了"硅谷必读"。</p>
+<p>Harari 是公开出柜的同性恋者、Vipassana 内观禅修者（每年禅修 60 天），素食主义者，对动物福利、AI 伦理、自由主义未来高度焦虑。这些立场强烈渗透在《人类简史》的解释里——他不是"中立的历史学家"，是一个有清晰道德议程的思想家。读这本书一定要意识到这一点。</p>
+</section>
+
+<section>
+<h3>思想谱系</h3>
+<p>本书是<strong>"大历史"（Big History）</strong>流派的畅销代表，与 Jared Diamond、David Christian 同属一脉：用跨学科叙事覆盖万年尺度。同领域更严谨/更值得读的另外两本：</p>
+<ul>
+<li><strong>《Guns, Germs, and Steel》</strong>（Jared Diamond，1997）——地理决定论的开山之作，比 Harari 更扎实，争议更少。Harari 很多论点都是 Diamond 的延伸。</li>
+<li><strong>《The Dawn of Everything》</strong>（David Graeber & David Wengrow，2021）——直接挑战 Harari 与 Diamond 的"线性叙事"，主张早期人类社会形态远比"采集→农业→国家"丰富得多。读完《人类简史》必读这本作为解毒剂。</li>
+</ul>
+</section>
+
+<section>
+<h3>限制与争议</h3>
+<ul>
+<li><strong>学界批评最猛的一本畅销书之一</strong>：考古学家 John Hawks、人类学家 Christopher Hallpike 等人撰文指出，Harari 对"认知革命"由单一基因突变导致的说法没有遗传学证据，"小麦驯化人类"的论断把比喻当作历史结论。</li>
+<li><strong>选择性引用</strong>：很多结论是几十年前的旧研究，遇到反例则不提。如对采集者"工作 4 小时"的说法主要源于 1960 年代 Marshall Sahlins 的有争议田野，新研究并不支持。</li>
+<li><strong>叙事压倒证据</strong>：Harari 自己曾在采访中承认"我写的是一个故事，不是一个证明"。但很多读者把它当真理读。这是这本书最大的危险。</li>
+<li><strong>结尾的哲学跳跃</strong>：从"虚构能力"推出"一切道德都是虚构因此都可重写"，是一个论证上的飞跃；Harari 的反人本主义立场需要警惕——他逻辑利落但前提强。</li>
+<li><strong>对宗教、对女性主义、对中国历史</strong>：处理都偏简化。佛教被理想化、伊斯兰被边缘化、儒家几乎缺席。一本"人类简史"如此忽略中国对世界文明的贡献，对中文读者尤其值得警觉。</li>
+<li><strong>性别视角薄弱</strong>：Harari 用一章谈"父权何以普遍"，但承认"没人知道答案"，论证有限。Gerda Lerner 的《父权制的创造》在这方面深得多。</li>
+</ul>
+</section>
+
+<section>
+<h3>阅读策略</h3>
+<p><strong>带着"这是一个论点"而非"这是历史"的心态读</strong>。推荐路径：</p>
+<ul>
+<li><strong>必读</strong>：第一部分（认知革命，第 1-4 章）和第二部分（农业革命，第 5-8 章）——本书原创性最高、最值得辩论的部分。</li>
+<li><strong>选读</strong>：第三部分（人类的统一，第 9-13 章）讲金钱、帝国、宗教——叙事流畅但更偏综合，可作为常识扫描。</li>
+<li><strong>快读</strong>：第四部分（科学革命，第 14-20 章）——观点重复，结尾的"未来"部分实际是为《未来简史》打广告，可一晚翻完。</li>
+<li><strong>阅读节奏</strong>：5-7 天读完比较合适。读太慢会失去叙事冲击力，读太快会忽略问题。每章读完做一件事：<em>找一处你不同意的地方</em>。</li>
+<li><strong>配合阅读</strong>：读完后立刻读 Graeber 的《The Dawn of Everything》或听 Razib Khan 等遗传学家对 Harari 的批评，避免单一叙事中毒。</li>
+</ul>
+</section>
+
+<section>
+<h3>中文译本推荐</h3>
+<p>林俊宏译本（中信出版社，2014；繁体台湾天下文化版略有差异）是中文世界通行版本，译笔流畅、保持了 Harari 干净利落的语言节奏。瑕疵：部分专业人类学术语翻译略宽松，"想象的秩序"（imagined order）等核心术语在不同章节偶有不一致。英文流畅者建议读原版——Harari 的英文极其克制、像在写一本好的报刊长文，是英语非母语者也能舒服读完的文笔。</p>
+</section>
+
+<section>
+<h3>阅读笔记推荐</h3>
+<p>批判性视角推荐 Christopher Robert Hallpike 在《New English Review》上的长书评 "A Response to Yuval Harari's 'Sapiens'"——他逐章拆解 Harari 的人类学硬伤，读完会让你对原书多一层免疫力。中文世界推荐刘苏里在《得到》上的解读、以及哲学家陈嘉映对"想象的秩序"概念的引申讨论。Razib Khan 在 Substack 上的人类基因学批评是另一组重要解毒剂。</p>
+</section>
+
+<section>
+<h3>English Summary</h3>
+<div class="english-sum">A sweeping, controversial popular history that argues Homo sapiens conquered Earth not through strength or intelligence but through fiction—our unique ability to make strangers cooperate around shared imagined realities (gods, nations, money, corporations). Brilliantly readable and intellectually provocative, but read it as a strong thesis to argue with, not as settled science. Pair with Graeber & Wengrow's *The Dawn of Everything* for balance.</div>
+</section>
+
+<section>
+<h3>实践问题</h3>
+<div class="questions">
+<ol>
+<li>我每天工作所在的"公司"是一个 Harari 意义上的"虚构实体"。如果我的团队、客户、投资人都停止相信它，它还剩下什么？这种"虚构"是脆弱还是稳健？</li>
+<li>"小麦驯化了人类"——我的生活里有没有类似的反向驯化？哪些工具、平台、流程，名义上是我在用，其实是它在塑造我？</li>
+<li>Harari 说科学革命的起点是"承认无知"。在我的专业领域，我最不愿承认的无知是什么？</li>
+<li>作为母亲，我希望孩子从这本书里带走的是它的"宏大叙事感"，还是"对宏大叙事的怀疑"？我会怎么和他/她讨论"农业革命是骗局"这种结论？</li>
+<li>这本书最让我兴奋的章节是哪一章？这种兴奋更多来自"新知识"还是"已有偏见被印证"？</li>
+</ol>
+</div>
+</section>
+
+<div class="nav-back">
+<a href="index.html">← 返回书架</a>
+</div>
+
+</div>
+<script src="https://cissy0802.github.io/comments.js" defer></script>
+<script src="https://cissy0802.github.io/search.js" defer></script>
+</body>
+</html>
