@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Issue 1：如何思考决策 — 四本书的对话 | 隔日好书</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f7f3ec;color:#2a2418;line-height:1.78}
+.container{max-width:780px;margin:0 auto;padding:32px 22px 80px}
+header{text-align:center;padding:60px 0 32px;border-bottom:1px solid #e0d6c2}
+.issue-tag{font-size:0.78rem;letter-spacing:3px;color:#a87a3e;font-weight:700;text-transform:uppercase}
+header h1{font-size:2.05rem;font-weight:800;color:#6b4423;margin:14px 0 10px;letter-spacing:1px}
+header .question{font-size:1rem;color:#8a6e4a;font-style:italic;max-width:540px;margin:0 auto}
+header .date{font-size:0.82rem;color:#b09578;margin-top:14px}
+section{margin-top:40px}
+h2{font-size:1.32rem;color:#6b4423;border-left:4px solid #a87a3e;padding-left:12px;margin-bottom:18px;font-weight:700}
+h3{font-size:1.12rem;color:#6b4423;margin-bottom:8px;font-weight:700}
+p{margin-bottom:14px}
+.intro{background:#fff;padding:22px 26px;border-radius:6px;box-shadow:0 1px 8px rgba(107,68,35,0.07);font-size:1rem}
+.overview-table{width:100%;border-collapse:collapse;background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 1px 8px rgba(107,68,35,0.07);font-size:0.93rem}
+.overview-table th,.overview-table td{padding:12px 14px;text-align:left;border-bottom:1px solid #ede3d0;vertical-align:top}
+.overview-table th{background:#f0e6d2;color:#6b4423;font-weight:700;font-size:0.86rem;letter-spacing:0.5px}
+.overview-table tr:last-child td{border-bottom:none}
+.role-badge{display:inline-block;padding:2px 8px;border-radius:12px;font-size:0.75rem;font-weight:700;letter-spacing:0.5px}
+.role-classic{background:#e8dcc0;color:#6b4423}
+.role-anti{background:#f0d4c0;color:#a04020}
+.role-field{background:#d8e0d0;color:#4a6038}
+.role-extend{background:#d6dde8;color:#3a5878}
+.book{background:#fff;padding:26px 28px;border-radius:6px;box-shadow:0 1px 10px rgba(107,68,35,0.08);margin-bottom:22px;border-top:3px solid #a87a3e}
+.book-header{margin-bottom:14px;padding-bottom:12px;border-bottom:1px dashed #d8c8a8}
+.book-title{font-size:1.25rem;color:#6b4423;font-weight:700;margin-bottom:4px}
+.book-en{font-size:0.95rem;color:#8a6e4a;font-style:italic}
+.book-meta{font-size:0.84rem;color:#a08868;margin-top:6px}
+.book-tagline{font-size:0.98rem;color:#6b4423;font-style:italic;margin:14px 0;padding:10px 14px;background:#faf6ec;border-left:3px solid #c8a868}
+.sub{font-size:0.92rem;color:#a87a3e;font-weight:700;margin:16px 0 6px;letter-spacing:0.5px;text-transform:uppercase}
+ul{padding-left:22px;margin-bottom:10px}
+li{margin-bottom:6px}
+.quote{background:#f9f4e8;padding:12px 16px;border-radius:4px;margin:8px 0;font-size:0.94rem}
+.quote .en{color:#5a4828;font-style:italic;margin-bottom:4px}
+.quote .zh{color:#8a6e4a;font-size:0.9rem}
+.diagram{background:#fff;padding:28px 20px;border-radius:6px;box-shadow:0 1px 8px rgba(107,68,35,0.07);margin:20px 0;text-align:center}
+.diagram-title{font-size:0.88rem;color:#a87a3e;margin-bottom:18px;letter-spacing:1px;text-transform:uppercase}
+.grid4{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:520px;margin:0 auto;position:relative}
+.node{background:#faf6ec;border:2px solid #a87a3e;border-radius:50%;width:130px;height:130px;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:8px;margin:0 auto;font-size:0.78rem;color:#6b4423;line-height:1.3}
+.node strong{font-size:0.85rem;display:block;margin-bottom:2px}
+.relations{margin-top:24px;font-size:0.85rem;color:#6b4423;text-align:left;max-width:520px;margin:24px auto 0}
+.relations div{padding:6px 0;border-bottom:1px dotted #e0d6c2}
+.relations .arrow{color:#a87a3e;font-weight:700}
+.path{background:#fff;padding:18px 22px;border-radius:6px;box-shadow:0 1px 8px rgba(107,68,35,0.07);margin-bottom:12px}
+.path-title{font-weight:700;color:#6b4423;margin-bottom:6px}
+.english{background:#f0e6d2;padding:18px 22px;border-radius:6px;font-style:italic;color:#5a4828;font-size:0.95rem;line-height:1.7}
+.questions{background:#fff;padding:20px 26px;border-radius:6px;box-shadow:0 1px 8px rgba(107,68,35,0.07)}
+.questions ol{padding-left:22px}
+.questions li{margin-bottom:10px;color:#5a4828}
+.further{font-size:0.93rem}
+.further li{margin-bottom:10px}
+.further .b{color:#6b4423;font-weight:700}
+footer{text-align:center;padding:40px 0 0;font-size:0.82rem;color:#b8a888;border-top:1px solid #e0d6c2;margin-top:40px}
+@media(max-width:600px){
+  header h1{font-size:1.55rem}
+  .container{padding:24px 16px 60px}
+  h2{font-size:1.15rem}
+  .book{padding:20px 18px}
+  .grid4{grid-template-columns:1fr;gap:10px}
+  .node{width:120px;height:120px}
+  .overview-table{font-size:0.85rem}
+  .overview-table th,.overview-table td{padding:9px 8px}
+}
+</style>
+</head>
+<body>
+<a href="https://cissy0802.github.io/" style="position:fixed;top:14px;left:14px;font-size:0.82rem;color:inherit;opacity:0.55;text-decoration:none;padding:6px 12px;border:1px solid currentColor;border-radius:20px;z-index:100;backdrop-filter:blur(6px);transition:opacity 0.2s" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.55">← Hub</a>
+
+<div class="container">
+
+<header>
+<div class="issue-tag">Issue 1 · 主题书单</div>
+<h1>如何思考决策</h1>
+<p class="question">同一个问题，四种针锋相对的答案：人到底应该依赖直觉、纠正直觉、训练直觉，还是干脆放弃直觉？</p>
+<p class="date">2026 · 隔日好书 · 第一期</p>
+</header>
+
+<section>
+<h2>主题导读</h2>
+<div class="intro">
+<p>"如何做出好决策"是一个看似拥挤、实则争议巨大的领域。Kahneman 用 System 1 / System 2 框架描绘了人脑的系统性偏差，几乎成了主流叙事；但 Gigerenzer 几十年来直接反驳——在真正的不确定环境下，简单启发式（heuristics）反而比复杂模型更准；Klein 把视角拉到火场和手术室，发现专家根本不"比较选项"，他们的直觉常常正确得惊人；Tetlock 则用十年的预测竞赛证明，普通人通过特定的思维习惯可以变成"超级预测者"。</p>
+<p>把这四本放在一起读，不是为了凑一个"决策书单"，而是为了看清这个领域内部真正的分歧：什么时候相信直觉、什么时候纠正它、什么时候训练它。读完你不会得到一个统一答案，但你会拥有四副不同的眼镜。</p>
+</div>
+</section>
+
+<section>
+<h2>4 本书一览</h2>
+<table class="overview-table">
+<thead><tr><th>书</th><th>作者</th><th>年份</th><th>角色</th></tr></thead>
+<tbody>
+<tr><td>Thinking, Fast and Slow<br><span style="color:#a08868;font-size:0.85rem">思考，快与慢</span></td><td>Daniel Kahneman</td><td>2011</td><td><span class="role-badge role-classic">经典 / 主流</span></td></tr>
+<tr><td>Risk Savvy<br><span style="color:#a08868;font-size:0.85rem">直觉思维：你比认知科学家更聪明</span></td><td>Gerd Gigerenzer</td><td>2014</td><td><span class="role-badge role-anti">反方 / 辩论</span></td></tr>
+<tr><td>Sources of Power<br><span style="color:#a08868;font-size:0.85rem">力量之源：人如何做决策</span></td><td>Gary Klein</td><td>1998</td><td><span class="role-badge role-field">田野 / 专家</span></td></tr>
+<tr><td>Superforecasting<br><span style="color:#a08868;font-size:0.85rem">超预测</span></td><td>Philip Tetlock &amp; Dan Gardner</td><td>2015</td><td><span class="role-badge role-extend">延伸 / 训练</span></td></tr>
+</tbody>
+</table>
+</section>
+
+<section>
+<h2>四本书的关系图</h2>
+<div class="diagram">
+<div class="diagram-title">Decision Studies · 一个领域内部的辩论</div>
+<div class="grid4">
+<div class="node"><strong>Kahneman</strong>直觉常常出错<br>需要 System 2 纠偏</div>
+<div class="node"><strong>Gigerenzer</strong>启发式不是 bug<br>是 feature</div>
+<div class="node"><strong>Klein</strong>专家凭模式识别<br>直觉极少比较选项</div>
+<div class="node"><strong>Tetlock</strong>预测可以训练<br>狐狸胜过刺猬</div>
+</div>
+<div class="relations">
+<div><span class="arrow">↔</span> <strong>Kahneman ↔ Gigerenzer</strong>：直接论战。Kahneman 强调偏差，Gigerenzer 强调"少即是多"。两人都没说服对方。</div>
+<div><span class="arrow">↔</span> <strong>Kahneman ↔ Klein</strong>：罕见的"对手合作"。他们 2009 年合写论文，承认彼此都对——直觉在"高效反馈环境"中可靠，在"低效反馈环境"中不可靠。</div>
+<div><span class="arrow">→</span> <strong>Kahneman → Tetlock</strong>：Tetlock 是 Kahneman 路线的实战化——把"如何更好地用 System 2"做成可训练的方法。</div>
+<div><span class="arrow">↔</span> <strong>Gigerenzer ↔ Klein</strong>：天然盟友。都相信简单规则 + 经验在现实世界胜过复杂建模。</div>
+</div>
+</div>
+</section>
+
+<section>
+<h2>四本书详情</h2>
+
+<div class="book">
+<div class="book-header">
+<div class="book-title">思考，快与慢</div>
+<div class="book-en">Thinking, Fast and Slow · Daniel Kahneman</div>
+<div class="book-meta">2011 · Farrar, Straus and Giroux · 约 500 页</div>
+</div>
+<div class="book-tagline">现代决策科学的奠基性综述，也是这场辩论的"主旋律"。</div>
+
+<div class="sub">核心论点</div>
+<ul>
+<li><strong>双系统模型</strong>：System 1 快速、自动、情绪化；System 2 慢、费力、理性。</li>
+<li><strong>系统性偏差</strong>：锚定、可得性、代表性、损失厌恶、框架效应——大脑用启发式抄近路，常常出错。</li>
+<li><strong>前景理论</strong>（与 Amos Tversky 合作）：人对损失的敏感度大约是收益的 2 倍，挑战了经济学的"理性人"假设，让 Kahneman 拿了诺奖。</li>
+<li><strong>经验自我 vs 记忆自我</strong>：决定我们如何选择的不是真实经历，而是被记忆扭曲过的版本（峰终定律）。</li>
+</ul>
+
+<div class="sub">重要金句</div>
+<div class="quote">
+<div class="en">"Nothing in life is as important as you think it is, while you are thinking about it."</div>
+<div class="zh">"当你正在想一件事的时候，它对你的重要性会被无限放大。"——聚焦错觉（focusing illusion）的经典表达。</div>
+</div>
+<div class="quote">
+<div class="en">"A reliable way to make people believe in falsehoods is frequent repetition, because familiarity is not easily distinguished from truth."</div>
+<div class="zh">"让人相信谎言最可靠的方法是反复重复——因为熟悉感很难与真相区分。"</div>
+</div>
+
+<div class="sub">关键概念</div>
+<ul>
+<li>System 1 / System 2</li>
+<li>Anchoring（锚定效应）</li>
+<li>Availability heuristic（可得性启发）</li>
+<li>Prospect Theory（前景理论）</li>
+<li>Peak-End Rule（峰终定律）</li>
+</ul>
+
+<div class="sub">与其他三本的关系</div>
+<p>这本是"靶子"也是"基准线"：Gigerenzer 全书都在反驳它的核心结论（启发式 = 偏差），Klein 在它的反方阵营（直觉常常对），Tetlock 在它的延伸阵营（用 System 2 训练预测）。读这一期不读它，等于看辩论赛只听了一方。</p>
+
+<div class="sub">谁该读 / 谁不必读</div>
+<p>该读：第一次系统接触决策研究的人、做产品 / 投资 / 政策的人。可跳过：前 5 章如果你已熟悉双系统模型；第三部分（关于幸福）相对松散。</p>
+
+<div class="sub">局限与争议</div>
+<p>2011 年后心理学的"复制危机"重创了书中部分研究——尤其是启动效应（priming）。Kahneman 本人 2017 年公开承认相关章节"过于乐观"。读时把书当作思想框架，而非具体实验结论的清单。</p>
+
+<div class="sub">中文译本</div>
+<p>《思考，快与慢》胡晓姣等译，中信出版社。译本完整，但部分心理学术语稍生硬，关键概念建议参照英文原词。</p>
+</div>
+
+<div class="book">
+<div class="book-header">
+<div class="book-title">直觉思维（风险智慧）</div>
+<div class="book-en">Risk Savvy: How to Make Good Decisions · Gerd Gigerenzer</div>
+<div class="book-meta">2014 · Viking · 约 320 页</div>
+</div>
+<div class="book-tagline">对 Kahneman 范式最系统、最锋利的反驳。</div>
+
+<div class="sub">核心论点</div>
+<ul>
+<li><strong>区分"风险" vs "不确定性"</strong>：风险是概率已知的世界（赌场、保险精算）；不确定性是概率未知的世界（创业、择偶、长期投资）。两者需要完全不同的决策工具。</li>
+<li><strong>启发式不是 bug 而是 feature</strong>：在不确定环境下，简单规则常常胜过复杂模型——因为复杂模型会过拟合噪音。</li>
+<li><strong>Less-is-more 效应</strong>：信息越少、计算越简单，反而越准。1/N 投资规则在长期常常打败马科维茨最优化。</li>
+<li><strong>Recognition heuristic（识别启发）</strong>：从两个选项中选你"听过的那个"，在很多场合（比如哪只股票表现更好、哪个城市更大）准确率惊人。</li>
+</ul>
+
+<div class="sub">重要金句</div>
+<div class="quote">
+<div class="en">"In an uncertain world, complex strategies can fail because they explain the past too well."</div>
+<div class="zh">"在不确定的世界里，复杂策略会失败，因为它们对过去解释得太好了。"——一句话讲清过拟合。</div>
+</div>
+<div class="quote">
+<div class="en">"Heuristics are not stupid; they are smart shortcuts."</div>
+<div class="zh">"启发式不是愚蠢，而是聪明的捷径。"</div>
+</div>
+
+<div class="sub">关键概念</div>
+<ul>
+<li>Fast-and-frugal heuristics</li>
+<li>Risk vs Uncertainty（Knight 区分的现代复活）</li>
+<li>1/N rule / Recognition heuristic</li>
+<li>Defensive decision-making（医生 / 官员的"自保式决策"）</li>
+<li>Bias-variance tradeoff 在认知层面的应用</li>
+</ul>
+
+<div class="sub">与其他三本的关系</div>
+<p>对 Kahneman 的直接论战——两人在学术期刊互相点名几十年。与 Klein 是天然盟友：都相信现实世界中"简单 + 经验"胜过"复杂 + 数据"。可以视为 Tetlock 的反面教材：Tetlock 训练人做更细密的概率思维，Gigerenzer 怀疑这种训练在真正不确定的领域是否有意义。</p>
+
+<div class="sub">谁该读 / 谁不必读</div>
+<p>该读：所有觉得"看完 Kahneman 就懂决策了"的人；金融、医学、政策从业者。可跳过：医疗概率教学那两章对非医生稍嫌冗长。</p>
+
+<div class="sub">局限与争议</div>
+<p>Gigerenzer 有时把对手立场推到极端再反驳（稻草人嫌疑）。"启发式总是更好"也被批评得太强——更准确的说法是"在特定环境下更好"，但他在书里没充分说明边界条件。</p>
+
+<div class="sub">中文译本</div>
+<p>《直觉思维：你比认知科学家更聪明》中信出版。译名稍夸张，内容忠实。</p>
+</div>
+
+<div class="book">
+<div class="book-header">
+<div class="book-title">力量之源</div>
+<div class="book-en">Sources of Power: How People Make Decisions · Gary Klein</div>
+<div class="book-meta">1998 · MIT Press · 约 330 页</div>
+</div>
+<div class="book-tagline">把决策研究从实验室搬到火场、手术室和指挥所。</div>
+
+<div class="sub">核心论点</div>
+<ul>
+<li><strong>RPD 模型（Recognition-Primed Decision）</strong>：专家做决策时不"比较选项"，而是"识别模式"——看一眼现场，第一个想到的方案通常就是答案。</li>
+<li><strong>Mental simulation</strong>：专家不计算后果，他们"在脑中演一遍"。这种心智模拟比正式分析快得多，也常常更准。</li>
+<li><strong>专家的直觉是经验的压缩</strong>：消防队长能"看出"火场要塌——不是超能力，是几千次火场积累的模式库。</li>
+<li><strong>正式决策方法在高时间压力下失效</strong>：MBA 教的"列出所有选项、加权评分"在现实危机中根本来不及，也常常导致更差的决定。</li>
+</ul>
+
+<div class="sub">重要金句</div>
+<div class="quote">
+<div class="en">"The commander's experience let him see a typical situation and quickly know the typical reaction."</div>
+<div class="zh">"指挥官的经验让他看到典型情景，就立刻知道典型反应。"——RPD 的精髓。</div>
+</div>
+<div class="quote">
+<div class="en">"Intuition depends on the use of experience to recognize key patterns."</div>
+<div class="zh">"直觉依赖经验来识别关键模式。"</div>
+</div>
+
+<div class="sub">关键概念</div>
+<ul>
+<li>Recognition-Primed Decision (RPD)</li>
+<li>Mental simulation（心智模拟）</li>
+<li>Pre-mortem（事前验尸——后被广泛引入企业管理）</li>
+<li>Naturalistic Decision Making（NDM）学派</li>
+<li>Expert intuition 的边界条件</li>
+</ul>
+
+<div class="sub">与其他三本的关系</div>
+<p>对 Kahneman 是"对手中的盟友"：2009 年他们合写《Conditions for Intuitive Expertise》，达成共识——直觉在"反馈快速且准确"的环境中可靠（消防、国际象棋），在"反馈慢或扭曲"的环境中不可靠（长期投资、政治预测）。这个边界条件比两个人各自的书都重要。与 Gigerenzer 同阵营，都反对"理性 = 复杂计算"。补足了 Tetlock：Tetlock 研究的是无反馈的预测领域，Klein 研究的是反馈丰富的操作领域。</p>
+
+<div class="sub">谁该读 / 谁不必读</div>
+<p>该读：管理团队的人、培养"经验型"专家的人（医生、工程师、运营）、对认知科学田野方法感兴趣的人。可跳过：如果只想要"决策技巧"，这本偏学术、案例多，叙述不如商业书流畅。</p>
+
+<div class="sub">局限与争议</div>
+<p>样本主要是男性、高压、高反馈职业（消防、军队），结论外推到女性主导或缓反馈领域时需谨慎。Pre-mortem 是被广泛实践的概念，但书中其他工具在企业落地有限。</p>
+
+<div class="sub">中文译本</div>
+<p>《力量之源》电子工业出版社。流通量不大，建议有英文能力者读原版。</p>
+</div>
+
+<div class="book">
+<div class="book-header">
+<div class="book-title">超预测</div>
+<div class="book-en">Superforecasting: The Art and Science of Prediction · Philip Tetlock &amp; Dan Gardner</div>
+<div class="book-meta">2015 · Crown · 约 340 页</div>
+</div>
+<div class="book-tagline">把"如何更好地预测"从玄学变成可训练的技能。</div>
+
+<div class="sub">核心论点</div>
+<ul>
+<li><strong>大多数"专家"预测准确率仅略好于随机</strong>——Tetlock 此前 20 年的研究（《Expert Political Judgment》）的核心结论。</li>
+<li><strong>但少数普通人能做到显著更好</strong>：Good Judgment Project 的"超级预测者"在地缘政治预测上击败了 CIA 的内部分析师。</li>
+<li><strong>狐狸胜过刺猬</strong>：刺猬有一个大想法，对所有事物用同一把锤子；狐狸有许多小想法，根据问题切换工具。狐狸预测得更准。</li>
+<li><strong>超级预测者的习惯</strong>：把大问题分解为小问题、用基础概率（base rate）锚定、小幅持续更新（贝叶斯）、积极开放思维（Actively Open-Minded Thinking）、复盘错误而非合理化。</li>
+</ul>
+
+<div class="sub">重要金句</div>
+<div class="quote">
+<div class="en">"Beliefs are hypotheses to be tested, not treasures to be guarded."</div>
+<div class="zh">"信念是有待检验的假设，不是要守护的宝藏。"——超级预测者心态的总结。</div>
+</div>
+<div class="quote">
+<div class="en">"The average expert was roughly as accurate as a dart-throwing chimpanzee."</div>
+<div class="zh">"普通专家的预测准确率大约相当于一只扔飞镖的黑猩猩。"——名场面式的结论。</div>
+</div>
+
+<div class="sub">关键概念</div>
+<ul>
+<li>Hedgehog vs Fox（源自 Isaiah Berlin，被 Tetlock 实证化）</li>
+<li>Bayesian updating（小幅、频繁、有依据）</li>
+<li>Brier score（预测准确度的量化指标）</li>
+<li>Outside view vs Inside view</li>
+<li>Actively Open-Minded Thinking（AOT）</li>
+</ul>
+
+<div class="sub">与其他三本的关系</div>
+<p>Tetlock 是 Kahneman 路线的"实战版"——前者讲偏差，后者讲如何用 System 2 真的对抗偏差并改善预测。与 Klein 互补：Klein 研究"反馈丰富"的领域里直觉为什么对，Tetlock 研究"反馈贫乏"的领域里直觉为什么错、怎么补救。与 Gigerenzer 有张力：Gigerenzer 怀疑复杂概率思维在真正不确定的世界是否真有优势，Tetlock 用数据反击——确实有，只是大多数人没在做。</p>
+
+<div class="sub">谁该读 / 谁不必读</div>
+<p>该读：所有要对未来下判断的人（投资、战略、产品规划、政策分析）。最实用的是"超预测者的十条习惯"那一部分，单独拿出来就值回票价。可跳过：开篇几章对 EPJ 项目的回顾稍冗长。</p>
+
+<div class="sub">局限与争议</div>
+<p>预测的"赛题"主要是地缘政治和短期事件（数月到 1-2 年），结论是否能外推到更长期或更模糊的领域（如"AI 何时改变就业市场"）仍有争议。书略带"超预测者群体崇拜"色彩——他们之所以厉害，可能也部分因为是自选出来对此感兴趣且时间投入巨大的人。</p>
+
+<div class="sub">中文译本</div>
+<p>《超预测》中信出版社。译本流畅，可读。</p>
+</div>
+
+</section>
+
+<section>
+<h2>阅读顺序建议</h2>
+<div class="path">
+<div class="path-title">路径 A · 经典先行（推荐给第一次接触决策研究的人）</div>
+<p><strong>Kahneman → Gigerenzer → Klein → Tetlock</strong>。先建立主流框架，再读最锋利的反驳，再去田野（Klein）看现实如何，最后用 Tetlock 学具体的训练方法。这是辩论赛的标准入场顺序。</p>
+</div>
+<div class="path">
+<div class="path-title">路径 B · 实战先行（推荐给已经读过 Kahneman 的人）</div>
+<p><strong>Tetlock → Klein → Gigerenzer → 回顾 Kahneman</strong>。先看可操作的训练方法，再看专家直觉的来源，再用 Gigerenzer 拓展思维边界，最后回到 Kahneman 时你会读得很不一样——你会发现哪些章节经得起复制危机，哪些不。</p>
+</div>
+</section>
+
+<section>
+<h2>English Summary</h2>
+<div class="english">
+<p>Issue 1 puts four heavyweight thinkers on decision-making into the same room: Kahneman (we are systematically biased), Gigerenzer (heuristics are features, not bugs), Klein (experts decide by pattern recognition, not comparison), and Tetlock (forecasting is a trainable skill). They don't agree — and that disagreement is the point. Reading them together gives you four lenses for one question: when to trust intuition, when to correct it, and when to train it.</p>
+</div>
+</section>
+
+<section>
+<h2>读完可以问自己的几个问题</h2>
+<div class="questions">
+<ol>
+<li>我现在做的这个决定，是处于"反馈丰富"的环境（更应信任直觉），还是"反馈贫乏"的环境（更应启动 System 2）？</li>
+<li>过去一年里，我有没有像超级预测者那样，在预测错的时候认真复盘？还是事后合理化了？</li>
+<li>我在这个领域是"刺猬"（一个大理论解释一切）还是"狐狸"（多个小模型按情境切换）？</li>
+<li>我做这个决定时用的是哪个 base rate？或者根本没用？</li>
+<li>如果用 1/N 那种"傻"规则替代我现在复杂的方案，结果会更差吗？我真的验证过吗？</li>
+</ol>
+</div>
+</section>
+
+<section>
+<h2>延伸阅读</h2>
+<ul class="further">
+<li><span class="b">《Noise》Kahneman, Sibony, Sunstein (2021)</span> ——Kahneman 晚年作。如果说 TFAS 讲偏差（bias），这本讲噪音（noise），互补且常被忽视。</li>
+<li><span class="b">《The Signal and the Noise》Nate Silver (2012)</span> ——Tetlock 路线的姊妹篇，从统计学角度讲预测，案例从扑克到地震。</li>
+<li><span class="b">《Algorithms to Live By》Brian Christian &amp; Tom Griffiths (2016)</span> ——把计算机科学的算法（最优停止、探索 vs 利用）映射到日常决策。</li>
+<li><span class="b">《How to Decide》Annie Duke (2020)</span> ——前职业扑克选手写的实战决策书，比上面四本都更"可操作"。</li>
+<li><span class="b">《Expert Political Judgment》Philip Tetlock (2005)</span> ——Tetlock 的学术原著，《超预测》的前传，硬核但奠基。</li>
+</ul>
+</section>
+
+<footer>BigCat · 隔日好书 · Issue 1 · 2026</footer>
+
+</div>
+</body>
+</html>
