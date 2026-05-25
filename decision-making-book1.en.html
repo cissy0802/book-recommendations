@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Issue 1: How to Think About Decisions — Four Books in Conversation | Bidaily Books</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f7f3ec;color:#2a2418;line-height:1.78}
+.container{max-width:780px;margin:0 auto;padding:32px 22px 80px}
+header{text-align:center;padding:60px 0 32px;border-bottom:1px solid #e0d6c2}
+.issue-tag{font-size:0.78rem;letter-spacing:3px;color:#a87a3e;font-weight:700;text-transform:uppercase}
+header h1{font-size:2.05rem;font-weight:800;color:#6b4423;margin:14px 0 10px;letter-spacing:1px}
+header .question{font-size:1rem;color:#8a6e4a;font-style:italic;max-width:600px;margin:0 auto}
+header .date{font-size:0.82rem;color:#b09578;margin-top:14px}
+section{margin-top:40px}
+h2{font-size:1.32rem;color:#6b4423;border-left:4px solid #a87a3e;padding-left:12px;margin-bottom:18px;font-weight:700}
+h3{font-size:1.12rem;color:#6b4423;margin-bottom:8px;font-weight:700}
+p{margin-bottom:14px}
+.intro{background:#fff;padding:22px 26px;border-radius:6px;box-shadow:0 1px 8px rgba(107,68,35,0.07);font-size:1rem}
+.overview-table{width:100%;border-collapse:collapse;background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 1px 8px rgba(107,68,35,0.07);font-size:0.93rem}
+.overview-table th,.overview-table td{padding:12px 14px;text-align:left;border-bottom:1px solid #ede3d0;vertical-align:top}
+.overview-table th{background:#f0e6d2;color:#6b4423;font-weight:700;font-size:0.86rem;letter-spacing:0.5px}
+.overview-table tr:last-child td{border-bottom:none}
+.role-badge{display:inline-block;padding:2px 8px;border-radius:12px;font-size:0.75rem;font-weight:700;letter-spacing:0.5px}
+.role-classic{background:#e8dcc0;color:#6b4423}
+.role-anti{background:#f0d4c0;color:#a04020}
+.role-field{background:#d8e0d0;color:#4a6038}
+.role-extend{background:#d6dde8;color:#3a5878}
+.book{background:#fff;padding:26px 28px;border-radius:6px;box-shadow:0 1px 10px rgba(107,68,35,0.08);margin-bottom:22px;border-top:3px solid #a87a3e}
+.book-header{margin-bottom:14px;padding-bottom:12px;border-bottom:1px dashed #d8c8a8}
+.book-title{font-size:1.25rem;color:#6b4423;font-weight:700;margin-bottom:4px}
+.book-en{font-size:0.95rem;color:#8a6e4a;font-style:italic}
+.book-meta{font-size:0.84rem;color:#a08868;margin-top:6px}
+.book-tagline{font-size:0.98rem;color:#6b4423;font-style:italic;margin:14px 0;padding:10px 14px;background:#faf6ec;border-left:3px solid #c8a868}
+.sub{font-size:0.92rem;color:#a87a3e;font-weight:700;margin:16px 0 6px;letter-spacing:0.5px;text-transform:uppercase}
+ul{padding-left:22px;margin-bottom:10px}
+li{margin-bottom:6px}
+.quote{background:#f9f4e8;padding:12px 16px;border-radius:4px;margin:8px 0;font-size:0.94rem}
+.quote .en{color:#5a4828;font-style:italic;margin-bottom:4px}
+.quote .zh{color:#8a6e4a;font-size:0.9rem}
+.diagram{background:#fff;padding:28px 20px;border-radius:6px;box-shadow:0 1px 8px rgba(107,68,35,0.07);margin:20px 0;text-align:center}
+.diagram-title{font-size:0.88rem;color:#a87a3e;margin-bottom:18px;letter-spacing:1px;text-transform:uppercase}
+.grid4{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:520px;margin:0 auto;position:relative}
+.node{background:#faf6ec;border:2px solid #a87a3e;border-radius:50%;width:130px;height:130px;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:8px;margin:0 auto;font-size:0.78rem;color:#6b4423;line-height:1.3}
+.node strong{font-size:0.85rem;display:block;margin-bottom:2px}
+.relations{margin-top:24px;font-size:0.85rem;color:#6b4423;text-align:left;max-width:520px;margin:24px auto 0}
+.relations div{padding:6px 0;border-bottom:1px dotted #e0d6c2}
+.relations .arrow{color:#a87a3e;font-weight:700}
+.path{background:#fff;padding:18px 22px;border-radius:6px;box-shadow:0 1px 8px rgba(107,68,35,0.07);margin-bottom:12px}
+.path-title{font-weight:700;color:#6b4423;margin-bottom:6px}
+.questions{background:#fff;padding:20px 26px;border-radius:6px;box-shadow:0 1px 8px rgba(107,68,35,0.07)}
+.questions ol{padding-left:22px}
+.questions li{margin-bottom:10px;color:#5a4828}
+.further{font-size:0.93rem}
+.further li{margin-bottom:10px}
+.further .b{color:#6b4423;font-weight:700}
+footer{text-align:center;padding:40px 0 0;font-size:0.82rem;color:#b8a888;border-top:1px solid #e0d6c2;margin-top:40px}
+@media(max-width:600px){
+  header h1{font-size:1.55rem}
+  .container{padding:24px 16px 60px}
+  h2{font-size:1.15rem}
+  .book{padding:20px 18px}
+  .grid4{grid-template-columns:1fr;gap:10px}
+  .node{width:120px;height:120px}
+  .overview-table{font-size:0.85rem}
+  .overview-table th,.overview-table td{padding:9px 8px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="issue-tag">Issue 1 · Themed Reading</div>
+<h1>How to Think About Decisions</h1>
+<p class="question">One question, four sharply opposed answers: should we trust our intuitions, correct them, train them, or set them aside entirely?</p>
+<p class="date">2026 · Bidaily Books · Issue 1</p>
+</header>
+
+<section>
+<h2>Why these four together</h2>
+<div class="intro">
+<p>"How to make good decisions" looks like a crowded shelf, but the field is in fact deeply divided. Kahneman's System 1 / System 2 model of cognitive bias has become the dominant narrative — yet Gigerenzer has spent decades arguing the opposite case: in genuinely uncertain environments, simple heuristics outperform elaborate models. Klein takes the camera into firehouses and operating rooms and discovers that experts rarely "compare options" at all — their intuitions are often startlingly correct. Tetlock, over a decade of forecasting tournaments, has shown that ordinary people, armed with the right habits of mind, can be trained into "superforecasters."</p>
+<p>Reading the four together is not about assembling a tidy "decision-making syllabus." It is about seeing where the real fault lines run: when to trust intuition, when to override it, when to train it. You won't walk away with a single answer — but you will own four different pairs of glasses.</p>
+</div>
+</section>
+
+<section>
+<h2>The four books at a glance</h2>
+<table class="overview-table">
+<thead><tr><th>Book</th><th>Author</th><th>Year</th><th>Role</th></tr></thead>
+<tbody>
+<tr><td>Thinking, Fast and Slow</td><td>Daniel Kahneman</td><td>2011</td><td><span class="role-badge role-classic">Classic / mainstream</span></td></tr>
+<tr><td>Risk Savvy</td><td>Gerd Gigerenzer</td><td>2014</td><td><span class="role-badge role-anti">Opposition / debate</span></td></tr>
+<tr><td>Sources of Power</td><td>Gary Klein</td><td>1998</td><td><span class="role-badge role-field">Field / expert</span></td></tr>
+<tr><td>Superforecasting</td><td>Philip Tetlock &amp; Dan Gardner</td><td>2015</td><td><span class="role-badge role-extend">Extension / training</span></td></tr>
+</tbody>
+</table>
+</section>
+
+<section>
+<h2>How the four books relate</h2>
+<div class="diagram">
+<div class="diagram-title">Decision Studies · a field at war with itself</div>
+<div class="grid4">
+<div class="node"><strong>Kahneman</strong>Intuition often errs<br>Use System 2 to correct it</div>
+<div class="node"><strong>Gigerenzer</strong>Heuristics are not a bug<br>They are a feature</div>
+<div class="node"><strong>Klein</strong>Experts rely on pattern recognition<br>They rarely compare options</div>
+<div class="node"><strong>Tetlock</strong>Forecasting is trainable<br>Foxes beat hedgehogs</div>
+</div>
+<div class="relations">
+<div><span class="arrow">↔</span> <strong>Kahneman ↔ Gigerenzer</strong>: open warfare. Kahneman emphasizes bias; Gigerenzer emphasizes "less is more." Neither has persuaded the other.</div>
+<div><span class="arrow">↔</span> <strong>Kahneman ↔ Klein</strong>: a rare "adversarial collaboration." In 2009 they co-authored a paper acknowledging that both are right — intuition is reliable in "high-validity environments" and unreliable in low-validity ones.</div>
+<div><span class="arrow">→</span> <strong>Kahneman → Tetlock</strong>: Tetlock is the applied wing of Kahneman's line — turning "how to use System 2 better" into a trainable method.</div>
+<div><span class="arrow">↔</span> <strong>Gigerenzer ↔ Klein</strong>: natural allies. Both believe that simple rules plus experience beat elaborate modeling in the real world.</div>
+</div>
+</div>
+</section>
+
+<section>
+<h2>The four books in detail</h2>
+
+<div class="book">
+<div class="book-header">
+<div class="book-title">Thinking, Fast and Slow</div>
+<div class="book-en">Daniel Kahneman</div>
+<div class="book-meta">2011 · Farrar, Straus and Giroux · ~500 pages</div>
+</div>
+<div class="book-tagline">The foundational synthesis of modern decision science — and the dominant melody this entire debate is arranged around.</div>
+
+<div class="sub">Core arguments</div>
+<ul>
+<li><strong>Two systems.</strong> System 1 is fast, automatic, emotional. System 2 is slow, effortful, deliberate.</li>
+<li><strong>Systematic biases.</strong> Anchoring, availability, representativeness, loss aversion, framing effects — the brain takes shortcuts and is regularly wrong.</li>
+<li><strong>Prospect theory</strong> (with Amos Tversky): people feel losses roughly twice as keenly as equivalent gains. The challenge to "rational economic man" earned Kahneman the Nobel.</li>
+<li><strong>Experiencing self vs. remembering self.</strong> Our choices are governed not by what actually happened but by the distorted version we remember — the peak-end rule.</li>
+</ul>
+
+<div class="sub">Key passages</div>
+<div class="quote">
+<div class="en">"Nothing in life is as important as you think it is, while you are thinking about it."</div>
+<div class="zh">The classic formulation of the focusing illusion.</div>
+</div>
+<div class="quote">
+<div class="en">"A reliable way to make people believe in falsehoods is frequent repetition, because familiarity is not easily distinguished from truth."</div>
+</div>
+
+<div class="sub">Key concepts</div>
+<ul>
+<li>System 1 / System 2</li>
+<li>Anchoring</li>
+<li>Availability heuristic</li>
+<li>Prospect theory</li>
+<li>Peak-end rule</li>
+</ul>
+
+<div class="sub">In conversation with the others</div>
+<p>This book is both the target and the baseline. Gigerenzer spends an entire book rebutting its core claim (heuristic = bias); Klein is in the opposing camp (intuition is often correct); Tetlock is in the extension camp (use System 2 to train better forecasts). Skipping this one is like watching a debate while listening to only one side.</p>
+
+<div class="sub">Who should read it / who can skip</div>
+<p>Read if: this is your first systematic encounter with decision research, or you build products, portfolios, or policy. Skip if: you already know the two-system model — the first five chapters will be familiar. The third section (on happiness) is the loosest part of the book.</p>
+
+<div class="sub">Limits and controversies</div>
+<p>The replication crisis in psychology has badly damaged several studies in the book, especially priming effects. Kahneman himself publicly acknowledged in 2017 that the relevant chapter was "too optimistic." Read it as a framework, not as a list of established empirical findings.</p>
+</div>
+
+<div class="book">
+<div class="book-header">
+<div class="book-title">Risk Savvy: How to Make Good Decisions</div>
+<div class="book-en">Gerd Gigerenzer</div>
+<div class="book-meta">2014 · Viking · ~320 pages</div>
+</div>
+<div class="book-tagline">The most systematic and sharpest rebuttal of the Kahneman paradigm.</div>
+
+<div class="sub">Core arguments</div>
+<ul>
+<li><strong>Risk vs. uncertainty.</strong> Risk is the world of known probabilities (casinos, insurance tables). Uncertainty is the world of unknown ones (starting a company, choosing a partner, long-horizon investing). The two require fundamentally different tools.</li>
+<li><strong>Heuristics as features, not bugs.</strong> Under uncertainty, simple rules often beat complex models — because complex models overfit noise.</li>
+<li><strong>Less-is-more effects.</strong> With less information and simpler computation, accuracy can rise. The 1/N investment rule has outperformed Markowitz optimization over the long run.</li>
+<li><strong>Recognition heuristic.</strong> Choose the option you've heard of. In many settings (which stock will outperform, which city is larger) the accuracy is remarkable.</li>
+</ul>
+
+<div class="sub">Key passages</div>
+<div class="quote">
+<div class="en">"In an uncertain world, complex strategies can fail because they explain the past too well."</div>
+<div class="zh">Overfitting in one sentence.</div>
+</div>
+<div class="quote">
+<div class="en">"Heuristics are not stupid; they are smart shortcuts."</div>
+</div>
+
+<div class="sub">Key concepts</div>
+<ul>
+<li>Fast-and-frugal heuristics</li>
+<li>Risk vs. uncertainty (a modern revival of Knight's distinction)</li>
+<li>1/N rule; recognition heuristic</li>
+<li>Defensive decision-making (the "self-protective" choices of doctors and bureaucrats)</li>
+<li>Bias-variance tradeoff applied to cognition</li>
+</ul>
+
+<div class="sub">In conversation with the others</div>
+<p>Direct opposition to Kahneman — the two have been naming each other in journals for decades. Natural ally of Klein: both believe that, in the real world, "simple plus experience" beats "complex plus data." A useful counterpoint to Tetlock: Tetlock trains people in finer probabilistic reasoning; Gigerenzer doubts whether that training pays off in genuinely uncertain domains.</p>
+
+<div class="sub">Who should read it / who can skip</div>
+<p>Read if: you ever caught yourself thinking "I've read Kahneman, so I understand decisions"; or if you work in finance, medicine, or policy. Skip if: the two chapters on teaching medical probabilities will feel long to non-clinicians.</p>
+
+<div class="sub">Limits and controversies</div>
+<p>Gigerenzer sometimes pushes opposing positions to caricature before rebutting them (a whiff of straw-manning). The claim that "heuristics are always better" has been criticized as too strong — "better in specific environments" would be more accurate, but the boundary conditions are not fully spelled out.</p>
+</div>
+
+<div class="book">
+<div class="book-header">
+<div class="book-title">Sources of Power: How People Make Decisions</div>
+<div class="book-en">Gary Klein</div>
+<div class="book-meta">1998 · MIT Press · ~330 pages</div>
+</div>
+<div class="book-tagline">Drags decision research out of the lab and into firehouses, operating rooms, and command posts.</div>
+
+<div class="sub">Core arguments</div>
+<ul>
+<li><strong>Recognition-Primed Decision (RPD).</strong> Experts under pressure do not compare options; they recognize patterns. The first solution that comes to mind is usually the answer.</li>
+<li><strong>Mental simulation.</strong> Experts don't calculate consequences — they "run the scene in their heads." Faster than formal analysis, and often more accurate.</li>
+<li><strong>Expert intuition is compressed experience.</strong> The fire chief who "knows" the floor is about to collapse isn't psychic; he has a pattern library built from thousands of fires.</li>
+<li><strong>Formal decision methods break down under time pressure.</strong> "List the options and weigh them" — the MBA standard — doesn't survive a real crisis, and often leads to worse outcomes.</li>
+</ul>
+
+<div class="sub">Key passages</div>
+<div class="quote">
+<div class="en">"The commander's experience let him see a typical situation and quickly know the typical reaction."</div>
+<div class="zh">RPD in one sentence.</div>
+</div>
+<div class="quote">
+<div class="en">"Intuition depends on the use of experience to recognize key patterns."</div>
+</div>
+
+<div class="sub">Key concepts</div>
+<ul>
+<li>Recognition-Primed Decision (RPD)</li>
+<li>Mental simulation</li>
+<li>Pre-mortem (later widely adopted by corporate management)</li>
+<li>Naturalistic Decision Making (NDM)</li>
+<li>The boundary conditions of expert intuition</li>
+</ul>
+
+<div class="sub">In conversation with the others</div>
+<p>An "ally inside the opposition" to Kahneman: in 2009 the two co-authored "Conditions for Intuitive Expertise" and converged on a shared answer — intuition is reliable in environments with fast, accurate feedback (firefighting, chess) and unreliable where feedback is slow or distorted (long-horizon investing, political forecasting). That boundary condition is more important than either of their solo books. Same camp as Gigerenzer in rejecting "rational = elaborate computation." Complements Tetlock: Tetlock studies feedback-poor forecasting domains; Klein studies feedback-rich operational ones.</p>
+
+<div class="sub">Who should read it / who can skip</div>
+<p>Read if: you manage teams, develop experiential experts (clinicians, engineers, operators), or are curious about field methods in cognitive science. Skip if: you want quick decision tips — this is more academic, case-heavy, and less smooth than a typical business book.</p>
+
+<div class="sub">Limits and controversies</div>
+<p>Samples skew male, high-pressure, high-feedback (firefighters, military). Extrapolating to female-dominated or slow-feedback domains needs care. The pre-mortem has been widely adopted, but most of the book's other tools haven't traveled as well into corporate practice.</p>
+</div>
+
+<div class="book">
+<div class="book-header">
+<div class="book-title">Superforecasting: The Art and Science of Prediction</div>
+<div class="book-en">Philip Tetlock &amp; Dan Gardner</div>
+<div class="book-meta">2015 · Crown · ~340 pages</div>
+</div>
+<div class="book-tagline">Turns "how to forecast better" from mystique into a trainable skill.</div>
+
+<div class="sub">Core arguments</div>
+<ul>
+<li><strong>Most "experts" forecast only marginally better than chance</strong> — the central finding of Tetlock's twenty-year study (<em>Expert Political Judgment</em>).</li>
+<li><strong>Yet a small group of amateurs can do dramatically better.</strong> The Good Judgment Project's "superforecasters" beat CIA analysts on geopolitical forecasting.</li>
+<li><strong>Foxes beat hedgehogs.</strong> Hedgehogs have one big idea and apply the same hammer everywhere; foxes have many small ideas and switch tools. Foxes forecast more accurately.</li>
+<li><strong>The habits of superforecasters.</strong> Decompose big questions, anchor on base rates, update in small Bayesian increments, practice actively open-minded thinking, post-mortem mistakes instead of rationalizing them.</li>
+</ul>
+
+<div class="sub">Key passages</div>
+<div class="quote">
+<div class="en">"Beliefs are hypotheses to be tested, not treasures to be guarded."</div>
+<div class="zh">The superforecaster mindset compressed.</div>
+</div>
+<div class="quote">
+<div class="en">"The average expert was roughly as accurate as a dart-throwing chimpanzee."</div>
+</div>
+
+<div class="sub">Key concepts</div>
+<ul>
+<li>Hedgehog vs. fox (from Isaiah Berlin, made empirical by Tetlock)</li>
+<li>Bayesian updating (small, frequent, evidence-based)</li>
+<li>Brier score (quantifying forecast accuracy)</li>
+<li>Outside view vs. inside view</li>
+<li>Actively Open-Minded Thinking (AOT)</li>
+</ul>
+
+<div class="sub">In conversation with the others</div>
+<p>Tetlock is the applied version of Kahneman: Kahneman names the biases, Tetlock shows how to use System 2 to actually counter them and improve predictions. Complementary to Klein: Klein studies feedback-rich domains where intuition works; Tetlock studies feedback-poor domains where it fails and shows how to compensate. In tension with Gigerenzer, who doubts that finer probabilistic reasoning pays off under deep uncertainty; Tetlock's reply is empirical — it does, but most people aren't doing it.</p>
+
+<div class="sub">Who should read it / who can skip</div>
+<p>Read if: you have to make calls about the future (investing, strategy, product planning, policy analysis). The "ten habits of superforecasters" alone is worth the price. Skip if: the opening chapters revisiting the EPJ project will feel slow if you already know the result.</p>
+
+<div class="sub">Limits and controversies</div>
+<p>The forecasting questions are mostly short-horizon geopolitical (months to one or two years out). Whether the findings extend to longer or fuzzier domains ("when will AI reshape the labor market") is still contested. The book has a faint whiff of "superforecaster cult" — these people may be unusually good in part because they were self-selected, intensely interested, and willing to put in enormous time.</p>
+</div>
+
+</section>
+
+<section>
+<h2>Reading order</h2>
+<div class="path">
+<div class="path-title">Path A · Classics first (recommended for newcomers)</div>
+<p><strong>Kahneman → Gigerenzer → Klein → Tetlock.</strong> Establish the mainstream frame, hear the sharpest rebuttal, take a field trip with Klein, then use Tetlock to learn the actual training methods. The standard debate-club entry order.</p>
+</div>
+<div class="path">
+<div class="path-title">Path B · Applied first (recommended for readers who already know Kahneman)</div>
+<p><strong>Tetlock → Klein → Gigerenzer → revisit Kahneman.</strong> Start with operational training, see where expert intuition comes from, expand the frame with Gigerenzer, then return to Kahneman with a different eye — you'll notice which chapters survived the replication crisis and which didn't.</p>
+</div>
+</section>
+
+<section>
+<h2>Questions to ask yourself after reading</h2>
+<div class="questions">
+<ol>
+<li>The decision I'm currently making — is it in a "feedback-rich" environment (trust intuition more) or a "feedback-poor" one (engage System 2)?</li>
+<li>In the past year, when my forecasts were wrong, did I run a serious post-mortem like a superforecaster — or did I rationalize after the fact?</li>
+<li>In this domain, am I a hedgehog (one big theory explains everything) or a fox (many small models, switched by context)?</li>
+<li>When I made this decision, which base rate was I using? Or did I never check one?</li>
+<li>If I replaced my elaborate scheme with a "dumb" rule like 1/N, would I actually do worse? Have I ever tested it?</li>
+</ol>
+</div>
+</section>
+
+<section>
+<h2>Further reading</h2>
+<ul class="further">
+<li><span class="b"><em>Noise</em>, Kahneman, Sibony, Sunstein (2021)</span> — Kahneman's late work. If <em>TFAS</em> is about bias, this is about noise — complementary and consistently underrated.</li>
+<li><span class="b"><em>The Signal and the Noise</em>, Nate Silver (2012)</span> — a sibling volume to Tetlock, approaching forecasting from statistics, with cases ranging from poker to earthquakes.</li>
+<li><span class="b"><em>Algorithms to Live By</em>, Brian Christian &amp; Tom Griffiths (2016)</span> — maps computer-science algorithms (optimal stopping, explore vs. exploit) onto everyday decisions.</li>
+<li><span class="b"><em>How to Decide</em>, Annie Duke (2020)</span> — by a former professional poker player; the most directly actionable book among these five.</li>
+<li><span class="b"><em>Expert Political Judgment</em>, Philip Tetlock (2005)</span> — Tetlock's academic original, the prequel to <em>Superforecasting</em>. Harder going but foundational.</li>
+</ul>
+</section>
+
+<footer>BigCat · Bidaily Books · Issue 1 · 2026</footer>
+
+</div>
+</body>
+</html>
