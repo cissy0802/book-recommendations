@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Issue 11: The Innovation Curve — How New Things Get Born and Cross to Mainstream | Bidaily Books</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f7f3ec;color:#2a2418;line-height:1.78}
+.container{max-width:780px;margin:0 auto;padding:32px 22px 80px}
+header{text-align:center;padding:60px 0 32px;border-bottom:1px solid #e0d6c2}
+.issue-tag{font-size:0.78rem;letter-spacing:3px;color:#a87a3e;font-weight:700;text-transform:uppercase}
+header h1{font-size:2.05rem;font-weight:800;color:#6b4423;margin:14px 0 10px;letter-spacing:1px}
+header .question{font-size:1rem;color:#8a6e4a;font-style:italic;max-width:600px;margin:0 auto}
+header .date{font-size:0.82rem;color:#b09578;margin-top:14px}
+section{margin-top:40px}
+h2{font-size:1.32rem;color:#6b4423;border-left:4px solid #a87a3e;padding-left:12px;margin-bottom:18px;font-weight:700}
+h3{font-size:1.12rem;color:#6b4423;margin-bottom:8px;font-weight:700}
+p{margin-bottom:14px}
+.intro{background:#fff;padding:22px 26px;border-radius:6px;box-shadow:0 1px 8px rgba(107,68,35,0.07);font-size:1rem}
+.overview-table{width:100%;border-collapse:collapse;background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 1px 8px rgba(107,68,35,0.07);font-size:0.93rem}
+.overview-table th,.overview-table td{padding:12px 14px;text-align:left;border-bottom:1px solid #ede3d0;vertical-align:top}
+.overview-table th{background:#f0e6d2;color:#6b4423;font-weight:700;font-size:0.86rem;letter-spacing:0.5px}
+.overview-table tr:last-child td{border-bottom:none}
+.role-badge{display:inline-block;padding:2px 8px;border-radius:12px;font-size:0.75rem;font-weight:700;letter-spacing:0.5px}
+.role-found{background:#e8dcc0;color:#6b4423}
+.role-pro{background:#d8e0d0;color:#4a6038}
+.role-anti{background:#f0d4c0;color:#a04020}
+.role-extend{background:#d6dde8;color:#3a5878}
+.book{background:#fff;padding:26px 28px;border-radius:6px;box-shadow:0 1px 10px rgba(107,68,35,0.08);margin-bottom:22px;border-top:3px solid #a87a3e}
+.book-header{margin-bottom:14px;padding-bottom:12px;border-bottom:1px dashed #d8c8a8}
+.book-title{font-size:1.25rem;color:#6b4423;font-weight:700;margin-bottom:4px}
+.book-en{font-size:0.95rem;color:#8a6e4a;font-style:italic}
+.book-meta{font-size:0.84rem;color:#a08868;margin-top:6px}
+.book-tagline{font-size:0.98rem;color:#6b4423;font-style:italic;margin:14px 0;padding:10px 14px;background:#faf6ec;border-left:3px solid #c8a868}
+.sub{font-size:0.92rem;color:#a87a3e;font-weight:700;margin:16px 0 6px;letter-spacing:0.5px;text-transform:uppercase}
+ul{padding-left:22px;margin-bottom:10px}
+li{margin-bottom:6px}
+.quote{background:#f9f4e8;padding:12px 16px;border-radius:4px;margin:8px 0;font-size:0.94rem}
+.quote .en{color:#5a4828;font-style:italic;margin-bottom:6px}
+.quote .src{color:#a87a3e;font-size:0.82rem;font-style:italic}
+.spectrum{background:#fff;padding:28px 24px;border-radius:6px;box-shadow:0 1px 8px rgba(107,68,35,0.07);margin:20px 0}
+.spectrum-title{font-size:0.88rem;color:#a87a3e;margin-bottom:24px;letter-spacing:1px;text-transform:uppercase;text-align:center}
+.spectrum-bar{position:relative;height:6px;background:linear-gradient(to right,#d8e0d0,#e8dcc0,#f0d4c0);border-radius:3px;margin:50px 8px 80px}
+.spectrum-end{position:absolute;top:-26px;font-size:0.82rem;color:#6b4423;font-weight:700}
+.spectrum-end.left{left:-4px}
+.spectrum-end.right{right:-4px;text-align:right}
+.spectrum-tick{position:absolute;top:-8px;width:2px;height:22px;background:#6b4423}
+.spectrum-label{position:absolute;top:24px;font-size:0.84rem;color:#6b4423;font-weight:700;text-align:center;width:120px;transform:translateX(-50%)}
+.spectrum-label small{display:block;font-weight:400;color:#8a6e4a;font-size:0.74rem;margin-top:3px;font-style:italic}
+.relations{margin-top:30px;font-size:0.85rem;color:#6b4423;text-align:left}
+.relations div{padding:7px 0;border-bottom:1px dotted #e0d6c2}
+.relations .arrow{color:#a87a3e;font-weight:700}
+.path{background:#fff;padding:18px 22px;border-radius:6px;box-shadow:0 1px 8px rgba(107,68,35,0.07);margin-bottom:12px}
+.path-title{font-weight:700;color:#6b4423;margin-bottom:6px}
+.questions{background:#fff;padding:20px 26px;border-radius:6px;box-shadow:0 1px 8px rgba(107,68,35,0.07)}
+.questions ol{padding-left:22px}
+.questions li{margin-bottom:10px;color:#5a4828}
+footer{text-align:center;padding:40px 0 0;font-size:0.82rem;color:#b8a888;border-top:1px solid #e0d6c2;margin-top:40px}
+@media(max-width:600px){
+  header h1{font-size:1.55rem}
+  .container{padding:24px 16px 60px}
+  h2{font-size:1.15rem}
+  .book{padding:20px 18px}
+  .spectrum{padding:20px 14px}
+  .spectrum-bar{margin:50px 0 100px}
+  .spectrum-label{font-size:0.76rem;width:90px}
+  .overview-table{font-size:0.85rem}
+  .overview-table th,.overview-table td{padding:9px 8px}
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+<div class="issue-tag">Issue 11 · Themed Reading List</div>
+<h1>The Innovation Curve</h1>
+<p class="question">How do new things go from nothing to something, from the fringe to the mainstream? Why do incumbents get killed by unglamorous nobodies, while startups religiously chanting "lean iteration" are mocked as incapable of building anything truly large?</p>
+<p class="date">2026 · Bidaily Books · Issue 11</p>
+</header>
+
+<section>
+<h2>Why These Four</h2>
+<div class="intro">
+<p>Every era re-litigates "innovation," and the word has been used so much it has lost its shape. These four books share one question: <strong>what does the curve of innovation look like, from zero to something</strong>, who dies on which segment of it, and why. Moore identifies the curve's most dangerous gap — between early enthusiasts and the mainstream majority lies a <strong>chasm</strong> that swallows most startups, crossable only by ruthlessly focusing on a beachhead. Christensen explains why incumbent giants get killed by low-end, unglamorous newcomers — not because management is bad, but precisely because it does everything "good management" prescribes. Ries turns it into a method — stop predicting, use MVPs and the build–measure–learn loop to demote "starting a company" from a gamble to a science. Thiel takes no prisoners and strikes back at the incrementalism the first three represent — what truly changes the world isn't lean iteration or low-end nibbling, but the <strong>zero-to-one</strong> leap that founds a monopoly. Stitched together, the four are a topographic map of innovation: how you start, how you survive, how you cross, and whether it's worth doing.</p>
+</div>
+</section>
+
+<section>
+<h2>The Four at a Glance</h2>
+<table class="overview-table">
+<thead><tr><th>Book</th><th>Author</th><th>Year</th><th>Role</th></tr></thead>
+<tbody>
+<tr><td>Crossing the Chasm</td><td>Geoffrey A. Moore</td><td>1991</td><td><span class="role-badge role-found">Market Terrain · Entry</span></td></tr>
+<tr><td>The Innovator's Dilemma</td><td>Clayton M. Christensen</td><td>1997</td><td><span class="role-badge role-pro">Disruption Theory · Canon</span></td></tr>
+<tr><td>The Lean Startup</td><td>Eric Ries</td><td>2011</td><td><span class="role-badge role-extend">Methodology · Contemporary</span></td></tr>
+<tr><td>Zero to One</td><td>Peter Thiel &amp; Blake Masters</td><td>2014</td><td><span class="role-badge role-anti">Contrarian · Challenge</span></td></tr>
+</tbody>
+</table>
+</section>
+
+<section>
+<h2>The Four on One Spectrum</h2>
+<div class="spectrum">
+<div class="spectrum-title">Views on Innovation · Incremental Iteration ←→ Singular Leap</div>
+<div class="spectrum-bar">
+<span class="spectrum-end left">Incremental / Iteration</span>
+<span class="spectrum-end right">Leap / Monopoly</span>
+<span class="spectrum-tick" style="left:12%"></span>
+<span class="spectrum-label" style="left:12%"><strong>Ries</strong><small>relentless testing<br>embrace uncertainty</small></span>
+<span class="spectrum-tick" style="left:38%"></span>
+<span class="spectrum-label" style="left:38%"><strong>Moore</strong><small>focus on a beachhead<br>conquer in segments</small></span>
+<span class="spectrum-tick" style="left:62%"></span>
+<span class="spectrum-label" style="left:62%"><strong>Christensen</strong><small>enter at the low end<br>climb to disrupt</small></span>
+<span class="spectrum-tick" style="left:90%"></span>
+<span class="spectrum-label" style="left:90%"><strong>Thiel</strong><small>create zero-to-one<br>harvest as monopoly</small></span>
+</div>
+<div class="relations">
+<div><span class="arrow">↔</span> <strong>Christensen ↔ Thiel</strong>: the central clash. Christensen says disruption begins by nibbling from the low end; Thiel openly mocks the word "disruption" as a fashionable pose and insists real novelty is not 1→n imitation but 0→1 creation.</div>
+<div><span class="arrow">↔</span> <strong>Ries ↔ Thiel</strong>: a methodological feud. Ries takes uncertainty as the starting point and climbs the hill with MVPs and small iterations; Thiel retorts that lean can at best find a local maximum, never the global one.</div>
+<div><span class="arrow">→</span> <strong>Moore → Christensen</strong>: the two sides of one diagram. Moore watches newcomers climb the curve; Christensen watches incumbents fall off it.</div>
+<div><span class="arrow">→</span> <strong>Moore → Ries</strong>: a spiritual predecessor. Moore preaches narrow focus; Ries's MVP shares the same DNA — get it right in a small place first, then talk expansion.</div>
+</div>
+</div>
+</section>
+
+<section>
+<h2>The Four in Detail</h2>
+
+<div class="book">
+<div class="book-header">
+<div class="book-title">Crossing the Chasm</div>
+<div class="book-en">Geoffrey A. Moore · 1991 (3rd ed. 2014)</div>
+<div class="book-meta">HarperBusiness · ~272 pages</div>
+</div>
+<div class="book-tagline">Most new products die not because nobody loves them, but because they never find the precise group of customers who could carry them from the early market into the mainstream.</div>
+
+<div class="sub">Core Arguments</div>
+<ul>
+<li><strong>Technology adoption life cycle</strong>: Innovators / Early Adopters / Early Majority / Late Majority / Laggards are five groups with sharply different psychology — sell vision to the first two, but the middle two demand a complete solution and proven references.</li>
+<li><strong>The chasm</strong>: early adopters buy a vision; the early majority only buys "a complete solution already validated by their peers." Most startups die in that exact fracture.</li>
+<li><strong>The bowling-pin strategy</strong>: the only way across is not casting a wide net but picking one painfully specific niche as a beachhead, dominating it completely, and letting adjacent niches fall on their own.</li>
+<li><strong>The "whole product" principle</strong>: customers don't buy your technology, they buy an end-to-end solution that works in their context. Technology is one ingredient, not the dish.</li>
+</ul>
+
+<div class="sub">Key Quote</div>
+<div class="quote">
+<div class="en">"The point of greatest peril in the development of a high-tech market lies in the transition from an early market dominated by a few visionary customers to a mainstream market dominated by a large block of customers who are predominantly pragmatists in orientation."</div>
+<div class="src">— Crossing the Chasm, Chapter 1</div>
+</div>
+
+<div class="sub">Resonance &amp; Conflict</div>
+<p><strong>Complementary to Christensen</strong>: Moore writes how newcomers climb the curve, Christensen writes how incumbents fall off it — the same map, mirrored. <strong>A spiritual ancestor to Ries</strong>: master a narrow scene before expansion, the same logic as MVP. <strong>Quietly opposed to Thiel</strong>: Moore teaches "conquer in segments," and Thiel would ask back — does your beachhead end as a monopoly, or just another niche waiting to be replaced?</p>
+
+<div class="sub">Limits &amp; Controversy</div>
+<p>Cases are mostly drawn from 1990s enterprise software (Documentum, Ariba); the details have aged. In an era of two-sided platforms, SaaS, and AI applications, a single beachhead may no longer be enough. The theory is heavy on qualitative pattern, light on numbers — "where is the chasm" tends to be clear only in hindsight. But as the entry coordinate for thinking about product-to-market, it remains irreplaceable.</p>
+</div>
+
+<div class="book">
+<div class="book-header">
+<div class="book-title">The Innovator's Dilemma</div>
+<div class="book-en">Clayton M. Christensen · 1997</div>
+<div class="book-meta">Harvard Business Review Press · ~286 pages</div>
+</div>
+<div class="book-tagline">Giants get killed by new technologies not because they slacken — precisely because they do everything "good management" tells them to do.</div>
+
+<div class="sub">Core Arguments</div>
+<ul>
+<li><strong>Sustaining vs. disruptive innovation</strong>: sustaining innovation improves along the existing performance axis; disruption enters from the low end, weaker on the established metric but cheaper, smaller, or simpler, and it carves out a new value network.</li>
+<li><strong>The curse of "good management"</strong>: listen to your best customers, chase margin, allocate by NPV — all textbook-correct, yet structurally hostile to a new technology that earns less and isn't yet wanted by the mainstream.</li>
+<li><strong>Performance overshoot</strong>: disruptors keep improving; once they cross the "good enough" line for mainstream customers, the incumbents collapse all at once. From disk drives to mini-mills to digital cameras, the script keeps replaying.</li>
+<li><strong>The response</strong>: disrupt yourself before others do — spin up an independent small organization with its own value network to do what the mainstream business can never authorize.</li>
+</ul>
+
+<div class="sub">Key Quotes</div>
+<div class="quote">
+<div class="en">"The very decision-making and resource-allocation processes that are key to the success of established companies are the very processes that reject disruptive technologies."</div>
+<div class="src">— The Innovator's Dilemma, Introduction</div>
+</div>
+<div class="quote">
+<div class="en">"Good management was the most powerful reason they failed to stay atop their industries."</div>
+<div class="src">— The Innovator's Dilemma, Introduction (the book's thesis in one line)</div>
+</div>
+
+<div class="sub">Resonance &amp; Conflict</div>
+<p><strong>Complementary to Moore</strong> (above). <strong>Head-on conflict with Thiel</strong> — in <em>Zero to One</em> Thiel explicitly says the word "disruption" has been worn out, and new companies should aim to create new markets from zero rather than pose as someone who disrupts an incumbent. <strong>Aligned with Ries in direction</strong>: both diagnose the mature company's standard process as the enemy of innovation, but their answers differ — Christensen's is organizational (an independent unit), Ries's is methodological (the MVP and the loop).</p>
+
+<div class="sub">Limits &amp; Controversy</div>
+<p>The disk-drive case is powerful, but Jill Lepore's famous 2014 critique in <em>The New Yorker</em> pointed out the theory leans heavily on cherry-picked retrospective cases — many "successful disruptions" are reverse-engineered, while failed would-be disrupters are ignored. The theory has <strong>strong explanatory power but weak predictive power</strong> — you can't reliably tell in advance which low-end product will succeed in disrupting. Even Christensen later narrowed his own claims. Yet for thinking about the contest between incumbents and newcomers, the scaffold is still hard to avoid.</p>
+</div>
+
+<div class="book">
+<div class="book-header">
+<div class="book-title">The Lean Startup</div>
+<div class="book-en">Eric Ries · 2011</div>
+<div class="book-meta">Crown Business · ~336 pages</div>
+</div>
+<div class="book-tagline">Demotes "starting a company" from a gamble to a scientific method — don't build the product you think people want, build the smallest experiment that tells you what they actually want.</div>
+
+<div class="sub">Core Arguments</div>
+<ul>
+<li><strong>The MVP (Minimum Viable Product)</strong>: build the cheapest product that lets you learn what matters. What you learn is worth more than what you built.</li>
+<li><strong>Build–Measure–Learn loop</strong>: route every product decision through this closed cycle so the company becomes a repeatable, accelerable learning machine.</li>
+<li><strong>Validated learning vs. vanity metrics</strong>: cohort retention and conversion measure real progress; total signups and cumulative downloads are sugar coating.</li>
+<li><strong>Pivot or persevere</strong>: every loop must end with an honest verdict — keep going or change direction. Without that honesty, "iteration" is just self-deception.</li>
+</ul>
+
+<div class="sub">Key Quotes</div>
+<div class="quote">
+<div class="en">"The only way to win is to learn faster than anyone else."</div>
+<div class="src">— The Lean Startup, Introduction</div>
+</div>
+<div class="quote">
+<div class="en">"Validated learning is the process of demonstrating empirically that a team has discovered valuable truths about a startup's present and future business prospects."</div>
+<div class="src">— The Lean Startup, Chapter 3</div>
+</div>
+
+<div class="sub">Resonance &amp; Conflict</div>
+<p><strong>In the same vein as Moore</strong>: focus on the smallest credible scene, get it right narrowly before widening. <strong>Aligned with Christensen and complementary</strong>: both see the mature process as innovation's enemy; Ries's answer can be read as a personal-scale "independent value network." <strong>Head-on opposed to Thiel</strong> — in <em>Zero to One</em> Chapter 6 Thiel names lean explicitly: incremental tweaking can only reach a local maximum, while truly great companies start with a concrete and grand plan.</p>
+
+<div class="sub">Limits &amp; Controversy</div>
+<p>The methodology easily ossifies into a new dogma — "test everything" simply doesn't apply to long-cycle, capital-heavy R&amp;D fields (aerospace, semiconductors, biopharma); forcing it on them dissolves real technical ambition. The MVN mindset has led some teams to settle for "barely working" and call roughness a virtue. Its dependence on fast feedback also biases against hardware and medicine, where loops are long. Still, as the most widely used execution framework in startup land, it has become the default vocabulary of the conversation.</p>
+</div>
+
+<div class="book">
+<div class="book-header">
+<div class="book-title">Zero to One</div>
+<div class="book-en">Notes on Startups, or How to Build the Future · Peter Thiel &amp; Blake Masters · 2014</div>
+<div class="book-meta">Crown Business · ~210 pages</div>
+</div>
+<div class="book-tagline">Real progress is not 1 to n (copying existing successes) but 0 to 1 (creating what didn't exist) — and almost everything that goes from 0 to 1 ends in some form of monopoly.</div>
+
+<div class="sub">Core Arguments</div>
+<ul>
+<li><strong>0→1 vs. 1→n</strong>: copying existing things is horizontal progress (globalization); creating what doesn't yet exist is vertical progress (technology). Only the latter is real "future."</li>
+<li><strong>"Competition is for losers"</strong>: in a perfectly competitive market nobody makes money; all great companies built some form of monopoly in their lane — through proprietary technology, network effects, economies of scale, or brand — and they usually hide the fact.</li>
+<li><strong>The contrarian question</strong>: his signature interview prompt — "What important truth do very few people agree with you on?" — becomes the filter he uses to recognize real founders.</li>
+<li><strong>Explicit attack on lean and on "disruption"</strong>: lean is incremental trial and error stuck at a local optimum; "disruption" has decayed into a fashionable boast. Both push founders to position themselves as bricklayers next to existing players instead of builders of new worlds.</li>
+</ul>
+
+<div class="sub">Key Quotes</div>
+<div class="quote">
+<div class="en">"Competition is for losers."</div>
+<div class="src">— Zero to One, Chapter 3 (the title is the thesis)</div>
+</div>
+<div class="quote">
+<div class="en">"What important truth do very few people agree with you on?"</div>
+<div class="src">— Zero to One, Preface (the question that organizes the whole book)</div>
+</div>
+
+<div class="sub">Resonance &amp; Conflict</div>
+<p><strong>Genuine conflict with Christensen</strong> (above) — Thiel writes that in recent years "'disruption' has transmogrified into a self-congratulatory buzzword for anything posing as trendy and new." <strong>Head-on opposed to Ries</strong> — lean is incremental, Thiel wants a discontinuous leap. <strong>Partially aligned with Moore</strong>: both endorse first monopolizing a narrow market, but for Moore it is a springboard (expand from there), while for Thiel it is the goal (defend the monopoly itself).</p>
+
+<div class="sub">Limits &amp; Controversy</div>
+<p>Intensely autobiographical — the theory rests almost entirely on PayPal, Palantir, and a handful of Founders Fund bets, a <strong>tiny sample with serious survivorship bias</strong>. The case for monopoly slides easily into impatience with antitrust and thin attention to social externalities. The prose carries a strong ideology; its views on education, technological pessimism, and politics are ones many readers will reject, and Thiel's later investment record doesn't uniformly vindicate the theory. Yet as a counter-strike against the dominant "startup = lean iteration + disruption pose" narrative, the book is irreplaceable — finishing it forces you to ask, <em>am I building 1→n, or 0→1?</em></p>
+</div>
+
+</section>
+
+<section>
+<h2>Suggested Reading Order</h2>
+<div class="path">
+<div class="path-title">Terrain → Cause of death → Manual → Counter-strike</div>
+<p>Recommended: <strong>Moore → Christensen → Ries → Thiel</strong>. Conveniently the order of publication, and also the natural flow of the ideas. Start with Moore to build the terrain — the technology adoption life cycle and the chasm are the background the other three quietly assume. Then read Christensen to see why incumbents fall down the same curve, and where the real tension between old and new comes from. Next read Ries for today's most widespread execution manual — MVP, build–measure–learn, pivot. Finally let Thiel slap all three awake: lean and disruption are now overused, and what truly rewrites the world isn't "find the chasm, find the low end, run experiments," but creating a monopoly-shaped thing that didn't exist. If you're short on time, <strong>read Christensen and Thiel together</strong> — that pro–con pair is the real engine of the issue; Moore and Ries give you the terrain and the toolkit, but on their own you'd miss the deepest question — <em>is any of this worth doing in the first place?</em></p>
+</div>
+</section>
+
+<section>
+<h2>Questions to Ask Yourself</h2>
+<div class="questions">
+<ol>
+<li>Where on Moore's adoption curve does what you're doing sit right now? What, specifically, is the chasm between you and the early majority — completeness of the product, reference customers, the way you sell, or something else?</li>
+<li>In your industry, what unglamorous low-end product is currently nibbling at the incumbent giants? Can you tell the difference between a real Christensen-style disruptive threat and a pseudo-threat the media merely labels "disruption"?</li>
+<li>Your most recent product decision: was it "I believe users will want this," or "I designed an experiment to test whether users want this"? Are you honest with yourself about the size of the bet you're placing?</li>
+<li>Use Thiel's contrarian prompt: what important truth do you believe, that your peers, colleagues, or investors almost universally disagree with you on? If you can't answer, what does that say about you?</li>
+<li>Which failure scares you most — missing Moore's chasm, being knocked over by a Christensen-style low-end disrupter, getting mocked by Ries for "building something nobody wanted," or being dismissed by Thiel as "just another 1→n copy"? That ranking is, in itself, the portrait of your view of innovation.</li>
+</ol>
+</div>
+</section>
+
+<footer>BigCat · Bidaily Books · Issue 11 · 2026</footer>
+
+</div>
+</body>
+</html>
