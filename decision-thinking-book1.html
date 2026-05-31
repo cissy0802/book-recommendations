@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Issue 1：如何思考决策 — 偏见、启发式、专家直觉与可学的预测 | 隔日好书</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f7f3ec;color:#2a2418;line-height:1.78}
+.container{max-width:780px;margin:0 auto;padding:32px 22px 80px}
+header{text-align:center;padding:60px 0 32px;border-bottom:1px solid #e0d6c2}
+.issue-tag{font-size:0.78rem;letter-spacing:3px;color:#a87a3e;font-weight:700;text-transform:uppercase}
+header h1{font-size:2.05rem;font-weight:800;color:#6b4423;margin:14px 0 10px;letter-spacing:1px}
+header .question{font-size:1rem;color:#8a6e4a;font-style:italic;max-width:600px;margin:0 auto}
+header .date{font-size:0.82rem;color:#b09578;margin-top:14px}
+section{margin-top:40px}
+h2{font-size:1.32rem;color:#6b4423;border-left:4px solid #a87a3e;padding-left:12px;margin-bottom:18px;font-weight:700}
+p{margin-bottom:14px}
+.intro{background:#fff;padding:22px 26px;border-radius:6px;box-shadow:0 1px 8px rgba(107,68,35,0.07);font-size:1rem}
+.overview-table{width:100%;border-collapse:collapse;background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 1px 8px rgba(107,68,35,0.07);font-size:0.93rem}
+.overview-table th,.overview-table td{padding:12px 14px;text-align:left;border-bottom:1px solid #ede3d0;vertical-align:top}
+.overview-table th{background:#f0e6d2;color:#6b4423;font-weight:700;font-size:0.86rem;letter-spacing:0.5px}
+.overview-table tr:last-child td{border-bottom:none}
+.book{background:#fff;padding:26px 28px;border-radius:6px;box-shadow:0 1px 10px rgba(107,68,35,0.08);margin-bottom:22px;border-top:3px solid #a87a3e}
+.book-header{margin-bottom:14px;padding-bottom:12px;border-bottom:1px dashed #d8c8a8}
+.book-title{font-size:1.25rem;color:#6b4423;font-weight:700;margin-bottom:4px}
+.book-en{font-size:0.95rem;color:#8a6e4a;font-style:italic}
+.book-meta{font-size:0.84rem;color:#a08868;margin-top:6px}
+.book-tagline{font-size:0.98rem;color:#6b4423;font-style:italic;margin:14px 0;padding:10px 14px;background:#faf6ec;border-left:3px solid #c8a868}
+.sub{font-size:0.92rem;color:#a87a3e;font-weight:700;margin:18px 0 8px;letter-spacing:0.5px;text-transform:uppercase}
+.quote{background:#f9f4e8;padding:12px 16px;border-radius:4px;margin:8px 0;font-size:0.94rem}
+.quote .zh{color:#5a4828;margin-bottom:6px}
+.quote .src{color:#a87a3e;font-size:0.82rem;font-style:italic}
+.apply-box{background:#efe6d0;border-left:3px solid #6b4423;padding:13px 18px;border-radius:4px;margin-top:4px;color:#3d3020;font-size:0.93rem;line-height:1.78}
+.diagram{background:#fbf6e8;padding:18px 12px 14px;border-radius:5px;margin:14px 0 18px;text-align:center;border:1px solid #ede3d0}
+.diagram-title{font-size:0.82rem;color:#a87a3e;margin-bottom:8px;letter-spacing:1.5px;text-transform:uppercase}
+.diagram svg{max-width:100%;height:auto;display:block;margin:0 auto}
+.questions{background:#fff;padding:20px 26px;border-radius:6px;box-shadow:0 1px 8px rgba(107,68,35,0.07)}
+.questions ol{padding-left:22px}
+.questions li{margin-bottom:14px;color:#5a4828}
+.questions details{margin-top:8px;background:#faf6ec;border-left:3px solid #c8a868;padding:8px 14px;border-radius:3px}
+.questions details summary{cursor:pointer;color:#a87a3e;font-weight:700;font-size:0.84rem;list-style:none;letter-spacing:0.5px}
+.questions details summary::-webkit-details-marker{display:none}
+.questions details summary::before{content:"▸ ";color:#a87a3e}
+.questions details[open] summary::before{content:"▾ "}
+.questions details p{margin:8px 0 0;color:#5a4828;font-size:0.92rem}
+footer{text-align:center;padding:40px 0 0;font-size:0.82rem;color:#b8a888;border-top:1px solid #e0d6c2;margin-top:40px}
+@media(max-width:600px){
+  header h1{font-size:1.55rem}
+  .container{padding:24px 16px 60px}
+  h2{font-size:1.15rem}
+  .book{padding:20px 18px}
+  .overview-table{font-size:0.85rem}
+  .overview-table th,.overview-table td{padding:9px 8px}
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+<div class="issue-tag">Issue 1 · 主题书单</div>
+<h1>如何思考决策</h1>
+<p class="question">关于"决策"的书泛滥，真正讲清楚机制的不多。这四本各抓一段：偏见从哪里来、为什么简单有时打败复杂、专家直觉何时可信、凡人怎么把预测练到比专家更准。</p>
+<p class="date">2026 · 隔日好书 · 第一期</p>
+</header>
+
+<section>
+<h2>主题导读</h2>
+<div class="intro">
+<p>"决策"被讲烂了，但四本书里讲的不是同一件事。Kahneman 抓的是<strong>错误的结构</strong>——为什么我们错得有规律。Gigerenzer 抓的是<strong>简单的边界</strong>——在真实不确定下，复杂模型反而崩，一两条好规则就够。Klein 抓的是<strong>专家直觉真的存在</strong>——在哪些环境里、为什么。Tetlock 抓的是<strong>预测可以训练</strong>——不靠 IQ，靠一套狐式的认知习惯加持续打分。读完不是记四套术语，是把四套机制看到能各自复述、能套回手上的活儿。</p>
+</div>
+</section>
+
+<section>
+<h2>4 本书一览</h2>
+<table class="overview-table">
+<thead><tr><th>书</th><th>作者</th><th>年份</th><th>这本说清楚的那件事</th></tr></thead>
+<tbody>
+<tr><td>思考，快与慢<br><span style="color:#a08868;font-size:0.85rem">Thinking, Fast and Slow</span></td><td>Daniel Kahneman</td><td>2011</td><td>你以为是"直觉"的判断里藏着可预测的系统性偏差——错不是随机的，是结构性的</td></tr>
+<tr><td>风险与好的决策<br><span style="color:#a08868;font-size:0.85rem">Risk Savvy</span></td><td>Gerd Gigerenzer</td><td>2014</td><td>把"风险"（已知概率）和"不确定性"（未知结构）分开——复杂模型在前者赢，简单启发式在后者赢，搞反了就坏事</td></tr>
+<tr><td>力量之源<br><span style="color:#a08868;font-size:0.85rem">Sources of Power</span></td><td>Gary Klein</td><td>1998</td><td>消防员、ICU 护士、特种兵根本不"比较选项"——他们认模式、然后心理模拟一遍，几秒内做完决策</td></tr>
+<tr><td>超预测<br><span style="color:#a08868;font-size:0.85rem">Superforecasting</span></td><td>Philip E. Tetlock &amp; Dan Gardner</td><td>2015</td><td>一群业余爱好者的预测稳定超过 CIA 同行——不是更聪明，是一套可学的"狐式"思维和概率化校准</td></tr>
+</tbody>
+</table>
+</section>
+
+<section>
+<h2>四本书详情</h2>
+
+<div class="book">
+<div class="book-header">
+<div class="book-title">思考，快与慢</div>
+<div class="book-en">Thinking, Fast and Slow · Daniel Kahneman · 2011</div>
+<div class="book-meta">Farrar, Straus and Giroux · 约 499 页</div>
+</div>
+<div class="book-tagline">你脑里有两个工作模式——直觉的快和推理的慢——它们各自的优势同时是各自的陷阱，更糟的是，慢系统是个懒鬼。</div>
+
+<div class="sub">这本书的核心洞见</div>
+<p>Kahneman 用一个隐喻把几十年实验装进一个框架：脑里有两个"虚构"的角色。<strong>系统 1</strong> 自动、快、不耗力，每秒在背景里运行——它认人脸、判断距离、续写"2 + 2 = ?"。<strong>系统 2</strong> 慢、费力、要调用注意力——它做长除法、记电话号码、克制冲动。绝大多数日常判断由系统 1 处理，系统 2 只在被叫醒时才工作，且默认是懒的。</p>
+<p>真正的洞见不是"我们会犯错"——这谁都知道——而是<strong>错误有结构</strong>。系统 1 用一种叫"替换问题"的手法：被问的难题是"我对人生满意吗"，它无意识替成好答的"我现在心情如何"，给出一个流畅答案；问的人误以为是前者的答案。锚定、可得性、代表性、损失厌恶、framing——这些都不是随机故障，是系统 1 用替换、模式匹配、流畅性等启发式时<strong>可预测的系统性偏移</strong>。</p>
+<p>书里最反直觉的部分是 Kahneman 与 Tversky 揭穿"专家"。从临床心理诊断到葡萄酒评分到法官量刑，简单的线性公式常常打败专家——因为<strong>专家会受不相关变量影响而不自觉</strong>（饥饿、疲劳、上一个案件的结果），公式不会。这不是说专家没用，是说他们的判断含一个不稳定项，需要外部规则来抵消。</p>
+<p>另一个少被复述的洞见叫<strong>聚焦错觉</strong>：你在<em>想</em>某件事的时候，它在你脑里的重要性被自动放大。"如果我搬到加州我会更幸福吗"——你回答的实际上是"加州 vs 现在天气的比较"，因为你没法在思考的同时给收入、通勤、人际关系等其余因素以应有权重。Kahneman 由此提出一个让人不舒服的推论：人对"做某个决定后会有多幸福"的预测，结构上是<strong>不可靠</strong>的。</p>
+
+<div class="sub">重要金句</div>
+<div class="quote">
+<div class="zh">"我们可以对显而易见的事视而不见，并且对自己的视而不见也视而不见。"</div>
+<div class="src">——《思考，快与慢》引言</div>
+</div>
+<div class="quote">
+<div class="zh">"生活中没有任何一件事，会像你在想它的那一刻所感觉的那么重要。"</div>
+<div class="src">——《思考，快与慢》第 38 章（聚焦错觉之名句）</div>
+</div>
+
+<div class="sub">局限</div>
+<p>2010 年代社会心理学复制危机里，书中第 4 章（priming 效应）的多数实验未能复制，Kahneman 本人 2017 公开承认这部分"再讲一遍我会重写"。系统 1 / 系统 2 是有用的隐喻——但不是字面上的神经学结构，过度套用会把复杂现象简化掉。</p>
+
+<div class="sub">BigCat 应用场景</div>
+<div class="apply-box">
+<p>Kahneman 在 AI 时代最锋利的点是——大语言模型的输出极其流畅，正好命中系统 1 的"流畅 = 正确"误觉。你读 Claude 给的方案时不知不觉信了它，恰恰因为没有停顿、没有结巴、句子整齐。下周可试：对所有用 AI 做的<strong>重要判断</strong>（不是日常邮件），强制启用系统 2——让同一个模型再生成一个"为什么前一版是错的"，并独立给出第三个版本。三份对比读，流畅性的催眠就破了。真正的 AI 用户不是问得快的人，是<strong>抵抗住流畅诱惑的那个</strong>。</p>
+</div>
+</div>
+
+<div class="book">
+<div class="book-header">
+<div class="book-title">风险与好的决策</div>
+<div class="book-en">Risk Savvy: How to Make Good Decisions · Gerd Gigerenzer · 2014</div>
+<div class="book-meta">Viking / Penguin · 约 322 页</div>
+</div>
+<div class="book-tagline">Kahneman 看到偏见是 bug；Gigerenzer 看到许多"偏见"其实是在嘈杂世界里进化出的 feature——前提是你分得清"风险"和"不确定性"。</div>
+
+<div class="sub">这本书的核心洞见</div>
+<p>Gigerenzer 与 Kahneman 阵营辩了几十年，分歧不在某一条实验，而在前提。他坚持一个被多数读者跳过却极关键的区分：<strong>风险（risk）</strong>是结构已知、概率可算的世界——赌场、保险精算、检测假阳率。<strong>不确定性（uncertainty）</strong>是结构未知、样本稀缺、规则会变的世界——创业、择偶、长期投资。两种世界要用两套工具。把不确定性当成风险来算，是大多数"理性失败"的真正源头。</p>
+<p>他的招牌发现是<strong>简单常胜复杂</strong>。在不确定的真实世界里，一两条好规则做的判断，常常打败几十个变量的多元回归。原因在统计上叫 <strong>bias-variance tradeoff</strong>：复杂模型在样本里贴得很紧，但抓住的大半是噪声；样本一换它就崩。简单规则忽略噪声，剩下来的是真信号。1/N 等权分散在 50 年长程回测里击败 Markowitz 的均值-方差最优——不是 Markowitz 数学错了，是估出的协方差矩阵在不确定世界里大半是噪声。</p>
+<p>他举的"take-the-best"启发式：判断两个城市哪个人口多，只用第一个有差异的线索（是不是省会？有没有大学？有没有机场？）——其余忽略。在多个真实数据集上，它跑赢 logistic 回归。一条线索做完决策的人不是懒——他选择忽略噪声。</p>
+<p>书里另一大块讲<strong>统计盲</strong>对真实代价的伤害。最经典是 40 岁女性乳腺癌阳性的题：把"敏感性 90% / 假阳率 9% / 患病率 1%"换成"1000 人中 10 人真有病，其中 9 人测出阳；990 没病的有 89 人假阳"——同一组数字，医生答对率从约 10% 飙到 87%。<strong>表示形式决定了大脑能否算它。</strong>由此他还指出"防御性决策"——医生明知不必要却开检查，因为漏诊代价（个人责任）远高于过查代价（病人钱包）。这种局部理性、系统性失能，制度造成而非个人愚蠢。</p>
+
+<div class="sub">重要金句</div>
+<div class="quote">
+<div class="zh">"风险素养，像读写能力一样，是现代社会的基本生存技能。"</div>
+<div class="src">——《Risk Savvy》引言（核心立论）</div>
+</div>
+<div class="quote">
+<div class="zh">"复杂的问题，并不总需要复杂的解。"</div>
+<div class="src">——《Risk Savvy》第 1 章（少即是多原则）</div>
+</div>
+
+<div class="sub">局限</div>
+<p>与 Kahneman 阵营的论战中，对 priming 等失败实验的批判有时滑入对整个行为经济学的不耐烦；"启发式何时确实更好"的边界仍偏定性。"自然频率"教学在医学教育里普及不顺——人理性了不代表流程就改。</p>
+
+<div class="sub">BigCat 应用场景</div>
+<div class="apply-box">
+<p>Gigerenzer 直接撞中投资判断。多因子模型、AI 选股、复杂量化在 risk 域（高频套利、做市）可能有效；放到 5–10 年的长期持仓上，估出的协方差和回报全是噪声主导。下周可试：对你目前由七八个因素综合判断的某个持仓，做一次"<strong>take-the-best 反演</strong>"——只允许保留一个最强信号（比如"管理团队是否在第二增长曲线上投了不可逆的钱"），扔掉其余六七项，结论变没变？变了 = 复杂模型在帮你；没变 = 复杂模型只是在事后合理化你已经做出的判断。第二件事：家里凡是有医生给出"X% 风险" 的诊断或筛查建议，先翻成自然频率——同一组数字，决策会不一样。</p>
+</div>
+</div>
+
+<div class="book">
+<div class="book-header">
+<div class="book-title">力量之源</div>
+<div class="book-en">Sources of Power: How People Make Decisions · Gary Klein · 1998</div>
+<div class="book-meta">MIT Press · 约 330 页</div>
+</div>
+<div class="book-tagline">真正的专家不"比较选项"——他们认模式，然后在脑里把方案模拟一遍。前提是：他们身处一个反馈快且环境有规律的世界。</div>
+
+<div class="sub">这本书的核心洞见</div>
+<p>Klein 进消防队是想验证经典决策论——以为指挥官在火场里也是在权衡 A、B、C。结果他们坚称"我们没在比较，就是知道该怎么做"。他改方法、追问几百个案例，得出了 <strong>RPD 模型（Recognition-Primed Decision，识别-启动决策）</strong>：专家见到新场景，从脑中上千个模式里识别出一个最接近的，<strong>在头脑里把对应方案推演一遍</strong>，若推演不出问题就执行；推演出问题就换下一个模式——<strong>永远只在一个选项上模拟，从不并行比较</strong>。</p>
+<p>这把直觉从神秘主义里救了出来：<strong>专家直觉 = 模式识别 + 心理模拟</strong>，没有第三种成分。它也定义了直觉的<strong>边界条件</strong>。2009 年 Klein 与 Kahneman 合写《Conditions for Intuitive Expertise: A Failure to Disagree》，两个看似敌对阵营达成共识：直觉可信，<strong>当且仅当</strong>满足两条——(1) 环境足够有规律（同类情境反复出现）；(2) 反馈足够快且明确（你能知道判断对了还是错了）。下棋、麻醉、消防、ICU 抢救：满足。股票预测、政治长期预测、首次招聘高管：不满足。在不满足的领域里"凭多年经验"的判断，结构上就是 Kahneman 那一套偏见在伪装专业感。</p>
+
+<div class="diagram">
+<div class="diagram-title">直觉何时可信 · Klein–Kahneman 2009</div>
+<svg viewBox="0 0 560 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="直觉可信性二维图：横轴反馈速度，纵轴环境规律性">
+<line x1="70" y1="270" x2="540" y2="270" stroke="#8a6e4a" stroke-width="1.4"/>
+<line x1="70" y1="270" x2="70" y2="40" stroke="#8a6e4a" stroke-width="1.4"/>
+<text x="305" y="300" text-anchor="middle" font-size="12" fill="#6b4423" font-weight="700">反馈速度 →</text>
+<text x="305" y="314" text-anchor="middle" font-size="10" fill="#a08868">慢且模糊 ········ 快且明确</text>
+<text x="36" y="155" text-anchor="middle" font-size="12" fill="#6b4423" font-weight="700" transform="rotate(-90 36 155)">环境规律性 →</text>
+<line x1="70" y1="155" x2="540" y2="155" stroke="#c8a868" stroke-width="0.6" stroke-dasharray="3,3" opacity="0.5"/>
+<line x1="305" y1="40" x2="305" y2="270" stroke="#c8a868" stroke-width="0.6" stroke-dasharray="3,3" opacity="0.5"/>
+<rect x="305" y="40" width="235" height="115" fill="rgba(108,165,108,0.15)" stroke="#5a8a3e" stroke-width="0.6"/>
+<rect x="70" y="155" width="235" height="115" fill="rgba(192,83,58,0.13)" stroke="#a04632" stroke-width="0.6"/>
+<text x="422" y="60" text-anchor="middle" font-size="11" font-weight="700" fill="#3d5e23">直觉可信</text>
+<text x="187" y="265" text-anchor="middle" font-size="11" font-weight="700" fill="#7a2f1e">直觉不可信</text>
+<circle cx="445" cy="95" r="4" fill="#5a8a3e"/>
+<text x="455" y="99" font-size="11" fill="#3d5e23">国际象棋</text>
+<circle cx="475" cy="115" r="4" fill="#5a8a3e"/>
+<text x="485" y="119" font-size="11" fill="#3d5e23">麻醉</text>
+<circle cx="410" cy="135" r="4" fill="#5a8a3e"/>
+<text x="345" y="139" font-size="11" fill="#3d5e23">消防指挥</text>
+<circle cx="455" cy="140" r="4" fill="#5a8a3e"/>
+<text x="465" y="144" font-size="11" fill="#3d5e23">ICU 抢救</text>
+<circle cx="160" cy="200" r="4" fill="#a04632"/>
+<text x="170" y="204" font-size="11" fill="#7a2f1e">股票长期选股</text>
+<circle cx="125" cy="245" r="4" fill="#a04632"/>
+<text x="135" y="249" font-size="11" fill="#7a2f1e">政治长程预测</text>
+<circle cx="220" cy="225" r="4" fill="#a04632"/>
+<text x="230" y="229" font-size="11" fill="#7a2f1e">高管首次招聘</text>
+</svg>
+</div>
+
+<p>Klein 的另一项遗产是 <strong>premortem（事前验尸）</strong>。常规 brainstorm 让人想"可能出什么问题"，效果有限。premortem 把时间挪到未来——"假设决定已经做了，一年后它彻底失败了，每个人独立写下：为什么"。"已经发生"的假设把团队的<strong>组织性沉默</strong>撬开（没人想做扫兴的那个），实验显示比正向 brainstorm 多挖出约 30% 风险点。</p>
+
+<div class="sub">重要金句</div>
+<div class="quote">
+<div class="zh">"决策者通常只生成一个可行选项，根本不去想别的——他们靠在脑中模拟来评估它，而不是和其他选项比较。"</div>
+<div class="src">——《Sources of Power》导言（RPD 模型核心命题）</div>
+</div>
+<div class="quote">
+<div class="zh">"形成有效直觉的两个条件：环境足够规律、且能通过长期实践学到这种规律。"</div>
+<div class="src">——Kahneman &amp; Klein 2009 联合论文（《Sources of Power》后版引述）</div>
+</div>
+
+<div class="sub">局限</div>
+<p>方法论上严重依赖回溯访谈——"想起一次困难决策然后讲讲"——记忆重构会让专家把当时纠结的判断讲得比当时更确定。样本几乎全是 high-validity 行业（消防、军事、医疗），所以结论自然偏向"专家直觉可信"，从研究设计上就难以伪证。</p>
+
+<div class="sub">BigCat 应用场景</div>
+<div class="apply-box">
+<p>Klein 在带人和招聘上最实用。技术面试常被设计成"比较候选人 A 和 B 的细节"，是 Kahneman-friendly 流程。Klein 的提示反过来：把"<strong>你过去带过、与此人足够相似的人，他们 18 个月后的轨迹</strong>"放到第一位——模式识别本身就是信号。下周可试两件事：(1) 关键面试前 5 分钟，独立写一个 premortem，"假设这人入职 18 个月后离职了，最可能的原因是？"——写得出具体的两三条，意味着你模糊感受到的红旗已经存在；(2) 用上面那张二维图体检自己的判断领域：你做的某类决策（招聘、技术选型、孩子教育路径）位于哪个象限？若在左下，把它当"凭经验"做就是在自己骗自己。</p>
+</div>
+</div>
+
+<div class="book">
+<div class="book-header">
+<div class="book-title">超预测</div>
+<div class="book-en">Superforecasting: The Art and Science of Prediction · Philip E. Tetlock &amp; Dan Gardner · 2015</div>
+<div class="book-meta">Crown · 约 340 页</div>
+</div>
+<div class="book-tagline">CIA 同行被一群兼职阿姨大叔击败。不是他们更聪明，是他们用了一套可学的"狐式"思维加持续校准——从今天起，你也能。</div>
+
+<div class="sub">这本书的核心洞见</div>
+<p>Tetlock 早年那本《Expert Political Judgment》（2005）做了二十年地缘政治预测追踪，结论让圈内难堪：电视上滔滔不绝的专家，预测准确率<strong>统计上与扔飞镖的黑猩猩无差</strong>。<em>超预测</em> 是后续的好消息——他主持的 Good Judgment Project（IARPA 资助）在公开预测竞赛里，挑出顶层 2% 的业余预测者，<strong>稳定击败拥有机密情报的情报机构分析员约 30%</strong>。</p>
+<p>分水岭不在 IQ 或专业，而在 Berlin 借古希腊的那个区分：<strong>刺猬</strong>有一个大想法（自由市场、地缘对抗、技术决定论），套到所有事件上——节目效果好，因为他自信、叙事干净。<strong>狐</strong>知道很多小事，多套框架灵活拼装。Tetlock 的数据表明，超预测者几乎全是狐。</p>
+<p>但只换世界观远不够，真正的工程藏在两件事里。第一是<strong>概率化</strong>——把"特朗普会赢吗"翻成"8 月某日他赢的概率是多少 %"，并写下来。这样年终能用 Brier score 给自己打分（同时奖励准确和坚定，惩罚极端而错的判断）。第二是<strong>增量更新</strong>——新信息进来，估计从 35% 调到 42%，<strong>哪怕只动 7 个百分点也要写下来</strong>。日常人讨厌"既要不锚死又不要过反应"的中间状态，超预测者把这件事训练成肌肉。书里还反复强调"outside view first"：先用 base rate（同类事件的历史比例），再用 inside view 的细节修正——这一步几乎所有人都跳过。</p>
+<p>Tetlock 同时承认<strong>边界</strong>：超预测者的优势集中在 6–18 个月内的中短期地缘政治问题；超过 3 年的真正长程问题，他们和普通人差不多——Taleb 笔下的黑天鹅<em>结构上</em>无法靠这套方法预测。这是真诚的话：方法不号称万能。</p>
+
+<div class="sub">重要金句</div>
+<div class="quote">
+<div class="zh">"信念是要被检验的假设，不是要被守护的财宝。"</div>
+<div class="src">——《Superforecasting》第 7 章</div>
+</div>
+<div class="quote">
+<div class="zh">"刺猬知道一件大事，狐狸知道很多事——超预测者几乎都是狐。"</div>
+<div class="src">——《Superforecasting》第 4 章（借自 Berlin 借自 Archilochus）</div>
+</div>
+
+<div class="sub">局限</div>
+<p>大部分预测题是地缘政治短中期问题（6–18 个月）——能被记分的、有清晰截止日的、范围明确的。真正改变历史的"黑天鹅"几乎全在这个分布之外，方法对它没用。GJP 的训练效应在 IARPA 资助结束后是否持续也有质疑。</p>
+
+<div class="sub">BigCat 应用场景</div>
+<div class="apply-box">
+<p>Tetlock 最直接的应用是给个人重大判断<strong>建一份"概率账本"</strong>。把你手上 5 个核心信念全写成"在 [具体日期] 之前 X 发生的概率是 __%"，存进一个 Notion / spreadsheet：例如"2027 年底前 LLM 推理成本再降一个量级"、"2026 年底 A 股某持仓相对 MSCI World 跑赢"、"孩子主动用英语阅读的天数年底前 ≥ 80%"。日期一到，回看打分。两个反直觉的副作用：(1) 写不出概率的判断，多半根本不是判断，是态度；(2) 半年后翻账本，会看到自己反复错的那一类问题——这才是 Tetlock 意义上唯一算数的进步。</p>
+</div>
+</div>
+
+</section>
+
+<section>
+<h2>读完可以问自己的几个问题</h2>
+<div class="questions">
+<ol>
+<li>你最近一次"凭直觉"快速做出的重要判断，发生在哪种环境——足够多重复 + 反馈快且明确（直觉可信），还是一次性 + 反馈延迟数年（直觉很可能是偏见在伪装专业感）？
+<details><summary>参考视角</summary><p>用 Klein–Kahneman 的二维图自检：把这次判断放到那张图里，它落哪个象限？落右上 = 直觉值得听；落左下 = 必须强制启用慢思考、外部检查表、premortem。绝大多数人弄错的不是判断本身，是<strong>没意识到自己处在左下还以为自己在右上</strong>——多年经验在不规律的环境里只是积累更多偏见，不是更多智慧。</p></details>
+</li>
+<li>你正在用一个复杂模型（5+ 因素加权）做的决策，如果只允许保留<strong>最重要的一个</strong>，结论会变吗？
+<details><summary>参考视角</summary><p>这是 Gigerenzer 的 take-the-best 反演。结论变 = 复杂模型在帮你；结论不变 = 复杂模型只是在事后合理化你已经做出的判断（这种情况比想象中常见）。在不确定性高、样本稀缺的领域里，简单往往不是认知偷懒，是抗 overfit 的硬功夫。判定标准：你能写下那"一个最重要的因素"吗？写得出来 = 你其实知道；写不出 = 你确实需要复杂模型，但也意味着你在猜。</p></details>
+</li>
+<li>把你目前手上最重要的某个判断改写成："在 [具体日期] 之前发生 X 的概率是 __%"——你能写出具体数字，还是只能说"挺可能的"？
+<details><summary>参考视角</summary><p>这是 Tetlock 的核心训练。如果你"60–70%"和"40–50%"区别不大，那你不是在预测，你在 hedge 措辞。合格的概率化判断要满足三条：(1) 有明确截止日期；(2) 有可验证的事件；(3) 你愿意拿它去打赌（任何价格都不愿，等于你心里根本没数）。三条都满足 = 这是一个真判断，错了能学到东西；任何一条不满足 = 它是一个态度或愿望，不会随时间增进知识。</p></details>
+</li>
+</ol>
+</div>
+</section>
+
+<footer>BigCat · 隔日好书 · Issue 1 · 2026</footer>
+
+</div>
+</body>
+</html>
