@@ -32,6 +32,9 @@ p{margin-bottom:14px}
 .quote .en{color:#5a4828;font-style:italic;margin-bottom:6px}
 .quote .src{color:#a87a3e;font-size:0.82rem;font-style:italic}
 .apply-box{background:#efe6d0;border-left:3px solid #6b4423;padding:13px 18px;border-radius:4px;margin-top:4px;color:#3d3020;font-size:0.93rem;line-height:1.78}
+.diagram{background:#fbf6e8;padding:18px 12px 14px;border-radius:5px;margin:14px 0 18px;text-align:center;border:1px solid #ede3d0}
+.diagram-title{font-size:0.82rem;color:#a87a3e;margin-bottom:8px;letter-spacing:1.5px;text-transform:uppercase}
+.diagram svg{max-width:100%;height:auto;display:block;margin:0 auto}
 .questions{background:#fff;padding:20px 26px;border-radius:6px;box-shadow:0 1px 8px rgba(107,68,35,0.07)}
 .questions ol{padding-left:22px}
 .questions li{margin-bottom:14px;color:#5a4828}
@@ -96,6 +99,34 @@ footer{text-align:center;padding:40px 0 0;font-size:0.82rem;color:#b8a888;border
 
 <div class="sub">Core Insight</div>
 <p>Everyone has seen the smooth bell curve of adoption (innovators → early adopters → early majority → …). Moore's subversion is to see that the curve is actually <strong>not continuous</strong> between "early adopters" and "early majority" — a chasm cracks open there. The issue isn't product maturity; it's that <strong>these two groups are psychologically two completely different kinds of buyers</strong>.</p>
+
+<div class="diagram">
+<div class="diagram-title">Technology Adoption Life Cycle · Where the Chasm Sits</div>
+<svg viewBox="0 0 600 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bell curve of technology adoption with chasm marker">
+<line x1="20" y1="200" x2="580" y2="200" stroke="#8a6e4a" stroke-width="1"/>
+<path d="M 30 200 C 110 200 130 180 170 150 C 220 95 260 60 300 60 C 340 60 380 95 430 150 C 470 180 490 200 570 200 Z" fill="rgba(168,122,62,0.18)" stroke="#6b4423" stroke-width="2" stroke-linejoin="round"/>
+<line x1="44" y1="200" x2="44" y2="192" stroke="#8a6e4a" stroke-width="0.7" stroke-dasharray="2,2" opacity="0.5"/>
+<line x1="300" y1="200" x2="300" y2="62" stroke="#a87a3e" stroke-width="0.6" stroke-dasharray="3,3" opacity="0.25"/>
+<line x1="484" y1="200" x2="484" y2="180" stroke="#a87a3e" stroke-width="0.6" stroke-dasharray="3,3" opacity="0.4"/>
+<line x1="116" y1="46" x2="116" y2="210" stroke="#c0533a" stroke-width="2.5" stroke-dasharray="6,4"/>
+<text x="116" y="36" text-anchor="middle" font-size="15" font-weight="700" fill="#c0533a">The Chasm</text>
+<text x="37" y="218" text-anchor="middle" font-size="11" fill="#6b4423">Innovators</text>
+<text x="37" y="232" text-anchor="middle" font-size="10" fill="#a08868">2.5%</text>
+<text x="80" y="218" text-anchor="middle" font-size="11" fill="#6b4423">Early<tspan x="80" dy="13">Adopters</tspan></text>
+<text x="80" y="248" text-anchor="middle" font-size="10" fill="#a08868">13.5%</text>
+<text x="208" y="218" text-anchor="middle" font-size="11" fill="#6b4423">Early<tspan x="208" dy="13">Majority</tspan></text>
+<text x="208" y="248" text-anchor="middle" font-size="10" fill="#a08868">34%</text>
+<text x="392" y="218" text-anchor="middle" font-size="11" fill="#6b4423">Late<tspan x="392" dy="13">Majority</tspan></text>
+<text x="392" y="248" text-anchor="middle" font-size="10" fill="#a08868">34%</text>
+<text x="527" y="218" text-anchor="middle" font-size="11" fill="#6b4423">Laggards</text>
+<text x="527" y="232" text-anchor="middle" font-size="10" fill="#a08868">16%</text>
+<text x="78" y="170" text-anchor="middle" font-size="11" font-style="italic" fill="#6b4423">Visionaries</text>
+<text x="78" y="183" text-anchor="middle" font-size="9" fill="#a08868">buy vision</text>
+<text x="200" y="118" text-anchor="middle" font-size="11" font-style="italic" fill="#6b4423">Pragmatists</text>
+<text x="200" y="131" text-anchor="middle" font-size="9" fill="#a08868">buy references</text>
+</svg>
+</div>
+
 <p>Early adopters are <strong>visionaries</strong>: they buy a vision, and even take pride in "nobody else uses this yet." The early majority are <strong>pragmatists</strong>: they don't care whether the product is "good" — they care whether, if it breaks, they can explain it to their boss. So they demand peers already using it, a phone number they can call, an alternative vendor, retraining options — these are <strong>not product requirements, they are personal risk management</strong>. The visionary's enthusiastic endorsement reads to the pragmatist as exactly a warning sign: "only pioneers are using it" means "nobody dares to."</p>
 <p>Hence the <strong>circular trap</strong>: pragmatists only trust someone like them having gone first, but if nobody is willing to be first, the product stalls in the chasm — early customers tapped out, mainstream customers immobile.</p>
 <p>Moore's solution is counterintuitive because it requires you to <strong>deliberately shrink the market to something tiny</strong>. Not "sell to enterprises" — sell to the team at pharma companies that prepares FDA filings. Not "build a support SaaS" — build the one that handles e-commerce refund tickets, period. Conditions: pain sharp enough that they'll risk something, and a circle tight enough that one customer's news reaches the next. Pour everything in to dominate completely — and at that point what you offer is no longer software, it is what Moore calls the <strong>whole product</strong>: core features + training + third-party integrations + success stories + a support channel. Pragmatists have always bought the whole product; technology is one ingredient. Once a few word-of-mouth successes exist inside the small circle, <strong>you have manufactured with your own hands the social proof pragmatists demand</strong>, and you topple adjacent niches in turn (the next niche no longer sees "pioneers using it" but "the neighbors succeeded") — that's the bowling-pin play. Most companies die because <strong>they aimed at the "mainstream market" as their target from day one</strong>, skipping the step of manufacturing social proof.</p>
@@ -253,9 +284,5 @@ footer{text-align:center;padding:40px 0 0;font-size:0.82rem;color:#b8a888;border
 <footer>BigCat · Bidaily Books · Issue 11 · 2026</footer>
 
 </div>
-<script src="https://cissy0802.github.io/comments.js" defer></script>
-<script src="https://cissy0802.github.io/search.js" defer></script>
-<script src="https://cissy0802.github.io/index-button.js" defer></script>
-<script src="https://cissy0802.github.io/i18n-tts.js" defer></script>
 </body>
 </html>

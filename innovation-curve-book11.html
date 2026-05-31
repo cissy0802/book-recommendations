@@ -32,6 +32,9 @@ p{margin-bottom:14px}
 .quote .zh{color:#5a4828;margin-bottom:6px}
 .quote .src{color:#a87a3e;font-size:0.82rem;font-style:italic}
 .apply-box{background:#efe6d0;border-left:3px solid #6b4423;padding:13px 18px;border-radius:4px;margin-top:4px;color:#3d3020;font-size:0.93rem;line-height:1.78}
+.diagram{background:#fbf6e8;padding:18px 12px 14px;border-radius:5px;margin:14px 0 18px;text-align:center;border:1px solid #ede3d0}
+.diagram-title{font-size:0.82rem;color:#a87a3e;margin-bottom:8px;letter-spacing:1.5px;text-transform:uppercase}
+.diagram svg{max-width:100%;height:auto;display:block;margin:0 auto}
 .questions{background:#fff;padding:20px 26px;border-radius:6px;box-shadow:0 1px 8px rgba(107,68,35,0.07)}
 .questions ol{padding-left:22px}
 .questions li{margin-bottom:14px;color:#5a4828}
@@ -96,6 +99,34 @@ footer{text-align:center;padding:40px 0 0;font-size:0.82rem;color:#b8a888;border
 
 <div class="sub">这本书的核心洞见</div>
 <p>所有人都见过那条平滑的钟形采用曲线（创新者→早期采用者→早期大众→……）。Moore 的颠覆性在于看见这条曲线在"早期采用者"和"早期大众"之间根本<strong>不是连续的</strong>——那里裂着一道沟。关键不在产品成熟度，在于<strong>这两群人是心理上完全不同的两种买家</strong>。</p>
+
+<div class="diagram">
+<div class="diagram-title">技术采用生命周期 · 鸿沟所在</div>
+<svg viewBox="0 0 600 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="技术采用生命周期钟形曲线，标出鸿沟位置">
+<line x1="20" y1="200" x2="580" y2="200" stroke="#8a6e4a" stroke-width="1"/>
+<path d="M 30 200 C 110 200 130 180 170 150 C 220 95 260 60 300 60 C 340 60 380 95 430 150 C 470 180 490 200 570 200 Z" fill="rgba(168,122,62,0.18)" stroke="#6b4423" stroke-width="2" stroke-linejoin="round"/>
+<line x1="44" y1="200" x2="44" y2="192" stroke="#8a6e4a" stroke-width="0.7" stroke-dasharray="2,2" opacity="0.5"/>
+<line x1="300" y1="200" x2="300" y2="62" stroke="#a87a3e" stroke-width="0.6" stroke-dasharray="3,3" opacity="0.25"/>
+<line x1="484" y1="200" x2="484" y2="180" stroke="#a87a3e" stroke-width="0.6" stroke-dasharray="3,3" opacity="0.4"/>
+<line x1="116" y1="46" x2="116" y2="210" stroke="#c0533a" stroke-width="2.5" stroke-dasharray="6,4"/>
+<text x="116" y="36" text-anchor="middle" font-size="16" font-weight="700" fill="#c0533a">鸿沟</text>
+<text x="37" y="220" text-anchor="middle" font-size="12" fill="#6b4423">创新者</text>
+<text x="37" y="234" text-anchor="middle" font-size="10" fill="#a08868">2.5%</text>
+<text x="80" y="220" text-anchor="middle" font-size="12" fill="#6b4423">早期采用者</text>
+<text x="80" y="234" text-anchor="middle" font-size="10" fill="#a08868">13.5%</text>
+<text x="208" y="220" text-anchor="middle" font-size="12" fill="#6b4423">早期大众</text>
+<text x="208" y="234" text-anchor="middle" font-size="10" fill="#a08868">34%</text>
+<text x="392" y="220" text-anchor="middle" font-size="12" fill="#6b4423">晚期大众</text>
+<text x="392" y="234" text-anchor="middle" font-size="10" fill="#a08868">34%</text>
+<text x="527" y="220" text-anchor="middle" font-size="12" fill="#6b4423">落伍者</text>
+<text x="527" y="234" text-anchor="middle" font-size="10" fill="#a08868">16%</text>
+<text x="78" y="172" text-anchor="middle" font-size="12" font-style="italic" fill="#6b4423">梦想家</text>
+<text x="78" y="185" text-anchor="middle" font-size="10" fill="#a08868">买愿景</text>
+<text x="200" y="120" text-anchor="middle" font-size="12" font-style="italic" fill="#6b4423">务实派</text>
+<text x="200" y="133" text-anchor="middle" font-size="10" fill="#a08868">买参考</text>
+</svg>
+</div>
+
 <p>早期采用者是<strong>梦想家</strong>：买愿景，甚至以"别人都还没用"为荣。早期大众是<strong>务实派</strong>：他们关心的根本不是"这东西好不好"，而是"它要是出问题，我能不能向老板交代"。所以他们要看到同行已经在用、有可问的电话、有可换的供应商——<strong>不是产品要求，是个人的风险管理</strong>。梦想家热情的推荐信，落到务实派眼里恰恰是危险信号：只有先锋在用，意味着没人敢用。</p>
 <p>由此<strong>循环陷阱</strong>：务实派只信同行先用，可没人愿意当第一个，产品就卡死在沟里——早期客户买完了，主流客户一个都不动。</p>
 <p>Moore 的解法之所以反直觉，是它要求你<strong>主动把市场切到极小</strong>。不是"卖给企业"，是"卖给制药公司里负责 FDA 报批文件的那个部门"；不是"做客服 SaaS"，是"专做电商售后退款工单的那一支"。条件：痛点尖到他愿意冒险，圈子紧到一家用了消息能传到第二家。把所有资源砸进去做到绝对垄断——这时你提供的不只是软件，是 Moore 说的<strong>"完整产品"（whole product）</strong>：核心功能 + 培训 + 第三方集成 + 已成功案例 + 售后渠道。务实派买的从来是完整产品，技术只是其中一块。一旦小圈子里产生几个口口相传的案例，<strong>你就亲手制造了务实派需要的社会证明</strong>，再推倒相邻细分（邻行业看见的不再是"先锋在用"，而是"邻行业有人成功了"）——这就是"保龄球瓶"打法。多数公司死，是<strong>从一开始就把"主流市场"瞄成了目标客户</strong>，跳过了亲手造社会证明这一步。</p>
@@ -253,9 +284,5 @@ footer{text-align:center;padding:40px 0 0;font-size:0.82rem;color:#b8a888;border
 <footer>BigCat · 隔日好书 · Issue 11 · 2026</footer>
 
 </div>
-<script src="https://cissy0802.github.io/comments.js" defer></script>
-<script src="https://cissy0802.github.io/search.js" defer></script>
-<script src="https://cissy0802.github.io/index-button.js" defer></script>
-<script src="https://cissy0802.github.io/i18n-tts.js" defer></script>
 </body>
 </html>
