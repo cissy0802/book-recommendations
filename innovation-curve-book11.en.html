@@ -33,7 +33,13 @@ p{margin-bottom:14px}
 .quote .src{color:#a87a3e;font-size:0.82rem;font-style:italic}
 .questions{background:#fff;padding:20px 26px;border-radius:6px;box-shadow:0 1px 8px rgba(107,68,35,0.07)}
 .questions ol{padding-left:22px}
-.questions li{margin-bottom:10px;color:#5a4828}
+.questions li{margin-bottom:14px;color:#5a4828}
+.questions details{margin-top:8px;background:#faf6ec;border-left:3px solid #c8a868;padding:8px 14px;border-radius:3px}
+.questions details summary{cursor:pointer;color:#a87a3e;font-weight:700;font-size:0.84rem;list-style:none;letter-spacing:0.5px}
+.questions details summary::-webkit-details-marker{display:none}
+.questions details summary::before{content:"▸ ";color:#a87a3e}
+.questions details[open] summary::before{content:"▾ "}
+.questions details p{margin:8px 0 0;color:#5a4828;font-size:0.92rem}
 footer{text-align:center;padding:40px 0 0;font-size:0.82rem;color:#b8a888;border-top:1px solid #e0d6c2;margin-top:40px}
 @media(max-width:600px){
   header h1{font-size:1.55rem}
@@ -117,10 +123,18 @@ footer{text-align:center;padding:40px 0 0;font-size:0.82rem;color:#b8a888;border
 <p>What's truly fatal is the <strong>crossing of two trajectories</strong>. Technology usually improves faster than customer needs grow. The low-end disrupter climbs its own trajectory and sooner or later <strong>crosses the "good enough" line for mainstream customers</strong> — at which point its cheaper, simpler advantages all cash in, and the giant collapses at once. Meanwhile the giant is <strong>happily fleeing upmarket</strong>, because the high end has fatter margins and a prettier quarterly report — fleeing until it has handed over the entire low and middle. The disk-drive industry replayed the same script over and over: 14 → 8 → 5.25 → 3.5 → 2.5 inches; each new small platter was dismissed by the larger-platter incumbents as "customers don't want this" — their incumbent customers genuinely didn't, because <strong>the new platter was creating new customers</strong>. This is exactly why customer interviews can't save you — you interview your incumbent customers, who are precisely the ones pulling you upmarket and forbidding you to step down.</p>
 <p>The remedy is therefore paradoxical: before disruption hits, you must <strong>disrupt yourself with an independent small organization</strong>. "Independent" doesn't mean "given freedom" — it means having <strong>its own cost structure, its own customers, its own P&amp;L</strong> — because a disruptive business can never survive under the parent's "correct" financial standards. IBM put its PC division in Florida, deliberately not at HQ in New York, and that is the positive case. Kodak invented the digital sensor itself but stayed trapped in film margins — the negative case.</p>
 
-<div class="sub">Key Quote</div>
+<div class="sub">Key Quotes</div>
 <div class="quote">
 <div class="en">"The very decision-making and resource-allocation processes that are key to the success of established companies are the very processes that reject disruptive technologies."</div>
 <div class="src">— The Innovator's Dilemma, Introduction</div>
+</div>
+<div class="quote">
+<div class="en">"Good management was the most powerful reason they failed to stay atop their industries."</div>
+<div class="src">— The Innovator's Dilemma, Introduction (the book's thesis in one line)</div>
+</div>
+<div class="quote">
+<div class="en">"There are times at which it is right not to listen to customers, right to invest in developing lower-performance products that promise lower margins, and right to aggressively pursue small, rather than substantial, markets."</div>
+<div class="src">— The Innovator's Dilemma, Introduction (the inversion of every management instinct)</div>
 </div>
 
 <div class="sub">Limits</div>
@@ -141,10 +155,18 @@ footer{text-align:center;padding:40px 0 0;font-size:0.82rem;color:#b8a888;border
 <p>Ries's most distinctive contribution is to confront a question others dodge: <strong>before you have any revenue, how do you know whether you're making progress?</strong> The answer is to distinguish two kinds of metrics. <strong>Vanity metrics</strong> (total signups, cumulative downloads, page views) only go up — a product can be getting worse and the cumulative curve still rises, because new traffic keeps being added. <strong>Actionable metrics</strong> are <strong>cohort retention and the conversion funnel</strong>: bucket the users who signed up in April, May, and June as separate cohorts, and look at what fraction of each remain on day 30. If a new version drops the latest cohort's retention, you know immediately that you've made things worse — <strong>regardless of what the total number is doing</strong>. This <strong>"innovation accounting"</strong> lets an early-stage company with no traditional financials use objective evidence to judge "is this worth keeping the investment in."</p>
 <p>The whole method closes into the <strong>Build–Measure–Learn loop</strong>, and each loop must end with an honest verdict — <strong>pivot or persevere</strong>. That step is the real lever. A pivot isn't failure — it is "keep what you've learned, change one assumption." Instagram pivoted from Burbn (a complicated location-check-in + games + photo app) to "just photos and filters" — keeping what the team had learned ("users love the filtered photos") and cutting the rest. Dodge that honesty, and even the fastest loop is just <strong>accelerated waste</strong>.</p>
 
-<div class="sub">Key Quote</div>
+<div class="sub">Key Quotes</div>
 <div class="quote">
 <div class="en">"Validated learning is the process of demonstrating empirically that a team has discovered valuable truths about a startup's present and future business prospects."</div>
 <div class="src">— The Lean Startup, Chapter 3</div>
+</div>
+<div class="quote">
+<div class="en">"The only way to win is to learn faster than anyone else."</div>
+<div class="src">— The Lean Startup, Introduction</div>
+</div>
+<div class="quote">
+<div class="en">"A startup is a human institution designed to create a new product or service under conditions of extreme uncertainty."</div>
+<div class="src">— The Lean Startup, Chapter 2 (the book's definition of a startup)</div>
 </div>
 
 <div class="sub">Limits</div>
@@ -166,10 +188,22 @@ footer{text-align:center;padding:40px 0 0;font-size:0.82rem;color:#b8a888;border
 <p>Thiel's most offensive cut is aimed at incrementalism. He distinguishes "<strong>definite optimism</strong>" from "<strong>indefinite optimism</strong>": the former is holding a concrete, grand picture of the future in your mind and then building straight toward it; the latter is believing the future will be better without knowing what it is, so you dare only to <strong>keep options open and tweak in small steps</strong>. In his eyes, lean iteration is exactly the latter — it can polish an existing thing to a local optimum but can <strong>never find the higher mountain</strong>. SpaceX was never "test whether users want to go to Mars" — it was Musk deciding "we are going to Mars," and back-solving every engineering problem from there.</p>
 <p>So the signature question — "<strong>What important truth do very few people agree with you on?</strong>" — exists to filter for people who dare hold a definite dissent. Everything that goes from zero to one begins with a <strong>secret</strong> that almost nobody at the time believed — and a secret, by definition, means the mainstream consensus is wrong. Airbnb's secret was "the vast majority of people are willing to stay in strangers' homes short-term," which struck nearly everyone at the time as absurd; Stripe's secret was "the real bottleneck in internet payments isn't the technology, it's the developer experience."</p>
 
-<div class="sub">Key Quote</div>
+<div class="sub">Key Quotes</div>
 <div class="quote">
 <div class="en">"What important truth do very few people agree with you on?"</div>
 <div class="src">— Zero to One, Preface (the question that organizes the whole book)</div>
+</div>
+<div class="quote">
+<div class="en">"Competition is for losers."</div>
+<div class="src">— Zero to One, Chapter 3 title (the title is the thesis)</div>
+</div>
+<div class="quote">
+<div class="en">"All happy companies are different: each one earns a monopoly by solving a unique problem. All failed companies are the same: they failed to escape competition."</div>
+<div class="src">— Zero to One, Chapter 3 opening (a riff on Tolstoy)</div>
+</div>
+<div class="quote">
+<div class="en">"The most contrarian thing of all is not to oppose the crowd but to think for yourself."</div>
+<div class="src">— Zero to One, Preface</div>
 </div>
 
 <div class="sub">Limits</div>
@@ -182,11 +216,15 @@ footer{text-align:center;padding:40px 0 0;font-size:0.82rem;color:#b8a888;border
 <h2>Questions to Ask Yourself</h2>
 <div class="questions">
 <ol>
-<li>For what you're building, are the people buying it now and the people you most want to buy it the two different kinds of person Moore describes? Where exactly is the chasm between you and the latter stuck — product completeness, peer phone numbers, or even just not yet picking which small circle to dominate?</li>
-<li>In your company, which "rational good processes" are systematically rejecting low-margin, currently-undesired small opportunities? Inside those rejected, could there be one of the upward-climbing curves Christensen describes?</li>
-<li>Your most recent "milestone hit": did it validate "we can build it" or "users really want it"? Is your core metric a Ries vanity metric that only goes up, or cohort retention that tells you whether the new version actually got better?</li>
-<li>Use Thiel's prompt: what important truth do you believe, that your peers, colleagues, and investors almost universally disagree with you on? If you can answer, you hold a secret; if you can't, you're most likely doing 1→n copying.</li>
-<li>Write the thing you most want to accomplish as one sentence — is it more like "I want X to get better" (indefinite optimism), or "I want to build X, this specific thing" (definite optimism)? Are those the same bet or two completely different ones?</li>
+<li>For what you're building, are the people buying it now and the people you most want to buy it the two different kinds of person Moore describes? Where exactly is the chasm between you and the latter stuck — product completeness, peer phone numbers, or even just not yet picking which small circle to dominate?
+<details><summary>A LENS TO TRY</summary><p>A good diagnosis is name-specific. Can you, right now, name at least three real mainstream pragmatist customers, with at least one willing to take a peer's call about you? If yes, the chasm is being crossed; if no, you're still in the early market and haven't started — and the real work is not "add more features" but to manually manufacture the first reference cases.</p></details>
+</li>
+<li>Your most recent "milestone hit": did it validate "we can build it" or "users really want it"? Is your core metric a Ries vanity metric that only goes up, or cohort retention that tells you whether the new version actually got better?
+<details><summary>A LENS TO TRY</summary><p>An honest count: in the last month, what's the ratio of your team's hours spent "building features" vs. "designing experiments to test assumptions"? If it's close to 10:1, you're betting far more on execution than on learning — exactly the eve of Ries's "efficiently building something nobody wants." A healthy early-stage product runs roughly 3:1 to 5:1, with dedicated time to ask "what are we even betting on."</p></details>
+</li>
+<li>Use Thiel's prompt: what important truth do you believe, that your peers, colleagues, and investors almost universally disagree with you on?
+<details><summary>A LENS TO TRY</summary><p>A qualifying answer satisfies three conditions at once: (1) <strong>important</strong> — affects outcomes, not just taste; (2) you have <strong>data or first-hand evidence</strong>, not pure intuition; (3) peers, when they hear it, <strong>genuinely disagree</strong>, not politely nod. Most people fail (3) — they think they hold many dissents, but most are merely consensus restated differently. If you can answer, you may hold a secret; if not, you're most likely doing 1→n copying.</p></details>
+</li>
 </ol>
 </div>
 </section>

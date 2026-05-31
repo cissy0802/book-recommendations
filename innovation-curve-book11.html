@@ -33,7 +33,13 @@ p{margin-bottom:14px}
 .quote .src{color:#a87a3e;font-size:0.82rem;font-style:italic}
 .questions{background:#fff;padding:20px 26px;border-radius:6px;box-shadow:0 1px 8px rgba(107,68,35,0.07)}
 .questions ol{padding-left:22px}
-.questions li{margin-bottom:10px;color:#5a4828}
+.questions li{margin-bottom:14px;color:#5a4828}
+.questions details{margin-top:8px;background:#faf6ec;border-left:3px solid #c8a868;padding:8px 14px;border-radius:3px}
+.questions details summary{cursor:pointer;color:#a87a3e;font-weight:700;font-size:0.84rem;list-style:none;letter-spacing:0.5px}
+.questions details summary::-webkit-details-marker{display:none}
+.questions details summary::before{content:"▸ ";color:#a87a3e}
+.questions details[open] summary::before{content:"▾ "}
+.questions details p{margin:8px 0 0;color:#5a4828;font-size:0.92rem}
 footer{text-align:center;padding:40px 0 0;font-size:0.82rem;color:#b8a888;border-top:1px solid #e0d6c2;margin-top:40px}
 @media(max-width:600px){
   header h1{font-size:1.55rem}
@@ -122,6 +128,14 @@ footer{text-align:center;padding:40px 0 0;font-size:0.82rem;color:#b8a888;border
 <div class="zh">"那些对成熟公司之成功至关重要的决策与资源分配流程，恰恰也是排斥颠覆性技术的流程。"</div>
 <div class="src">——《创新者的窘境》引言</div>
 </div>
+<div class="quote">
+<div class="zh">"良好的管理，正是这些公司守不住行业顶峰最有力的原因。"</div>
+<div class="src">——《创新者的窘境》引言（点题之句）</div>
+</div>
+<div class="quote">
+<div class="zh">"有时候，正确的做法是不去听客户的话、是去投资性能更低、毛利更薄的产品、是主动去追逐微小而非显著的市场。"</div>
+<div class="src">——《创新者的窘境》引言（管理直觉的反面）</div>
+</div>
 
 <div class="sub">局限</div>
 <p>Jill Lepore 2014 年在《纽约客》的著名批评指出，理论高度依赖事后挑案例——许多"成功颠覆"是先有结果再补叙因，对失败的颠覆者视而不见。<strong>解释力强而预测力弱</strong>：你很难提前判断哪个低端产品会真正成功。</p>
@@ -145,6 +159,14 @@ footer{text-align:center;padding:40px 0 0;font-size:0.82rem;color:#b8a888;border
 <div class="quote">
 <div class="zh">"经验证的学习，是一支团队用经验证据，证明自己确实发现了关于公司当下与未来商业前景的某些真知。"</div>
 <div class="src">——《精益创业》第三章</div>
+</div>
+<div class="quote">
+<div class="zh">"取胜的唯一办法是比任何人学得都快。"</div>
+<div class="src">——《精益创业》导言</div>
+</div>
+<div class="quote">
+<div class="zh">"创业公司是一种被设计出来、用于在极端不确定条件下创造新产品或新服务的人类组织。"</div>
+<div class="src">——《精益创业》第二章（对"创业公司"的核心定义）</div>
 </div>
 
 <div class="sub">局限</div>
@@ -171,6 +193,18 @@ footer{text-align:center;padding:40px 0 0;font-size:0.82rem;color:#b8a888;border
 <div class="zh">"有哪条重要的真理，是几乎没人同意你的？"</div>
 <div class="src">——《从 0 到 1》序言（贯穿全书的核心问题）</div>
 </div>
+<div class="quote">
+<div class="zh">"竞争是失败者的事。"</div>
+<div class="src">——《从 0 到 1》第三章标题（即论点本身）</div>
+</div>
+<div class="quote">
+<div class="zh">"所有幸福的公司都是不同的：每一家都靠解决一个独特的问题赢得了垄断。所有失败的公司都是相同的：它们都没能逃脱竞争。"</div>
+<div class="src">——《从 0 到 1》第三章开篇（戏仿托尔斯泰）</div>
+</div>
+<div class="quote">
+<div class="zh">"最反主流的事，不是站到人群对面，而是为自己思考。"</div>
+<div class="src">——《从 0 到 1》序言</div>
+</div>
 
 <div class="sub">局限</div>
 <p>高度自传化——理论几乎全建立在 PayPal、Palantir 与少数 Founders Fund 投资上，<strong>样本量小、幸存者偏差严重</strong>。"垄断好"的论证容易滑入对反垄断的不耐烦。文风带强烈意识形态，许多结论读者并不认同。</p>
@@ -182,11 +216,15 @@ footer{text-align:center;padding:40px 0 0;font-size:0.82rem;color:#b8a888;border
 <h2>读完可以问自己的几个问题</h2>
 <div class="questions">
 <ol>
-<li>你正在做的事，现在买它的人和你最希望买它的人，是不是 Moore 说的两种不同的人？你和后者之间那道沟，具体卡在哪——产品完整度、可问的同行电话，还是连"目标小圈子"都还没选清楚？</li>
-<li>你所在的公司，正在用什么"理性的好流程"系统性地否决利润率低、客户暂时不要的小机会？这些被否决的，里面有没有可能藏着 Christensen 说的那条上爬曲线？</li>
-<li>你最近一次"达成里程碑"，验证的是"我们能造出来"，还是"用户真的会要"？你的核心指标，是只会往上走的虚荣指标，还是能告诉你换版后到底变好没有的分群留存？</li>
-<li>用 Thiel 的问法：有哪条重要的真理，是你的同行、同事、投资人几乎没人同意你的？答得出来，意味着你手里有一条秘密；答不出来，意味着你大概率在做 1→n 的复制。</li>
-<li>把你最想达成的那件事写成一句话——它更像"我要让 X 变得更好"（不明确的乐观），还是"我要造出 X 这个具体的东西"（明确的乐观）？这两种表达拉开的是同一件事，还是两个完全不同的赌局？</li>
+<li>你正在做的事，现在买它的人和你最希望买它的人，是不是 Moore 说的两种不同的人？你和后者之间那道沟，具体卡在哪——产品完整度、可问的同行电话，还是连"目标小圈子"都还没选清楚？
+<details><summary>参考视角</summary><p>好的诊断要具体到名字。能不能立即叫出至少 3 个真实的主流务实派客户，且其中至少一位愿意接你电话给同行做参考？叫得出 = 沟已在跨；叫不出 = 你仍困在早期市场，沟还没开始跨——而真正的工作不是"再加几个功能"，是去亲手造那几个参考案例。</p></details>
+</li>
+<li>你最近一次"达成里程碑"，验证的是"我们能造出来"，还是"用户真的会要"？你的核心指标，是只会往上走的虚荣指标，还是能告诉你换版后到底变好没有的分群留存？
+<details><summary>参考视角</summary><p>诚实测算：过去一个月你团队投入的工时里，"造功能" vs "设计实验来检验假设"是几比几？比例如果接近 10:1，你押在执行上的赌注远大于学习——这正是 Ries 说的"高效造一个没人要的东西"的前夜。健康的早期产品大致在 3:1 到 5:1 之间，留有专门时间反复问"我们到底在赌什么"。</p></details>
+</li>
+<li>用 Thiel 的问法：有哪条重要的真理，是你的同行、同事、投资人几乎没人同意你的？
+<details><summary>参考视角</summary><p>合格答案要同时满足三条：(1) <strong>重要</strong>——会影响结果，不是品味偏好；(2) 你有<strong>数据或亲历论据</strong>，不是单纯直觉；(3) 同行真听了真不同意，<strong>不是礼貌点头</strong>。绝大多数人卡在第三条——以为自己异见很多，其实大都和共识只差表述方式。能答出来意味着你手里可能有一条秘密；答不出来意味着你大概率在做 1→n 的复制。</p></details>
+</li>
 </ol>
 </div>
 </section>
