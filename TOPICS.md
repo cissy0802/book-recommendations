@@ -53,3 +53,11 @@
 - Issue 48: 教育与学习 — Holt《孩子如何学习》/ Robinson《让天赋自由》/ Lahey《让孩子学会负责》/ Willingham《为什么学生不喜欢上学》
 - Issue 49: 工作与意义 — Crawford《摩托车修理店的未来工作哲学》/ Sennett《匠人》/ Graeber《狗屁工作》/ Terkel《工作》
 - Issue 50: 旅行与他者 — Kapuściński《太阳的阴影》/ Chatwin《巴塔哥尼亚高原上》/ Theroux《火车大巴扎》/ 玄奘《大唐西域记》
+- Issue 51: 经济学的奠基 — Smith《国富论》/ Keynes《通论》/ Hayek《通往奴役之路》/ Marx《资本论》导读
+- Issue 52: 正义与政治哲学 — Rawls《正义论》/ Nozick《无政府、国家与乌托邦》/ Sandel《公正》/ Mill《论自由》
+- Issue 53: 诗的语言 — Rilke《杜伊诺哀歌》/ 聂鲁达诗选 / Whitman《草叶集》/ 杜甫诗选讲
+- Issue 54: 中国古典的源头 — 《论语》/ 《庄子》/ 《史记》/ 《诗经》导读
+- Issue 55: 法律与正义 — Hart《法律的概念》/ Dworkin《认真对待权利》/ Stevenson《Just Mercy》/ 贝卡里亚《论犯罪与刑罚》
+- Issue 56: 气候与人类世 — Wallace-Wells《不宜居的地球》/ Klein《改变一切》/ Kolbert《大灭绝时代》/ Ghosh《大错乱》
+- Issue 57: 宗教经典的现代读法 — Armstrong《神的历史》/ Alter《圣经叙事的艺术》/ Nasr《研习古兰经》/ Pals《宗教的八种理论》
+- Issue 58: 自我与疗愈 — Rogers《成为一个人》/ Maslow《动机与人格》/ Perry《你经历了什么》/ Haidt《象与骑象人》
