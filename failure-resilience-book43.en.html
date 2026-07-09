@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Issue 43: Failure &amp; Resilience — is failure a defect to eliminate, or the fuel that makes systems stronger | Book Recommendations</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f7f3ec;color:#2a2418;line-height:1.78}
+.container{max-width:780px;margin:0 auto;padding:32px 22px 80px}
+header{text-align:center;padding:60px 0 32px;border-bottom:1px solid #e0d6c2}
+.issue-tag{font-size:0.78rem;letter-spacing:3px;color:#a87a3e;font-weight:700;text-transform:uppercase}
+header h1{font-size:2.05rem;font-weight:800;color:#6b4423;margin:14px 0 10px;letter-spacing:1px}
+header .question{font-size:1rem;color:#8a6e4a;font-style:italic;max-width:600px;margin:0 auto}
+header .date{font-size:0.82rem;color:#b09578;margin-top:14px}
+section{margin-top:40px}
+h2{font-size:1.32rem;color:#6b4423;border-left:4px solid #a87a3e;padding-left:12px;margin-bottom:18px;font-weight:700}
+p{margin-bottom:14px}
+.intro{background:#fff;padding:22px 26px;border-radius:6px;box-shadow:0 1px 8px rgba(107,68,35,0.07);font-size:1rem}
+.overview-table{width:100%;border-collapse:collapse;background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 1px 8px rgba(107,68,35,0.07);font-size:0.93rem}
+.overview-table th,.overview-table td{padding:12px 14px;text-align:left;border-bottom:1px solid #ede3d0;vertical-align:top}
+.overview-table th{background:#f0e6d2;color:#6b4423;font-weight:700;font-size:0.86rem;letter-spacing:0.5px}
+.overview-table tr:last-child td{border-bottom:none}
+.book{background:#fff;padding:26px 28px;border-radius:6px;box-shadow:0 1px 10px rgba(107,68,35,0.08);margin-bottom:22px;border-top:3px solid #a87a3e}
+.book-header{margin-bottom:14px;padding-bottom:12px;border-bottom:1px dashed #d8c8a8}
+.book-title{font-size:1.25rem;color:#6b4423;font-weight:700;margin-bottom:4px}
+.book-en{font-size:0.95rem;color:#8a6e4a;font-style:italic}
+.book-meta{font-size:0.84rem;color:#a08868;margin-top:6px}
+.book-tagline{font-size:0.98rem;color:#6b4423;font-style:italic;margin:14px 0;padding:10px 14px;background:#faf6ec;border-left:3px solid #c8a868}
+.sub{font-size:0.92rem;color:#a87a3e;font-weight:700;margin:18px 0 8px;letter-spacing:0.5px;text-transform:uppercase}
+.quote{background:#f9f4e8;padding:12px 16px;border-radius:4px;margin:8px 0;font-size:0.94rem}
+.quote .zh{color:#5a4828;margin-bottom:6px}
+.quote .src{color:#a87a3e;font-size:0.82rem;font-style:italic}
+.apply-box{background:#efe6d0;border-left:3px solid #6b4423;padding:13px 18px;border-radius:4px;margin-top:4px;color:#3d3020;font-size:0.93rem;line-height:1.78}
+.diagram{background:#fbf6e8;padding:18px 12px 14px;border-radius:5px;margin:14px 0 18px;text-align:center;border:1px solid #ede3d0}
+.diagram-title{font-size:0.82rem;color:#a87a3e;margin-bottom:8px;letter-spacing:1.5px;text-transform:uppercase}
+.diagram svg{max-width:100%;height:auto;display:block;margin:0 auto}
+.questions{background:#fff;padding:20px 26px;border-radius:6px;box-shadow:0 1px 8px rgba(107,68,35,0.07)}
+.questions ol{padding-left:22px}
+.questions li{margin-bottom:14px;color:#5a4828}
+.questions details{margin-top:8px;background:#faf6ec;border-left:3px solid #c8a868;padding:8px 14px;border-radius:3px}
+.questions details summary{cursor:pointer;color:#a87a3e;font-weight:700;font-size:0.84rem;list-style:none;letter-spacing:0.5px}
+.questions details summary::-webkit-details-marker{display:none}
+.questions details summary::before{content:"▸ ";color:#a87a3e}
+.questions details[open] summary::before{content:"▾ "}
+.questions details p{margin:8px 0 0;color:#5a4828;font-size:0.92rem}
+footer{text-align:center;padding:40px 0 0;font-size:0.82rem;color:#b8a888;border-top:1px solid #e0d6c2;margin-top:40px}
+@media(max-width:600px){
+  header h1{font-size:1.55rem}
+  .container{padding:24px 16px 60px}
+  h2{font-size:1.15rem}
+  .book{padding:20px 18px}
+  .overview-table{font-size:0.85rem}
+  .overview-table th,.overview-table td{padding:9px 8px}
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+<div class="issue-tag">Issue 43 · Themed Reading List</div>
+<h1>Failure &amp; Resilience</h1>
+<p class="question">Is failure a defect to be eliminated at any cost, or the mechanism by which a system perceives reality, calibrates itself, and even grows stronger? These four books answer the same counterintuitive question from four different levels.</p>
+<p class="date">2026 · Book Recommendations · Issue 43</p>
+</header>
+
+<section>
+<h2>Introduction</h2>
+<div class="intro">
+<p>Our instinct is to treat failure as an endpoint to be eliminated. Each of these books inverts it from a different level. Taleb argues that a whole class of systems doesn't merely survive volatility and stress but grows from it—"antifragility" is a third property beyond resilience. Harford argues that a complex world cannot be planned correctly in advance; success can only emerge through the evolutionary trial-and-error of <strong>variation—survivability—selection</strong>. Petroski argues that engineering's true limits are revealed only by failure: a successful structure proves only that it "didn't collapse," never how far it stood from collapse. Syed argues that learning from error is not automatic—it is a cultural choice: some systems turn every failure into data, others bury it. Four mechanisms, one shared fuel: failure.</p>
+</div>
+</section>
+
+<section>
+<h2>The Four Books at a Glance</h2>
+<table class="overview-table">
+<thead><tr><th>Book</th><th>Author</th><th>Year</th><th>The one thing it makes clear</th></tr></thead>
+<tbody>
+<tr><td>Antifragile</td><td>Nassim Nicholas Taleb</td><td>2012</td><td>Resilience only means "takes a hit and stays the same"; antifragility means "takes a hit and gets stronger"—a whole class of systems craves volatility rather than merely enduring it</td></tr>
+<tr><td>Adapt</td><td>Tim Harford</td><td>2011</td><td>No one can plan the right answer to a complex problem in advance; the only reliable path is the trial-and-error of "dare, survive, select"</td></tr>
+<tr><td>To Engineer Is Human</td><td>Henry Petroski</td><td>1985</td><td>Success only proves the structure didn't collapse, never the safety margin; a run of successes accumulates hidden risk until the next failure resets what we know</td></tr>
+<tr><td>Black Box Thinking</td><td>Matthew Syed</td><td>2015</td><td>Learning from error isn't automatic—aviation treats accidents as data, medicine blames the individual, so the same mistakes recur</td></tr>
+</tbody>
+</table>
+</section>
+
+<section>
+<h2>The Four Books in Detail</h2>
+
+<div class="book">
+<div class="book-header">
+<div class="book-title">Antifragile</div>
+<div class="book-en">Antifragile: Things That Gain from Disorder · Nassim Nicholas Taleb · 2012</div>
+<div class="book-meta">Random House · ~519 pages</div>
+</div>
+<div class="book-tagline">Resilience just means taking a beating and staying up. The truly scarce property is "getting stronger from the beating"—and it has a recognizable mathematical shape.</div>
+
+<div class="sub">Core Insight</div>
+<p>Taleb begins from a gap in language: <strong>the opposite of "fragile" is not "sturdy."</strong> Sturdy and robust merely mean unchanged after a shock; but there is a third class of things that get <strong>better</strong> after a shock—and it had no name. He coined one: antifragile. Muscle grows under load, bone densifies under stress, the immune system strengthens after exposure to germs, an economy improves by weeding out the weak in small crises. These systems <strong>need</strong> a dose of stress, volatility, and randomness; wrap them in sterile comfort and they atrophy.</p>
+<p>The key is <strong>nonlinearity</strong>. Fragility means a concave response to shocks: one big shock does far more damage than the same total delivered in many small doses. A porcelain cup shatters when dropped a meter, yet survives a thousand one-millimeter taps—its exposure to volatility is concave. Antifragility is the reverse—a convex response: the cumulative gain from many small, controllable setbacks exceeds the gain from dead calm. This is why Taleb says <strong>he cares about "exposure," not "prediction"</strong>: you can't predict where the next shock comes from, but you can choose to stand on the convex side of the curve.</p>
+
+<div class="diagram">
+<div class="diagram-title">Three responses to the same shock</div>
+<svg viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three curves: fragile is a downward-accelerating concave curve, robust is a flat line, antifragile is an upward-accelerating convex curve">
+<line x1="45" y1="30" x2="45" y2="220" stroke="#8a6e4a" stroke-width="1"/>
+<line x1="45" y1="125" x2="565" y2="125" stroke="#8a6e4a" stroke-width="1"/>
+<text x="14" y="34" font-size="11" fill="#a08868">payoff</text>
+<text x="495" y="140" font-size="11" fill="#a08868">shock size →</text>
+<path d="M55 122 C 230 116, 400 100, 560 40" fill="none" stroke="#4a7c59" stroke-width="2.5"/>
+<text x="565" y="42" font-size="12" font-weight="700" fill="#4a7c59">antifragile</text>
+<line x1="55" y1="125" x2="560" y2="125" stroke="#a87a3e" stroke-width="2" stroke-dasharray="5,4"/>
+<text x="565" y="123" font-size="12" font-weight="700" fill="#a87a3e">robust</text>
+<path d="M55 128 C 230 134, 400 152, 560 216" fill="none" stroke="#c0533a" stroke-width="2.5"/>
+<text x="565" y="216" font-size="12" font-weight="700" fill="#c0533a">fragile</text>
+<text x="140" y="205" font-size="10" fill="#a08868">concave: loss accelerates</text>
+<text x="140" y="70" font-size="10" fill="#a08868">convex: gain accelerates</text>
+</svg>
+</div>
+
+<p>This yields an operational strategy: the <strong>barbell</strong>. Don't spread resources across the "moderate risk" middle—the worst spot, with neither a safety cushion nor big upside. Instead go to both extremes: <strong>most of your resources (say 85%) extremely conservative, near-zero risk</strong>, and a small remainder in high-risk bets with huge upside but capped downside (worst case, you lose only that small slice). A single failure can't touch the core, while any windfall can change everything—you've plugged yourself into <strong>optionality</strong>: limited loss, open-ended gain. It also explains his fondness for the "Lindy effect": the longer something (a book, a technology, an idea) has lived, the longer its remaining life expectancy—surviving the shock of time is itself proof of antifragility.</p>
+<p>Taleb's sharpest cut targets the <strong>cult of "intervention" and "stability."</strong> Artificially suppressing volatility—bailing out markets, stamping out every small fire, shielding a child from every setback—looks protective but merely converts risk from "frequent small failures" into "rare catastrophe." Suppress small fires and the forest accumulates fuel until one blaze can't be put out; this is his "iatrogenics"—harm caused by the treatment itself. Antifragile systems <strong>require the failure of their lower units to keep the whole healthy</strong>: restaurants must go bankrupt one by one for the restaurant industry to be excellent overall.</p>
+
+<div class="sub">Key Quotes</div>
+<div class="quote">
+<div class="zh">"Wind extinguishes a candle and energizes fire. Likewise with randomness, uncertainty, chaos: you want to use them, not hide from them. You want to be the fire and wish for the wind."</div>
+<div class="src">— Antifragile, Prologue</div>
+</div>
+<div class="quote">
+<div class="zh">"Antifragility is beyond resilience or robustness. The resilient resists shocks and stays the same; the antifragile gets better."</div>
+<div class="src">— Antifragile, Prologue</div>
+</div>
+
+<div class="sub">Limitations</div>
+<p>The prose is self-assured and combative; the mockery of academics, economists, and "fragilistas" sometimes overpowers the argument. The core concept is extremely strong, but the book is long and digressive, hammering the same insight repeatedly. How the "barbell" cashes out in concrete asset allocation is left largely unquantified.</p>
+
+<div class="sub">Application for BigCat</div>
+<div class="apply-box">
+<p>The barbell maps directly onto the time allocation of an "AI super-individual." Most people spread their learning time across the middle—chasing a pile of "maybe-useful" mid-tier tools, dabbling, neither going deep nor hitting a jackpot. The antifragile arrangement: <strong>put 85% of your energy on rock-solid ground</strong> (your existing depth in distributed systems/AI, your body, your family), and stake only <strong>10–15% on experiments with capped downside and open upside</strong>—take one of your deep interests (consciousness, complexity science) × frontier AI and make a few "at most wastes a weekend, but if it lands it's something others can't build" bets. To try next week: list three things on your plate and ask which is "convex" (failure costs only time, success is unbounded), then give your next open slot only to that—rather than learning yet another middling framework.</p>
+</div>
+</div>
+
+<div class="book">
+<div class="book-header">
+<div class="book-title">Adapt</div>
+<div class="book-en">Adapt: Why Success Always Starts with Failure · Tim Harford · 2011</div>
+<div class="book-meta">Little, Brown · ~309 pages</div>
+</div>
+<div class="book-tagline">In a complex world, no expert can plan the right answer in advance—the systems that improve all run on a discipline that dares to fail.</div>
+
+<div class="sub">Core Insight</div>
+<p>Harford's central diagnosis is the <strong>"God complex"</strong>: however complex a problem, people carry an unshakeable certainty that their judgment is right. Yet reality is otherwise—the knowledge behind even a humble object (he cites a pencil) is dispersed across thousands of people worldwide; no single person could make one alone. <strong>When no one can hold the whole picture, "planning the right answer" is blocked at the root.</strong> The only reliable alternative is to mimic biological evolution: generate lots of variation, let the environment weed out the failures, amplify the survivors.</p>
+<p>He compresses this into the three principles of the Soviet engineer Palchinsky: <strong>first, seek out new ideas and try new things, expecting some to fail; second, when trying something new, do it on a scale where failure is survivable; third, seek out feedback and learn from your mistakes as you go.</strong> The three interlock, none dispensable: dare-but-don't-survive (missing the second) bets it all in one shot; play-it-safe (missing the first) never progresses; try, fail, but ignore feedback and deny it (missing the third) is paying tuition for nothing.</p>
+<p>The most counter-human of the three is <strong>the second—"survivability."</strong> Trial and error presupposes that failure isn't fatal. An entrepreneur who stakes everything, a financial system with no redundancy, an institution "too big to fail"—these have precisely <strong>forfeited the right to experiment</strong>, because they can't afford even one loss. Harford stresses repeatedly: the real skill isn't avoiding failure but <strong>designing structures that make failure cheap and recoverable</strong>—try small, try in parallel, isolate each experiment so one error can't infect the whole system.</p>
+<p>And the third—learning from feedback—is hard because it requires <strong>being able to tell that you actually failed</strong>. In the real world, failure is routinely hidden by narrative: reword it, pick a flattering metric, blame luck, and the error "disappears." Through cases from the Iraq War to the financial crisis to aid projects, Harford shows that the larger and more self-assured an institution, the fewer its mechanisms for admitting failure—so the same error can recur, at enormous cost, for years.</p>
+
+<div class="sub">Key Quotes</div>
+<div class="quote">
+<div class="zh">"First, try new things, expecting that some will fail; second, do it on a scale where failure is survivable; third, seek out feedback and learn from your mistakes as you go along."</div>
+<div class="src">— Adapt, Chapter 1 (the Palchinsky principles)</div>
+</div>
+<div class="quote">
+<div class="zh">"Success comes through rapidly fixing our mistakes rather than getting things right first time."</div>
+<div class="src">— Adapt, Introduction</div>
+</div>
+
+<div class="sub">Limitations</div>
+<p>The cases are wide-ranging but scattered—leaping from the Iraq War to financial derivatives to corporate innovation, leaving the reader to extract the through-line. Where "trial and error" hits its limits in moral or irreversible settings (one-shot major medical decisions, the critical windows of parenting) is treated thinly—not every failure is "recoverable."</p>
+
+<div class="sub">Application for BigCat</div>
+<div class="apply-box">
+<p>Palchinsky's second principle is most useful when leading a team into AI adoption. Don't make the one-shot big bet of "roll out one unified AI process company-wide"—if the direction is wrong, the cost is so high that no one dares admit failure, and the error drags on buried under narrative. Instead run <strong>parallel small experiments</strong>: have 3–4 groups each use different tools/approaches on their own most painful use case, each capped at "even failure wastes only two weeks," with an agreed, quantifiable feedback metric (the third principle). To try next week: split some current "big, all-encompassing AI plan" into three mutually isolated, two-week-verdict experiments—and <strong>write down in advance "what result counts as failure"</strong>—because without a clear failure criterion, the third principle can never be executed.</p>
+</div>
+</div>
+
+<div class="book">
+<div class="book-header">
+<div class="book-title">To Engineer Is Human</div>
+<div class="book-en">To Engineer Is Human: The Role of Failure in Successful Design · Henry Petroski · 1985</div>
+<div class="book-meta">St. Martin's Press / Vintage · ~272 pages</div>
+</div>
+<div class="book-tagline">A successful structure tells you one thing only: it didn't collapse. The real boundary of knowledge is always drawn by failure.</div>
+
+<div class="sub">Core Insight</div>
+<p>Petroski is a structural engineer, and he states from inside the profession a truth outsiders find counterintuitive: <strong>engineering advances mainly through failure, not success.</strong> A bridge or an aircraft that has run safely for ten years proves only that it <strong>did not</strong> collapse under those conditions—it tells you <strong>nothing</strong> about how much safety margin remains or how close it stood to the limit. Success is silent; only failure speaks, pointing precisely at "here, this is where it fails." So every major structural disaster advances engineering knowledge more than countless successful builds.</p>
+<p>Hence an unsettling <strong>paradox of success</strong>: a run of successes breeds the next failure. Designers see predecessors as "too conservative, too much material," and generation by generation trim redundancy, widen spans, push toward the limit—each step "proven" safe by prior success, until one generation crosses the line no one had marked, disaster strikes, and knowledge is <strong>reset</strong>. Petroski notes that major bridge collapses have historically recurred roughly every thirty years—about one <strong>generational turnover of engineers</strong>: those who lived through the last failure retire, the lesson fades, and redundancy gets eaten away again.</p>
+
+<div class="diagram">
+<div class="diagram-title">How success eats the safety margin until failure resets it</div>
+<svg viewBox="0 0 600 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A sawtooth curve: the safety margin declines slowly across successive successes, hits the danger line, then is reset upward by failure">
+<line x1="45" y1="25" x2="45" y2="205" stroke="#8a6e4a" stroke-width="1"/>
+<line x1="45" y1="205" x2="570" y2="205" stroke="#8a6e4a" stroke-width="1"/>
+<text x="10" y="30" font-size="10" fill="#a08868">safety</text>
+<text x="10" y="42" font-size="10" fill="#a08868">margin</text>
+<text x="430" y="222" font-size="11" fill="#a08868">time / successive successes →</text>
+<line x1="45" y1="175" x2="570" y2="175" stroke="#c0533a" stroke-width="1.5" stroke-dasharray="6,4"/>
+<text x="48" y="192" font-size="10" fill="#c0533a">danger line (failure occurs)</text>
+<path d="M55 55 L 200 172 L 200 65 L 340 172 L 340 72 L 470 172 L 470 60 L 560 150" fill="none" stroke="#6b4423" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="200" cy="172" r="4" fill="#c0533a"/>
+<circle cx="340" cy="172" r="4" fill="#c0533a"/>
+<circle cx="470" cy="172" r="4" fill="#c0533a"/>
+<text x="110" y="103" font-size="10" fill="#a08868" transform="rotate(21 110 103)">trimming redundancy…</text>
+<text x="205" y="60" font-size="10" fill="#4a7c59">failure → reset</text>
+</svg>
+</div>
+
+<p>He also dismantles the misreading of the "factor of safety." Engineers build in several times the needed redundancy; Petroski says it should really be called the <strong>"factor of ignorance"</strong>—it measures not how safe we are, but how little we understand about <strong>material fatigue, wind-induced vibration, resonance, and unexpected loads</strong>. Redundancy is insurance bought against "what we don't know we don't know"; once success tempts us to trim it, what we're really buying is disaster. The Comet airliners breaking apart from metal fatigue at the corners of square windows, the Tacoma Narrows Bridge twisting apart in resonance with the wind—all were failure modes designers <strong>did not anticipate and could not have</strong>, forced into the textbooks only by the failures themselves.</p>
+
+<div class="sub">Key Quotes</div>
+<div class="quote">
+<div class="zh">"The colossal disasters that do occur are ultimately failures of design, but the lessons learned from those disasters can do more to advance engineering knowledge than all the successful machines and structures in the world."</div>
+<div class="src">— To Engineer Is Human, Chapter 1</div>
+</div>
+<div class="quote">
+<div class="zh">"No one wants to learn by mistakes, but we cannot learn enough from successes to go beyond the state of the art."</div>
+<div class="src">— To Engineer Is Human</div>
+</div>
+
+<div class="sub">Limitations</div>
+<p>Written in 1985, its cases center on the mechanical structures of civil engineering and aviation, not the failure modes of newer systems like software and networks. The prose is essayistic; the theoretical frame is looser than later books of its kind. It says little about "how to institutionalize the memory of failure"—it is better at diagnosis than at prescription.</p>
+
+<div class="sub">Application for BigCat</div>
+<div class="apply-box">
+<p>"Factor of safety = factor of ignorance" is a ready-made diagnostic blade for anyone building distributed systems. A system runs two years without incident, and the team begins <strong>trimming redundancy</strong>—cutting backups, raising utilization, removing "seemingly superfluous" degradation plans—each step "proven" safe by past stability, until one traffic spike crosses the line no one marked. To try next week: pick one piece of redundancy that "hasn't caused trouble, so you're about to optimize it away," and write down <strong>which class of failure-you-don't-yet-understand it was originally insurance against</strong>. Can't articulate it? Then you truly understand it and may trim it. Can articulate it? Then what you're about to cut is the factor of ignorance. And second: turn major-incident post-mortems into an <strong>institutional memory that doesn't vanish with staff turnover</strong>, to fight Petroski's "thirty-year cycle"—don't let the lesson reset to zero the moment those who lived it retire.</p>
+</div>
+</div>
+
+<div class="book">
+<div class="book-header">
+<div class="book-title">Black Box Thinking</div>
+<div class="book-en">Black Box Thinking: Marginal Gains and the Secrets of High Performance · Matthew Syed · 2015</div>
+<div class="book-meta">John Murray · ~336 pages</div>
+</div>
+<div class="book-tagline">Learning from failure is not automatic. It is a culture you can choose—or refuse—and the contrast between two industries proves it.</div>
+
+<div class="sub">Core Insight</div>
+<p>Syed builds the whole book on a stark contrast of two industries: <strong>aviation vs medicine</strong>. Aircraft carry two black boxes; every accident is investigated by an independent body with no blame attached, and the conclusions are fed back into the entire industry by force—so aviation grows ever safer. Medicine is the reverse: errors are often concealed, blamed on individuals, waved past under the name "complication," lacking a mechanism of no-fault investigation. The result: <strong>the same preventable errors take lives in hospitals over and over.</strong> The difference lies not in the intelligence or goodwill of practitioners, but in <strong>how the system as a whole treats failure.</strong></p>
+<p>He abstracts the two attitudes into <strong>"closed loop" and "open loop."</strong> A closed loop is where error information is denied or reinterpreted away, so the loop seals shut, the system learns nothing, and it spins in place; an open loop is where failure is recorded honestly, treated as signal, and fed back—so the loop opens and the system keeps evolving. <strong>What decides your fate is not whether you err, but where the information flows after the error.</strong></p>
+<p>Why is the closed loop so common? Syed's answer is the psychology of <strong>"cognitive dissonance"</strong>: when the facts clash with one's self-image ("I'm competent / I'm right"), people don't admit error cleanly—they <strong>unconsciously rewrite the narrative</strong>: find excuses, cherry-pick data, blame luck, disparage the evidence, so the self-image survives intact. The more expert, the more authoritative, the more one's reputation is staked on "never being wrong," the stronger this defense. So the very people who should most learn from failure are the ones who most resist admitting it. <strong>It isn't bad people covering up—it's ordinary people protecting the self.</strong></p>
+<p>The way out Syed calls <strong>"marginal gains"</strong>: break a big goal into countless measurable small links, let each link expose its tiny failures, and optimize them one by one. Britain's cycling team turned a one-percent improvement in every detail into an overwhelming advantage exactly this way. It works precisely because <strong>it shrinks "failure" and strips its stigma</strong>—each micro-failure is neither fatal nor shameful, so people are willing to report it honestly, and the loop opens.</p>
+
+<div class="sub">Key Quotes</div>
+<div class="quote">
+<div class="zh">"For organizations beyond aviation, it is not about creating a literal black box; rather, it is about the willingness and tenacity to investigate the lessons that often exist when we fail, but which we rarely exploit."</div>
+<div class="src">— Black Box Thinking, Introduction (defining "black box thinking")</div>
+</div>
+
+<div class="sub">Limitations</div>
+<p>The argument is clear but somewhat thin—"learn from failure" is proven by example after example, and the second half feels repetitive. The aviation-vs-medicine dichotomy is simplified: medicine's recent patient-safety movement is in fact moving toward the aviation model. It says too little about "which failures shouldn't be risked at all"—it is better at encouraging the open loop than at drawing its boundaries.</p>
+
+<div class="sub">Application for BigCat</div>
+<div class="apply-box">
+<p>The "cognitive dissonance → closed loop" chain speaks most directly to parenting. The moment a child (or an adult) errs, if what follows is blame or shame, cognitive dissonance drives her to <strong>learn to conceal, make excuses, avoid risk</strong>—turning home into a closed loop. To make it an open loop, the mechanism isn't "more encouragement" but <strong>decoupling error from self-worth</strong>: in the debrief, ask only "what does this data tell us to adjust next time," never "whose fault was it." To try next week, a family-version "black box": agree that once a week, each person shares one of their own failures that week and one thing learned from it—parents go first and model admitting error—so the child sees that <strong>owning a failure is not shameful but a respected act in this home.</strong> The same applies to team retrospectives: swap the "blame meeting" for a "no-fault investigation," and information will actually flow back into the system.</p>
+</div>
+</div>
+
+</section>
+
+<section>
+<h2>Questions to Ask Yourself After Reading</h2>
+<div class="questions">
+<ol>
+<li>In Taleb's terms, look at what you're currently doing: is it fragile, robust, or antifragile? If an unexpected shock hit, would you be crushed, stay put, or actually benefit?
+<details><summary>A framework</summary><p>The key is "nonlinearity" and "optionality." Ask two things: (1) Would one big shock harm you far more than the same total delivered as many small setbacks? Yes = you're on the concave side, fragile. (2) Is your downside capped and your upside open? Yes = you're on the convex side, antifragile. Most people mistake themselves for "solid" when they've merely hidden the risk in a "rare but fatal" tail—that isn't resilience, it's fragility disguised as it.</p></details>
+</li>
+<li>Check your most recent "attempt" against Harford's three principles: Do you dare try new things? Would you survive if it failed? Did you actually seek feedback and admit the failure? Which of the three are you most missing?
+<details><summary>A framework</summary><p>Each has its own way of killing you. Missing the first (don't dare try) = long stagnation, rotting safely; missing the second (scale too large) = one fatal bet, no second chance; missing the third (ignore feedback) = paying tuition repeatedly and learning nothing. Most smart people are stuck on the third—not that they don't try, but that after failing, cognitive dissonance quietly rewrites the narrative, so "failure" vanishes in their own eyes. Honest check: when was the last judgment you explicitly admitted "this one was wrong"?</p></details>
+</li>
+<li>Look at your system (team, family, codebase) through Petroski + Syed together: Is it quietly trimming redundancy amid success, creeping toward a line no one marked? When failure occurs, does the information flow back into the system, or get buried under narrative?
+<details><summary>A framework</summary><p>Watch two signals together. Petroski signal: is some piece of redundancy being optimized away "because nothing's gone wrong," with no one able to say what it originally guarded against?—that's likely trimming the factor of ignorance. Syed signal: after the last problem, was the debrief a "no-fault investigation, only what to fix," or "find whose fault it was"? If the latter, your system is a closed loop—error information is flowing toward blame, not improvement. Both signals red means you're personally brewing a "thirty-year-cycle" scale of failure.</p></details>
+</li>
+</ol>
+</div>
+</section>
+
+<footer>BigCat · Book Recommendations · Issue 43 · 2026</footer>
+
+</div>
+</body>
+</html>
