@@ -63,3 +63,6 @@
 - Issue 56: 气候与人类世 — Wallace-Wells《不宜居的地球》/ Klein《改变一切》/ Kolbert《大灭绝时代》/ Ghosh《大错乱》
 - Issue 57: 宗教经典的现代读法 — Armstrong《神的历史》/ Alter《圣经叙事的艺术》/ Nasr《研习古兰经》/ Pals《宗教的八种理论》
 - Issue 58: 自我与疗愈 — Rogers《成为一个人》/ Maslow《动机与人格》/ Perry《你经历了什么》/ Haidt《象与骑象人》
+- Issue 59: 极权主义与政治之恶 — Arendt《极权主义的起源》/ Arendt《艾希曼在耶路撒冷》/ Miłosz《被禁锢的头脑》/ Havel《无权者的权力》
+- Issue 60: 斯多葛与生活的艺术 — Aurelius《沉思录》/ Seneca《论生命之短暂》/ Epictetus《爱比克泰德手册》/ Irvine《像哲学家一样生活》
+- Issue 61: 存在主义与荒诞 — Camus《西西弗神话》/ Sartre《存在主义是一种人道主义》/ Kierkegaard《恐惧与颤栗》/ Kaufmann《存在主义》
