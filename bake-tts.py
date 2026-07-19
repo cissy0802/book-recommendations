@@ -38,7 +38,7 @@ ENDPOINT_TEMPLATE = "https://{region}.tts.speech.microsoft.com/cognitiveservices
 DEFAULT_VOICE_ZH = "zh-CN-XiaoxiaoNeural"
 DEFAULT_VOICE_EN = "en-US-JennyNeural"
 # Elements whose data-zh/data-en text becomes part of a model's narration.
-NARRATION_TAGS = ("h1", "h2", "h3", "h4", "p", "div", "li", "summary")
+NARRATION_TAGS = ("h1", "h2", "h3", "h4", "p", "div", "li", "summary", "table")
 REPO_DIR = Path(__file__).parent.resolve()
 AUDIO_DIR = REPO_DIR / "audio"
 # Azure tolerates much larger bodies than Volcano. 3000 chars gives plenty of
@@ -311,6 +311,27 @@ def collect_groups(soup) -> list[tuple]:
             if lang == "zh" and "en" in classes:
                 continue
             if lang == "en" and "zh" in classes:
+                continue
+            # Tables: format cells so the audio has natural pauses. Header
+            # row first, then each body row as "header：cell，header：cell" so
+            # the listener hears which column each cell belongs to.
+            if node.name == "table":
+                headers = [th.get_text(strip=True) for th in node.find_all("th")]
+                rows = []
+                for tr in node.find_all("tr"):
+                    cells = [td.get_text(strip=True) for td in tr.find_all(["th", "td"])]
+                    cells = [c for c in cells if c]
+                    if not cells or all(c in headers for c in cells):
+                        continue
+                    if headers and len(cells) == len(headers):
+                        pairs = [f"{h}：{c}" for h, c in zip(headers, cells)]
+                        rows.append("，".join(pairs))
+                    else:
+                        rows.append("，".join(cells))
+                text = "。".join(rows)
+                if text:
+                    bins_split[h2_seen].append(text)
+                skip_descendants_of.add(id(node))
                 continue
             text = node.get_text().strip()
             if not text:
