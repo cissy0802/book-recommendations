@@ -5,47 +5,51 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Issue 43：失败与韧性 — 失败是要消除的坏事，还是系统变强的燃料 | 好书推荐</title>
+<meta content="#24290f" name="theme-color"/>
 <style>
+/* bigcat-dark v1 */
+:root{color-scheme:dark}
+
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f7f3ec;color:#2a2418;line-height:1.78}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#24290f;color:#d6d0c4;line-height:1.78}
 .container{max-width:780px;margin:0 auto;padding:32px 22px 80px}
-header{text-align:center;padding:60px 0 32px;border-bottom:1px solid #e0d6c2}
-.issue-tag{font-size:0.78rem;letter-spacing:3px;color:#a87a3e;font-weight:700;text-transform:uppercase}
-header h1{font-size:2.05rem;font-weight:800;color:#6b4423;margin:14px 0 10px;letter-spacing:1px}
-header .question{font-size:1rem;color:#8a6e4a;font-style:italic;max-width:600px;margin:0 auto}
+header{text-align:center;padding:60px 0 32px;border-bottom:1px solid #4c422e}
+.issue-tag{font-size:0.78rem;letter-spacing:3px;color:#c39559;font-weight:700;text-transform:uppercase}
+header h1{font-size:2.05rem;font-weight:800;color:#d4ad8c;margin:14px 0 10px;letter-spacing:1px}
+header .question{font-size:1rem;color:#b59975;font-style:italic;max-width:600px;margin:0 auto}
 header .date{font-size:0.82rem;color:#b09578;margin-top:14px}
 section{margin-top:40px}
-h2{font-size:1.32rem;color:#6b4423;border-left:4px solid #a87a3e;padding-left:12px;margin-bottom:18px;font-weight:700}
+h2{font-size:1.32rem;color:#d4ad8c;border-left:4px solid #c39559;padding-left:12px;margin-bottom:18px;font-weight:700}
 p{margin-bottom:14px}
-.intro{background:#fff;padding:22px 26px;border-radius:6px;box-shadow:0 1px 8px rgba(107,68,35,0.07);font-size:1rem}
-.overview-table{width:100%;border-collapse:collapse;background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 1px 8px rgba(107,68,35,0.07);font-size:0.93rem}
-.overview-table th,.overview-table td{padding:12px 14px;text-align:left;border-bottom:1px solid #ede3d0;vertical-align:top}
-.overview-table th{background:#f0e6d2;color:#6b4423;font-weight:700;font-size:0.86rem;letter-spacing:0.5px}
+.intro{background:#0d0f05;padding:22px 26px;border-radius:6px;box-shadow:0 1px 8px rgba(0,0,0,0.07);font-size:1rem}
+.overview-table{width:100%;border-collapse:collapse;background:#0d0f05;border-radius:6px;overflow:hidden;box-shadow:0 1px 8px rgba(0,0,0,0.07);font-size:0.93rem}
+.overview-table th,.overview-table td{padding:12px 14px;text-align:left;border-bottom:1px solid #3f3522;vertical-align:top}
+.overview-table th{background:#3d331f;color:#d4ad8c;font-weight:700;font-size:0.86rem;letter-spacing:0.5px}
 .overview-table tr:last-child td{border-bottom:none}
-.book{background:#fff;padding:26px 28px;border-radius:6px;box-shadow:0 1px 10px rgba(107,68,35,0.08);margin-bottom:22px;border-top:3px solid #a87a3e}
-.book-header{margin-bottom:14px;padding-bottom:12px;border-bottom:1px dashed #d8c8a8}
-.book-title{font-size:1.25rem;color:#6b4423;font-weight:700;margin-bottom:4px}
-.book-en{font-size:0.95rem;color:#8a6e4a;font-style:italic}
+.book{background:#0d0f05;padding:26px 28px;border-radius:6px;box-shadow:0 1px 10px rgba(0,0,0,0.08);margin-bottom:22px;border-top:3px solid #c39559}
+.book-header{margin-bottom:14px;padding-bottom:12px;border-bottom:1px dashed #655535}
+.book-title{font-size:1.25rem;color:#d4ad8c;font-weight:700;margin-bottom:4px}
+.book-en{font-size:0.95rem;color:#b59975;font-style:italic}
 .book-meta{font-size:0.84rem;color:#a08868;margin-top:6px}
-.book-tagline{font-size:0.98rem;color:#6b4423;font-style:italic;margin:14px 0;padding:10px 14px;background:#faf6ec;border-left:3px solid #c8a868}
-.sub{font-size:0.92rem;color:#a87a3e;font-weight:700;margin:18px 0 8px;letter-spacing:0.5px;text-transform:uppercase}
-.quote{background:#f9f4e8;padding:12px 16px;border-radius:4px;margin:8px 0;font-size:0.94rem}
-.quote .zh{color:#5a4828;margin-bottom:6px}
-.quote .src{color:#a87a3e;font-size:0.82rem;font-style:italic}
-.apply-box{background:#efe6d0;border-left:3px solid #6b4423;padding:13px 18px;border-radius:4px;margin-top:4px;color:#3d3020;font-size:0.93rem;line-height:1.78}
-.diagram{background:#fbf6e8;padding:18px 12px 14px;border-radius:5px;margin:14px 0 18px;text-align:center;border:1px solid #ede3d0}
-.diagram-title{font-size:0.82rem;color:#a87a3e;margin-bottom:8px;letter-spacing:1.5px;text-transform:uppercase}
+.book-tagline{font-size:0.98rem;color:#d4ad8c;font-style:italic;margin:14px 0;padding:10px 14px;background:#22270e;border-left:3px solid #a08040}
+.sub{font-size:0.92rem;color:#c39559;font-weight:700;margin:18px 0 8px;letter-spacing:0.5px;text-transform:uppercase}
+.quote{background:#252a11;padding:12px 16px;border-radius:4px;margin:8px 0;font-size:0.94rem}
+.quote .zh{color:#cebc9c;margin-bottom:6px}
+.quote .src{color:#c39559;font-size:0.82rem;font-style:italic}
+.apply-box{background:#3f3620;border-left:3px solid #d4ad8c;padding:13px 18px;border-radius:4px;margin-top:4px;color:#d2c5b5;font-size:0.93rem;line-height:1.78}
+.diagram{background:#24290f;padding:18px 12px 14px;border-radius:5px;margin:14px 0 18px;text-align:center;border:1px solid #3f3522}
+.diagram-title{font-size:0.82rem;color:#c39559;margin-bottom:8px;letter-spacing:1.5px;text-transform:uppercase}
 .diagram svg{max-width:100%;height:auto;display:block;margin:0 auto}
-.questions{background:#fff;padding:20px 26px;border-radius:6px;box-shadow:0 1px 8px rgba(107,68,35,0.07)}
+.questions{background:#0d0f05;padding:20px 26px;border-radius:6px;box-shadow:0 1px 8px rgba(0,0,0,0.07)}
 .questions ol{padding-left:22px}
-.questions li{margin-bottom:14px;color:#5a4828}
-.questions details{margin-top:8px;background:#faf6ec;border-left:3px solid #c8a868;padding:8px 14px;border-radius:3px}
-.questions details summary{cursor:pointer;color:#a87a3e;font-weight:700;font-size:0.84rem;list-style:none;letter-spacing:0.5px}
+.questions li{margin-bottom:14px;color:#cebc9c}
+.questions details{margin-top:8px;background:#22270e;border-left:3px solid #a08040;padding:8px 14px;border-radius:3px}
+.questions details summary{cursor:pointer;color:#c39559;font-weight:700;font-size:0.84rem;list-style:none;letter-spacing:0.5px}
 .questions details summary::-webkit-details-marker{display:none}
-.questions details summary::before{content:"▸ ";color:#a87a3e}
+.questions details summary::before{content:"▸ ";color:#c39559}
 .questions details[open] summary::before{content:"▾ "}
-.questions details p{margin:8px 0 0;color:#5a4828;font-size:0.92rem}
-footer{text-align:center;padding:40px 0 0;font-size:0.82rem;color:#b8a888;border-top:1px solid #e0d6c2;margin-top:40px}
+.questions details p{margin:8px 0 0;color:#cebc9c;font-size:0.92rem}
+footer{text-align:center;padding:40px 0 0;font-size:0.82rem;color:#b8a888;border-top:1px solid #4c422e;margin-top:40px}
 @media(max-width:600px){
   header h1{font-size:1.55rem}
   .container{padding:24px 16px 60px}
@@ -97,16 +101,16 @@ footer{text-align:center;padding:40px 0 0;font-size:0.82rem;color:#b8a888;border
 <div class="diagram">
 <div class="diagram-title">面对同一冲击的三种反应曲线</div>
 <svg aria-label="三条曲线，脆弱为向下加速的凹曲线，坚韧为水平线，反脆弱为向上加速的凸曲线" role="img" viewbox="0 0 600 250" xmlns="http://www.w3.org/2000/svg">
-<line stroke="#8a6e4a" stroke-width="1" x1="45" x2="45" y1="30" y2="220"></line>
-<line stroke="#8a6e4a" stroke-width="1" x1="45" x2="565" y1="125" y2="125"></line>
+<line stroke="#b59975" stroke-width="1" x1="45" x2="45" y1="30" y2="220"></line>
+<line stroke="#b59975" stroke-width="1" x1="45" x2="565" y1="125" y2="125"></line>
 <text fill="#a08868" font-size="11" x="20" y="34">收益</text>
 <text fill="#a08868" font-size="11" x="510" y="140">冲击强度 →</text>
-<path d="M55 122 C 230 116, 400 100, 560 40" fill="none" stroke="#4a7c59" stroke-width="2.5"></path>
-<text fill="#4a7c59" font-size="12" font-weight="700" x="565" y="42">反脆弱</text>
-<line stroke="#a87a3e" stroke-dasharray="5,4" stroke-width="2" x1="55" x2="560" y1="125" y2="125"></line>
-<text fill="#a87a3e" font-size="12" font-weight="700" x="565" y="123">坚韧</text>
-<path d="M55 128 C 230 134, 400 152, 560 216" fill="none" stroke="#c0533a" stroke-width="2.5"></path>
-<text fill="#c0533a" font-size="12" font-weight="700" x="565" y="216">脆弱</text>
+<path d="M55 122 C 230 116, 400 100, 560 40" fill="none" stroke="#82b491" stroke-width="2.5"></path>
+<text fill="#82b491" font-size="12" font-weight="700" x="565" y="42">反脆弱</text>
+<line stroke="#c39559" stroke-dasharray="5,4" stroke-width="2" x1="55" x2="560" y1="125" y2="125"></line>
+<text fill="#c39559" font-size="12" font-weight="700" x="565" y="123">坚韧</text>
+<path d="M55 128 C 230 134, 400 152, 560 216" fill="none" stroke="#c95c43" stroke-width="2.5"></path>
+<text fill="#c95c43" font-size="12" font-weight="700" x="565" y="216">脆弱</text>
 <text fill="#a08868" font-size="10" x="150" y="205">凹：损失加速</text>
 <text fill="#a08868" font-size="10" x="150" y="70">凸：增益加速</text>
 </svg>
@@ -170,19 +174,19 @@ footer{text-align:center;padding:40px 0 0;font-size:0.82rem;color:#b8a888;border
 <div class="diagram">
 <div class="diagram-title">成功如何一点点吃掉安全余量，直到失败重置</div>
 <svg aria-label="锯齿曲线，安全余量随连续成功缓慢下降触及危险线后因失败被重置抬高" role="img" viewbox="0 0 600 240" xmlns="http://www.w3.org/2000/svg">
-<line stroke="#8a6e4a" stroke-width="1" x1="45" x2="45" y1="25" y2="205"></line>
-<line stroke="#8a6e4a" stroke-width="1" x1="45" x2="570" y1="205" y2="205"></line>
+<line stroke="#b59975" stroke-width="1" x1="45" x2="45" y1="25" y2="205"></line>
+<line stroke="#b59975" stroke-width="1" x1="45" x2="570" y1="205" y2="205"></line>
 <text fill="#a08868" font-size="10" x="18" y="30">安全</text>
 <text fill="#a08868" font-size="10" x="18" y="42">余量</text>
 <text fill="#a08868" font-size="11" x="470" y="222">时间 / 连续成功 →</text>
-<line stroke="#c0533a" stroke-dasharray="6,4" stroke-width="1.5" x1="45" x2="570" y1="175" y2="175"></line>
-<text fill="#c0533a" font-size="10" x="48" y="192">危险线（失败发生）</text>
-<path d="M55 55 L 200 172 L 200 65 L 340 172 L 340 72 L 470 172 L 470 60 L 560 150" fill="none" stroke="#6b4423" stroke-linejoin="round" stroke-width="2.2"></path>
-<circle cx="200" cy="172" fill="#c0533a" r="4"></circle>
-<circle cx="340" cy="172" fill="#c0533a" r="4"></circle>
-<circle cx="470" cy="172" fill="#c0533a" r="4"></circle>
+<line stroke="#c95c43" stroke-dasharray="6,4" stroke-width="1.5" x1="45" x2="570" y1="175" y2="175"></line>
+<text fill="#c95c43" font-size="10" x="48" y="192">危险线（失败发生）</text>
+<path d="M55 55 L 200 172 L 200 65 L 340 172 L 340 72 L 470 172 L 470 60 L 560 150" fill="none" stroke="#d4ad8c" stroke-linejoin="round" stroke-width="2.2"></path>
+<circle cx="200" cy="172" fill="#c95c43" r="4"></circle>
+<circle cx="340" cy="172" fill="#c95c43" r="4"></circle>
+<circle cx="470" cy="172" fill="#c95c43" r="4"></circle>
 <text fill="#a08868" font-size="10" transform="rotate(21 120 105)" x="120" y="105">削减冗余…</text>
-<text fill="#4a7c59" font-size="10" x="205" y="60">失败→认知重置</text>
+<text fill="#82b491" font-size="10" x="205" y="60">失败→认知重置</text>
 </svg>
 </div>
 <p>他还破除了对「安全系数」（factor of safety）的误读。工程师给结构留出数倍冗余，Petroski 说这个名字更该叫<strong>「无知系数」（factor of ignorance）</strong>——它衡量的不是我们有多安全，而是我们<strong>对材料疲劳、风振、共振、意外荷载有多不了解</strong>。冗余是给「我们不知道自己不知道的东西」买的保险；一旦被成功诱导着削掉，买的其实是灾难。彗星客机因方形舷窗转角的金属疲劳接连解体、塔科马海峡大桥在风中共振扭曲坍塌——都是设计者<strong>没料到、也无从预料</strong>的失效模式，只有失败本身把它逼进了教科书。</p>
